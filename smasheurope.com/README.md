@@ -1,5 +1,8 @@
 # Astro Starter Kit: Minimal
 
+tutorial:
+https://docs.astro.build/en/tutorial/2-pages/1/
+
 ```
 npm create astro@latest -- --template minimal
 ```
