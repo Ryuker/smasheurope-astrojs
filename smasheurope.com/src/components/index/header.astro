@@ -3,23 +3,81 @@
 ---
 
 <section id="info-header">
-  <h1>SmashEurope AstroJS Header</h1>
-<p>Here you can find your local European Smash community and an overview of events to compete in.
-
-  You're encouraged to follow our social accounts to stay in the loop of developments in the scene.
-  
-  The European Smash community has been active for over two decades. It's made up of a grassroots scene fragmented into various communities. SmashEurope was launched in January of 2015 as central hub into this community.
-  
-  Best of luck on your Smash journey!</p>
-  <span>—The SmashEurope Development Team</span>
-  <div>
-    <button>Btn1</button>
-    <button>Btn2</button>
-    <button>Btn3</button>
-    <button>Btn4</button>
-    <button>Btn5</button>
-    <button>Btn6</button>
-    <button>Btn7</button>
+  <div class="container">
+    <div id="image">
+      <img src="/assets/smasheurope_logo_default.png"/>
+    </div>
+    <div id="info">
+      <h1>Welcome to SmashEurope! </h1>
+      <p>Here you can find your local European Smash community and an overview of events to compete in.</p>
+      <p>You're encouraged to follow our social accounts to stay in the loop of developments in the scene.</p>
+      <p>The European Smash community has been active for over two decades. It's made up of a grassroots scene fragmented into various communities. SmashEurope was launched in January of 2015 as central hub into this community.</p>  
+      <p>Best of luck on your Smash journey!</p>
+      <span>—The SmashEurope Development Team</span>
+      <div id="buttons">
+        <button>Btn1</button>
+        <button>Btn2</button>
+        <button>Btn3</button>
+        <button>Btn4</button>
+        <button>Btn5</button>
+        <button>Btn6</button>
+        <button>Btn7</button>
+      </div>
+    </div>
   </div>
-  <img src="/assets/smasheurope_logo_default.png"/>
 </section>
+
+<style lang="scss">
+  .container {
+    // background: blue;
+    max-width: 1000px;
+    margin: 0px 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    @media screen and (max-width: 799px) {
+      display: flex;
+      flex-direction: column;
+    }
+
+  }
+  #info-header {
+    // background: rgb(116, 116, 208);
+    display: flex;
+    justify-content: center;
+    #image {
+      // background: rgb(156, 156, 196);
+      flex: 0 0 100%;
+      display: flex;
+      justify-content: center;
+      @media screen and (min-width: 800px) {
+        flex: 1;
+        order: 2;
+      }     
+    }
+    #info {
+      // background: rgb(230, 157, 157);
+      @media screen and (min-width: 800px) {
+        flex: 1;
+        order: 1;
+        width: 50%;
+      }
+      @media screen and (max-width: 799px) {
+        width: 100%;
+      }
+
+      #buttons {
+        width: 100%;
+        @media screen and (min-width: 800px) {
+          flex: 0 0 100%;
+          order: 3;
+        }
+        @media screen and (max-width: 799px) {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+</style>
