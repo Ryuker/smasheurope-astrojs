@@ -1,18 +1,25 @@
 ---
-
+const { 
+    games = "Game", 
+    image_src = "../../assets/regen2023_banner.jpg",
+    title = "Event Name Year", 
+    info = "Praesent luctus lacus in rutrum aliquet. Pellentesque tristique tortor id finibus mollis. Phasellus id leo ac ante luctus ultricies. Vestibulum molestie mi viverra.", 
+    data = "August 18-20th, Birmingham, England",  
+    trailer_url = "http://google.com", 
+    reg_url = "https://start.gg"  } = Astro.props;
 ---
 
 <div class="card">
-  <span class="game">Ultimate</span>
+  <span class="game">{games}</span>
   <div class="image">
     <img src="../../assets/regen2023_banner.jpg"/>
   </div>
-  <span>Regen 2023</span>
-  <p>The premier UK Smash Ultimate tournament is back,this time for 3 DAYS!</p>
-  <span>August 18-20th, Birmingham, England</span>
+  <span>{title}</span>
+  <p>{info}</p>
+  <span>{data}</span>
   <div class="buttons">
-    <button>trailer</button>
-    <button>details</button>
+    <a href={trailer_url}>trailer</a>
+    <a href={reg_url}>details</a>
   </div>
 </div>
 

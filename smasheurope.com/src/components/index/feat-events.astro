@@ -5,9 +5,30 @@ import FeatEventCard from './events/feat-event-card.astro';
   <div class="container" style="flex-direction:column;">
     <h2>Visit European Summer Majors</h2>
     <div class="cards">
-      <FeatEventCard />
-      <FeatEventCard />
-      <FeatEventCard />
+
+      <FeatEventCard 
+        games="Ultimate"
+        image_src="../../assets/regen2023_banner.jpg"
+        title="Regen 2023"
+        info="The premier UK Smash Ultimate tournament is back,this time for 3 DAYS!"
+        data="August 18-20th, Birmingham, England"
+        trailer_url="https://youtu.be/q1hYzBA6Njk"
+        reg_url="https://www.start.gg/tournament/regen-2023/"
+      />
+
+      <FeatEventCard 
+        games="Melee | Project+ | Ultimate"
+        image_src="../../assets/fete3_banner.png.jpg"
+        title="Fête 3: By the Sea"
+        info="The UK's premier melee tournament, Fête, returns and is bigger than ever!"
+        data="July 14th-16th, Camber, England"
+        trailer_url="https://twitter.com/FeteSmash/status/1586800972302614528"
+        reg_url="https://www.start.gg/tournament/f-te-3-by-the-sea/details"
+      />
+      <FeatEventCard 
+        games="Melee | Project+ | Ultimate"
+      />
+
     </div>
     <div class="more-button">
       <button>more events</button>
