@@ -1,15 +1,15 @@
 ---
-
+import FeatEventCard from './events/feat-event-card.astro';
 ---
 <section id="feat-events">
   <div class="container" style="flex-direction:column;">
     <h2>Visit European Summer Majors</h2>
-    <div>
-      <div>card 1</div>
-      <div>card 2</div>
-      <div>card 3</div>
+    <div class="cards">
+      <FeatEventCard />
+      <FeatEventCard />
+      <FeatEventCard />
     </div>
-    <div>
+    <div class="more-button">
       <button>more events</button>
     </div>
   </div> 
@@ -19,6 +19,22 @@
   #feat-events {
     display: flex;
     justify-content: center;
+
+    .container {
+      // background: rgb(152, 152, 232);
+      width: 100%;
+
+      .cards {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+
+      }
+      .more-button {
+        flex: 0 0 100%;
+      }
+    }
   }
   
 </style>

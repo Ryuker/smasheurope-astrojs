@@ -1,0 +1,50 @@
+---
+
+---
+
+<div class="card">
+  <span class="game">Ultimate</span>
+  <div class="image">
+    <img src="../../assets/regen2023_banner.jpg"/>
+  </div>
+  <span>Regen 2023</span>
+  <p>The premier UK Smash Ultimate tournament is back,this time for 3 DAYS!</p>
+  <span>August 18-20th, Birmingham, England</span>
+  <div class="buttons">
+    <button>trailer</button>
+    <button>details</button>
+  </div>
+</span>
+
+<style lang="scss">
+  .card {
+    background: rgb(152, 152, 232);
+    display: flex;
+    flex-direction: column;
+    
+    min-height: 200px;
+    width: 400px;
+    margin-bottom: 2em;
+
+    border: 1px black solid;
+    border-radius: 10px;
+
+    @media screen and (max-width: 1000px) {
+        width:100%;
+    }
+
+    span {
+      width:100%;
+      &.game {
+        text-align: center;
+      }
+    }
+
+    .image {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+</style>
