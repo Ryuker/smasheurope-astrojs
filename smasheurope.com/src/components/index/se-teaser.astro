@@ -3,7 +3,9 @@
 ---
 <section id="se-teaser">
   <div class="container">
-    <iframe></iframe>
+    <div class="iframe-container">
+      <iframe src="https://www.youtube.com/embed/mVJMz7ZuYAs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+    </div>
   </div>
 </section>
 
@@ -11,5 +13,31 @@
   #se-teaser {
     display: flex;
     justify-content: center;
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+
+    .container {
+      flex-basis: 0;
+      flex-grow: 1;
+      width: 1000px;
+      margin: 0 5%;
+    }
+
+    .iframe-container {
+      overflow: hidden;
+      padding-top: 56.25%;
+      position: relative;
+      width: 100%;
+
+      iframe {
+        border: 0;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+      }
+    }
   }
 </style>
