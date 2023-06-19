@@ -3,10 +3,39 @@ import BaseLayout from './base-layout.astro';
 const {frontmatter} = Astro.props;
 ---
 
-<BaseLayout title="news"/>
+<BaseLayout title={frontmatter.title}>
+  <div class="container">
+
   <h1>{frontmatter.title}</h1>
   <span>{frontmatter.author}</span>
   <span>{frontmatter.date}</span>
-  <p>{frontmatter.content}</p>
+  
+  <div class="content">
+    <slot />
+  </div>
+
   <span>{frontmatter.tags}</span>
+  </div>
 </BaseLayout>
+
+<style lang="scss">
+  .container {
+    margin: 0 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 30px;
+
+    @media screen and (max-width: 799px) {
+        h1 {
+          font-size: 1.5rem;
+        }
+    }
+
+    .content {
+      max-width: 500px;
+    }
+  }
+</style>
