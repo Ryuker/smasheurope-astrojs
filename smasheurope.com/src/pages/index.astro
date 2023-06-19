@@ -5,22 +5,12 @@ import Header from '../components/index/header.astro';
 import FeatEvents from '../components/index/feat-events.astro';
 import SE_Teaser from '../components/index/se-teaser.astro';
 import Initiatives from '../components/index/initiatives.astro';
-import Footer from '../components/footer.astro';
+import BaseLayout from '../layouts/base-layout.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>SmashEurope</title>
-	</head>
-	<body>
+<BaseLayout title="Home">
 		<Header />
 		<FeatEvents />
 		<SE_Teaser />
 		<Initiatives />
-		<Footer />
-	</body>
-</html>
+</BaseLayout>
