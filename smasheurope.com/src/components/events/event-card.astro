@@ -1,0 +1,57 @@
+---
+const { 
+    games = "Game", 
+    image_src = "/assets/regen2023_banner.jpg",
+    title = "Event Name Year", 
+    info = "Praesent luctus lacus in rutrum aliquet. Pellentesque tristique tortor id finibus mollis. Phasellus id leo ac ante luctus ultricies. Vestibulum molestie mi viverra.", 
+    data = "August 18-20th, Birmingham, England",  
+    trailer_url = "http://google.com", 
+    reg_url = "https://start.gg"  } = Astro.props;
+---
+
+<div class="card">
+  <span class="game">{games}</span>
+  <div class="image">
+    <img src="/assets/regen2023_banner.jpg"/>
+  </div>
+  <span>{title}</span>
+  <p>{info}</p>
+  <span>{data}</span>
+  <div class="buttons">
+    <a href={trailer_url}>trailer</a>
+    <a href={reg_url}>details</a>
+  </div>
+</div>
+
+<style lang="scss">
+  .card {
+    background: rgb(152, 152, 232);
+    display: flex;
+    flex-direction: column;
+    
+    min-height: 200px;
+    width: 400px;
+    margin-bottom: 2em;
+
+    border: 1px black solid;
+    border-radius: 10px;
+
+    @media screen and (max-width: 1000px) {
+        width:100%;
+    }
+
+    span {
+      width:100%;
+      &.game {
+        text-align: center;
+      }
+    }
+
+    .image {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+</style>
