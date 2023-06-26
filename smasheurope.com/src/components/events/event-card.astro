@@ -4,19 +4,27 @@ const {
     image_src = "/assets/regen2023_banner.jpg",
     title = "Event Name Year", 
     info = "Praesent luctus lacus in rutrum aliquet. Pellentesque tristique tortor id finibus mollis. Phasellus id leo ac ante luctus ultricies. Vestibulum molestie mi viverra.", 
-    data = "August 18-20th, Birmingham, England",  
+    month = "august", 
+    start = 18,
+    end = 20,
+    city = "city",
+    country = "country",
     trailer_url = "http://google.com", 
-    reg_url = "https://start.gg"  } = Astro.props;
+    reg_url = "https://start.gg",
+    event_slug = 'regen-2023' } = Astro.props;
 ---
 
 <div class="card">
   <span class="game">{games}</span>
   <div class="image">
-    <img src="/assets/regen2023_banner.jpg"/>
+    <img src={image_src}/>
   </div>
   <span>{title}</span>
-  <p>{info}</p>
-  <span>{data}</span>
+
+  
+  <slot/>
+  
+  <span>{month} {start}-{end}, {city}, {country}</span>
   <div class="buttons">
     <a href={trailer_url}>trailer</a>
     <a href={reg_url}>details</a>

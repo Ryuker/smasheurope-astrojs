@@ -1,10 +1,51 @@
 ---
+import { getCollection, CollectionEntry } from 'astro:content';
+const allEvents = await getCollection('events');
 import Event from './event-card.astro';
+
+// const firstEvent = await allEvents[0];
+// const { Content } = await firstEvent.render();
+
+const firstEventContent = await allEvents[0].render();
+
+// export async function getStaticPaths() {
+//   const eventEntries = await getCollection('events');
+//   return eventEntries.map(entry => ({
+//     props: { entry }
+//   }));
+// }
+
+/////////
+// interface Props {
+//   event_prop: CollectionEntry<"events">;
+// }
+
+// const { event_prop } = Astro.props;
+// const { Content } = await event_prop.render();
+
 ---
 
 
 <section id="events" class="container">
   <h1>All Events</h1>
+  {
+    allEvents.map((event, index) => (
+      <Event 
+        games={event.data.games}
+        title={event.data.title}
+        image_src={event.data.image}
+        month={event.data.month}
+        start={event.data.start}
+        end={event.data.end}
+        city={event.data.city}
+        country={event.data.country}
+        trailer_url={event.data.trailer_url}
+        reg_rul={event.data.reg_url}
+      >
+      </Event>
+    ))
+  }
+
   <Event />
   <Event />
   <Event />
