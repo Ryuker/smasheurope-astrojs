@@ -1,6 +1,8 @@
 ---
 import { getCollection, CollectionEntry } from 'astro:content';
-const allEvents = await getCollection('events');
+const { collection = 'events' } = Astro.props
+const allEvents = await getCollection(collection);
+
 import Event from './event-card.astro';
 
 // const firstEvent = await allEvents[0];
@@ -41,6 +43,7 @@ const firstEventContent = await allEvents[0].render();
         country={event.data.country}
         trailer_url={event.data.trailer_url}
         reg_rul={event.data.reg_url}
+        event={event}
       >
       </Event>
     ))
