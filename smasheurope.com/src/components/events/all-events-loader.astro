@@ -8,7 +8,14 @@ import Event from './event-card.astro';
 // const firstEvent = await allEvents[0];
 // const { Content } = await firstEvent.render();
 
-const firstEventContent = await allEvents[0].render();
+// const firstEventContent = await allEvents[0].render();
+
+export async function getStaticPaths() {
+  const allEvents = await getCollection('events');
+  return allEvents.map(entry => ({
+    params: { slug: entry.slug }, props: { entry },
+  }));
+}
 
 // export async function getStaticPaths() {
 //   const eventEntries = await getCollection('events');
@@ -42,7 +49,7 @@ const firstEventContent = await allEvents[0].render();
         city={event.data.city}
         country={event.data.country}
         trailer_url={event.data.trailer_url}
-        reg_rul={event.data.reg_url}
+        reg_url={event.data.reg_url}
         event={event}
       >
       </Event>

@@ -1,29 +1,23 @@
 ---
 import { getCollection,getEntry, CollectionEntry } from 'astro:content';
-const dummyEntree = await getEntry('events', 'regen-2023');
+var dummyEntree = await getEntry('events', 'regen-2023');
 
-export async function getStaticPaths() {
-  const eventEntries = await getCollection('events');
-  return eventEntries.map(post => ({
-    params: { slug: post.slug }, props: { post },
-  }));
+interface Props {
+  post: CollectionEntry<'events'>;
+  games: "";
+  image_src: "/assets/regen2023_banner.jpg";
+  title: "Event Name Year"; 
+  info: "Praesent luctus lacus in rutrum aliquet. Pellentesque tristique tortor id finibus mollis. Phasellus id leo ac ante luctus ultricies. Vestibulum molestie mi viverra."; 
+  month: "august";
+  start: 18;
+  end: 20;
+  city: "city";
+  country: "country";
+  trailer_url: "http://google.com";
+  reg_url: "https://start.gg";
+  event: CollectionEntry<'events'>;
+  entry: CollectionEntry<'events'>;
 }
-
-// interface Props {
-//   post: CollectionEntry<'events'>;
-//   games: "";
-//   image_src: "/assets/regen2023_banner.jpg";
-//   title: "Event Name Year"; 
-//   info: "Praesent luctus lacus in rutrum aliquet. Pellentesque tristique tortor id finibus mollis. Phasellus id leo ac ante luctus ultricies. Vestibulum molestie mi viverra."; 
-//   month: "august";
-//   start: 18;
-//   end: 20;
-//   city: "city";
-//   country: "country";
-//   trailer_url: "http://google.com";
-//   reg_url: "https://start.gg";
-//   event: CollectionEntry<'events'>; 
-// }
 
 const {
   games = "Game", 
@@ -37,10 +31,26 @@ const {
   country = "country",
   trailer_url = "http://google.com", 
   reg_url = "https://start.gg",
-  event } = Astro.props;   
+  event,
+  entry } = Astro.props;   
+// const { entry } = Astro.props;
 
-const { post } = Astro.props;
-const { Content } = await post != undefined ? post.render() : dummyEntree.render();
+const curEvent = await Astro.props.event;
+// const { Content } = await curEvent.render();
+await curEvent != undefined 
+  ? console.log( "curEvent: " + curEvent.render()) 
+  : console.log("event is undefined");
+// console.log(await "render: " + Content.name);
+// console.log(await "event: " + event);
+// console.log(await "content: " + Content.Content);
+// dummyEntree = event != undefined ? event : dummyEntree;
+// console.log(dummyEntree.body);
+
+
+
+
+
+// const { Content } = await event != undefined ? event.render() : dummyEntree.render();
 
 // const { Content } = await post.render();
 // const Content =  await entry.content;    
@@ -55,9 +65,9 @@ const { Content } = await post != undefined ? post.render() : dummyEntree.render
   <span>{title}</span>
 
   <!-- { event != undefined ? event.render() : ""; } -->
-  { event != undefined ? event.body : "bla"}
+  <!-- { event != undefined ? event.render() : "bla"} -->
 
-  { Content != undefined ? <Content /> : "no content" } 
+  <!-- { Content != undefined ? <Content /> : "no content" }  -->
   
   <span>{month} {start}-{end}, {city}, {country}</span>
   <div class="buttons">
