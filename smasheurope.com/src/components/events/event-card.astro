@@ -1,17 +1,50 @@
 ---
-const { 
-    games = "Game", 
-    image_src = "/assets/regen2023_banner.jpg",
-    title = "Event Name Year", 
-    info = "Praesent luctus lacus in rutrum aliquet. Pellentesque tristique tortor id finibus mollis. Phasellus id leo ac ante luctus ultricies. Vestibulum molestie mi viverra.", 
-    month = "august", 
-    start = 18,
-    end = 20,
-    city = "city",
-    country = "country",
-    trailer_url = "http://google.com", 
-    reg_url = "https://start.gg",
-    event_slug = 'regen-2023' } = Astro.props;
+import { getCollection,getEntry, CollectionEntry } from 'astro:content';
+const dummyEntree = await getEntry('events', 'regen-2023');
+
+export async function getStaticPaths() {
+  const eventEntries = await getCollection('events');
+  return eventEntries.map(post => ({
+    params: { slug: post.slug }, props: { post },
+  }));
+}
+
+// interface Props {
+//   post: CollectionEntry<'events'>;
+//   games: "";
+//   image_src: "/assets/regen2023_banner.jpg";
+//   title: "Event Name Year"; 
+//   info: "Praesent luctus lacus in rutrum aliquet. Pellentesque tristique tortor id finibus mollis. Phasellus id leo ac ante luctus ultricies. Vestibulum molestie mi viverra."; 
+//   month: "august";
+//   start: 18;
+//   end: 20;
+//   city: "city";
+//   country: "country";
+//   trailer_url: "http://google.com";
+//   reg_url: "https://start.gg";
+//   event: CollectionEntry<'events'>; 
+// }
+
+const {
+  games = "Game", 
+  image_src = "/assets/regen2023_banner.jpg",
+  title = "Event Name Year", 
+  info = "Praesent luctus lacus in rutrum aliquet. Pellentesque tristique tortor id finibus mollis. Phasellus id leo ac ante luctus ultricies. Vestibulum molestie mi viverra.", 
+  month = "august", 
+  start = 18,
+  end = 20,
+  city = "city",
+  country = "country",
+  trailer_url = "http://google.com", 
+  reg_url = "https://start.gg",
+  event } = Astro.props;   
+
+const { post } = Astro.props;
+const { Content } = await post != undefined ? post.render() : dummyEntree.render();
+
+// const { Content } = await post.render();
+// const Content =  await entry.content;    
+// const {Content } = await entry.render()
 ---
 
 <div class="card">
@@ -21,8 +54,10 @@ const {
   </div>
   <span>{title}</span>
 
-  
-  <slot/>
+  <!-- { event != undefined ? event.render() : ""; } -->
+  { event != undefined ? event.body : "bla"}
+
+  { Content != undefined ? <Content /> : "no content" } 
   
   <span>{month} {start}-{end}, {city}, {country}</span>
   <div class="buttons">
