@@ -3,35 +3,7 @@ import { getCollection, CollectionEntry } from 'astro:content';
 const { collection = 'events' } = Astro.props
 const allEvents = await getCollection(collection);
 
-import Event from './event-card.astro';
-
-// const firstEvent = await allEvents[0];
-// const { Content } = await firstEvent.render();
-
-// const firstEventContent = await allEvents[0].render();
-
-export async function getStaticPaths() {
-  const allEvents = await getCollection('events');
-  return allEvents.map(entry => ({
-    params: { slug: entry.slug }, props: { entry },
-  }));
-}
-
-// export async function getStaticPaths() {
-//   const eventEntries = await getCollection('events');
-//   return eventEntries.map(entry => ({
-//     props: { entry }
-//   }));
-// }
-
-/////////
-// interface Props {
-//   event_prop: CollectionEntry<"events">;
-// }
-
-// const { event_prop } = Astro.props;
-// const { Content } = await event_prop.render();
-
+import EventCard from './event-card.astro';
 ---
 
 
@@ -39,9 +11,10 @@ export async function getStaticPaths() {
   <h1>All Events</h1>
   {
     allEvents.map((event, index) => (
-      <Event 
+      <EventCard 
         games={event.data.games}
         title={event.data.title}
+        desc={event.data.desc}
         image_src={event.data.image}
         month={event.data.month}
         start={event.data.start}
@@ -50,15 +23,10 @@ export async function getStaticPaths() {
         country={event.data.country}
         trailer_url={event.data.trailer_url}
         reg_url={event.data.reg_url}
-        event={event}
-      >
-      </Event>
+        eventSlug={event.data.slug}
+      />
     ))
   }
-
-  <Event />
-  <Event />
-  <Event />
 </section>
 
 <style lang="scss">
