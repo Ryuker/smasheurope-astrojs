@@ -16,6 +16,7 @@ interface Props {
   trailer_url: "http://google.com";
   reg_url: "https://start.gg";
   eventSlug: "regen-2023";
+  event: CollectionEntry<'events'>;
 }
 
 const {
@@ -30,16 +31,10 @@ const {
   country = "country",
   trailer_url = "http://google.com", 
   reg_url = "https://start.gg",
-  eventSlug = "regen-2023"  } = Astro.props;   
+  eventSlug = "regen-2023", 
+  event =  firstEntry } = Astro.props;   
 
-const curEvent = await eventSlug;
-// await curEvent != undefined 
-// ? console.log( "curEvent: " + curEvent) 
-// : console.log("eventDummy: " + firstEntry.slug);
-
-const eventEntry = await getEntry('events', curEvent);
-const { Content } = await eventEntry.render();
-// console.log("content: " + Content);
+const { Content } = await event.render();
 ---
 
 <div class="card">
@@ -48,7 +43,7 @@ const { Content } = await eventEntry.render();
     <img src={image_src}/>
   </div>
   <span>{title}</span>
-  
+
   { Content != undefined ? <Content/> : "" }
   
   <span>{month} {start}-{end}, {city}, {country}</span>
