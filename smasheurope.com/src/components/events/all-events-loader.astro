@@ -1,9 +1,9 @@
 ---
-import { getCollection, CollectionEntry } from 'astro:content';
+import EventCard from './event-card.astro';
+import { getCollection } from 'astro:content';
+
 const { collection = 'events' } = Astro.props
 const allEvents = await getCollection(collection);
-
-import EventCard from './event-card.astro';
 ---
 
 
