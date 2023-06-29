@@ -34,6 +34,7 @@ const {
   event =  firstEntry } = Astro.props;   
 
 const { Content } = await event.render();
+var event_page = "/events/" + event.data.slug;
 ---
 
 <div class="card">
@@ -49,6 +50,7 @@ const { Content } = await event.render();
   <div class="buttons">
     <a href={trailer_url}>trailer</a>
     <a href={reg_url}>details</a>
+    <a href={event_page}>page</a>
   </div>
 </div>
 
