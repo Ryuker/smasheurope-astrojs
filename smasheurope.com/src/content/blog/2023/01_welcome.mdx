@@ -1,0 +1,36 @@
+---
+# layout: ../../layouts/news-layout.astro
+title: Welcome to the new SmashEurope 
+image: /assets/smasheurope_logo_default.png
+categories: { news }
+draft: false
+desc: "It took a while but we're honored to finally launch the revamped version of SmashEurope. Read on to learn more."
+tags: { news, welcome } 
+slug: welcome
+---
+
+![SmashEurope Logo](/{frontmatter.image} "SmashEurope Logo") 
+# {frontmatter.title}
+
+It took a while but we're honored to finally launch the revamped version of SmashEurope. At first look it may not look much different from what you are used to but under the hood... we've completely changed the architecture. 
+
+SmashEurope is now built using Astro JS, an island framework that offers the option of creating your own reusable components and has support for any of the modern javascript frameworks. This allowed us to rebuild the base functionality in a manner that's optimized for modern load times and thus of benefit to SEO standards. 
+
+But on the pages that need more dynamic functionality in the future we now have a controlled way of adding these without having to impact our base static functionality. We are flexible to add a high speed component built in Svelte or a more traditional React or Vue component where required.
+
+SmashEurope is now runs completely independent of wordpress. News posts like these are written in .mdx files which allow us to add reactive components where required. 
+
+Using AstroJS we can now access any API we want. This means in the future we can pull events from start.gg where necessary and we can access any other community APIs which includes wordpress APIs offered through GraphQL.  
+
+AstroJS offers a neat way to specify which pages load javascript and which don't. We can even specify if javascript is loaded only when a visitor has a reactive component in view.
+
+We are open sourcing SmashEurope's code base from here on out so the community can make contributions and you can have a look at the code we've written.
+
+We hope you like what you'll see. Keep an eye on this site as we continue to role out new functionality.
+
+Best of luck on your Smash journey!
+
+~ The SmashEurope Development Team
+
+
+
