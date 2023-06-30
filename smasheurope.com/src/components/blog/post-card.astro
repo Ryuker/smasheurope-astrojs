@@ -11,6 +11,9 @@ const {
 
 const { Content } = await post.render();
 var post_page = "/blog/" + post.data.slug;
+
+const categories = post.data.categories;
+console.log(categories);
 ---
 
 <div class="card">
@@ -23,7 +26,7 @@ var post_page = "/blog/" + post.data.slug;
   
   <ul>
     { 
-      post.data.categories.map((category) => 
+      categories.map((category) => 
       <li>{category}</li>
     )} 
   </ul>
