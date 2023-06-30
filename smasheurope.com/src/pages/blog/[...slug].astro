@@ -21,11 +21,15 @@ const { Content } = await post.render();
       <div class="image">
         <img src={post.data.image}/>
       </div>
-      <span>{post.data.title}</span>
     
       <Content/>
 
-      <span>{post.data.categories} - {post.data.tags} - </span>
+      <ul style="display:flex; list-style-type: none;">
+        categories: { post.data.categories.map((category:string) => <li>{category} </li> )}
+      </ul>
+      <ul style="display:flex; list-style-type: none;">
+        tags: { post.data.tags.map((tag:string) => <li>{tag} </li> )}
+      </ul>
     </div>
   </div> 
   
@@ -66,6 +70,14 @@ const { Content } = await post.render();
         width: 100%;
         img {
           width: 100%;
+        }
+      }
+
+      ul {
+        padding: 0;
+        margin: 0;
+        li:not(:first-child) {
+          padding-left: 0.1rem;
         }
       }
     }

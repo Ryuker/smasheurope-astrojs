@@ -12,8 +12,8 @@ const {
 const { Content } = await post.render();
 var post_page = "/blog/" + post.data.slug;
 
-const categories = post.data.categories;
-console.log(categories);
+// const categories = post.data.categories;
+// console.log("test - " + categories.map((cat:string) => cat ) );
 ---
 
 <div class="card">
@@ -23,19 +23,20 @@ console.log(categories);
   <span>{post.data.title}</span>
 
   <p>{post.data.desc}</p>
+  <span>author: {post.data.author}</span>
   
-  <ul>
-    { 
-      categories.map((category) => 
-      <li>{category}</li>
-    )} 
-  </ul>
-  <span>{post.data.author} - 
-    
-    - {post.data.tags}</span>
   <div class="buttons">
     <a href={post_page}>read more</a>
   </div>
+
+  <ul style="display:flex; list-style-type: none; margin-top: 20px">
+    categories:
+    { post.data.categories.map((category:string) => <li>{category}</li> )} 
+  </ul>
+  <ul style="display:flex; list-style-type: none;">
+    tags:   
+    { post.data.tags.map((tag:string) => <li>{tag} </li> )} 
+  </ul>
 </div>
 
 <style lang="scss">
@@ -59,6 +60,14 @@ console.log(categories);
       width:100%;
       &.game {
         text-align: center;
+      }
+    }
+
+    ul {
+      padding: 0;
+      margin: 0;
+      li:not(:first-child) {
+        padding-left: 0.1rem;
       }
     }
 
