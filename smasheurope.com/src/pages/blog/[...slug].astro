@@ -1,0 +1,74 @@
+---
+import BaseLayout from '../../layouts/base-layout.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const blogEntries = await getCollection('blog');
+  return blogEntries.map(post => ({
+    params: { slug: post.slug }, props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await post.render();
+
+
+---
+<BaseLayout>
+  <section id={post.data.title} class="container">
+    <div class="card">
+      <span>{post.data.date} - author: {post.data.author}</span>
+      <div class="image">
+        <img src={post.data.image}/>
+      </div>
+      <span>{post.data.title}</span>
+    
+      <Content/>
+
+      <span>{post.data.categories} - {post.data.tags} - </span>
+    </div>
+  </div> 
+  
+</BaseLayout>
+
+<style lang="scss">
+  .container {
+    max-width: inherit;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    .card {
+      background: rgb(152, 152, 232);
+      display: flex;
+      flex-direction: column;
+      
+      min-height: 200px;
+      width: 400px;
+      margin-bottom: 2em;
+
+      border: 1px black solid;
+      border-radius: 10px;
+
+      @media screen and (max-width: 1000px) {
+          width:100%;
+      }
+
+      span {
+        width:100%;
+        &.game {
+          text-align: center;
+        }
+      }
+
+      .image {
+        width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+</style>
+
