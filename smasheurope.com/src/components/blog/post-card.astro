@@ -1,0 +1,69 @@
+---
+import { getEntry, CollectionEntry } from 'astro:content';
+const firstEntry = await getEntry('blog', 'welcome');
+
+interface Props {
+  post: CollectionEntry<'blog'>;
+}
+
+const {
+  post  =  firstEntry } = Astro.props;   
+
+const { Content } = await post.render();
+var post_page = "/blog/" + post.data.slug;
+---
+
+<div class="card">
+  <div class="image">
+    <img src={post.data.image}/>
+  </div>
+  <span>{post.data.title}</span>
+
+  <p>{post.data.desc}</p>
+  
+  <ul>
+    { 
+      post.data.categories.map((category) => 
+      <li>{category}</li>
+    )} 
+  </ul>
+  <span>{post.data.author} - 
+    
+    - {post.data.tags}</span>
+  <div class="buttons">
+    <a href={post_page}>read more</a>
+  </div>
+</div>
+
+<style lang="scss">
+  .card {
+    background: rgb(152, 152, 232);
+    display: flex;
+    flex-direction: column;
+    
+    min-height: 200px;
+    width: 400px;
+    margin-bottom: 2em;
+
+    border: 1px black solid;
+    border-radius: 10px;
+
+    @media screen and (max-width: 1000px) {
+        width:100%;
+    }
+
+    span {
+      width:100%;
+      &.game {
+        text-align: center;
+      }
+    }
+
+    .image {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+</style>

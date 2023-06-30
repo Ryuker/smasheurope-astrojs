@@ -1,0 +1,28 @@
+---
+import PostCard from './post-card.astro';
+import { getCollection } from 'astro:content';
+
+const { collection = 'blog' } = Astro.props
+const allPosts = await getCollection(collection);
+---
+
+
+<section id="post" class="container">
+  <h1>News</h1>
+  {
+    allPosts.map((post) => (
+      <PostCard post={post}/>
+    ))
+  }
+</section>
+
+<style lang="scss">
+  .container {
+    max-width: inherit;
+    background: red;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+</style>
