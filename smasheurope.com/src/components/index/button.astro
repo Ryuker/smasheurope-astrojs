@@ -1,12 +1,12 @@
 ---
   const { 
-    name = "button",
-    icon = "throphy",    
+    name = "",
+    icon = "far fa-calendar-alt fa-lg fa-fw",    
     url="https://google.com" } = Astro.props;
 
 ---
 
-<a href={url}>{name}</a>
+<a href={url}><i class={icon}></i>{name}</a>
 
 <style lang="scss">
   a:not(:last-child) {
