@@ -1,5 +1,6 @@
 ---
 import FeatEventCard from './events/feat-event-card.astro';
+import Button from './button.astro';
 ---
 <section id="feat-events">
   <div class="container" style="flex-direction:column;">
@@ -31,7 +32,7 @@ import FeatEventCard from './events/feat-event-card.astro';
 
     </div>
     <div class="more-button">
-      <button>more events</button>
+      <Button name="more events" styleClasses="dark" icon="far fa-calendar-alt fa-lg fa-fw"/>
     </div>
   </div> 
 </section>
@@ -54,6 +55,7 @@ import FeatEventCard from './events/feat-event-card.astro';
 
       }
       .more-button {
+        margin: 30px 0;
         flex: 0 0 100%;
       }
     }

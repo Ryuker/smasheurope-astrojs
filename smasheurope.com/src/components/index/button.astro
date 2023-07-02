@@ -1,12 +1,13 @@
 ---
   const { 
     name = "",
+    styleClasses ="",
     icon = "far fa-calendar-alt fa-lg fa-fw",    
     url="https://google.com" } = Astro.props;
 
 ---
 
-<a href={url}><i class={icon}></i>{name}</a>
+<a href={url} class={styleClasses}><i class={icon}></i>{name}</a>
 
 <style lang="scss">
   a:not(:last-child) {
@@ -31,6 +32,8 @@
     font-size: .9375rem;
     line-height: 1.5;
     border-radius: 0.5rem;
+    text-decoration: none;
+    text-transform: capitalize;
 
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s;
 
@@ -46,6 +49,18 @@
       color: #283e59;
       background-color: #d0ddef;
       border-color: #c7d6ec;
+    }
+
+    &.dark {
+      color: #fff;
+      background-color: #6e84a3;
+      border-color: #6e84a3;
+
+      &:hover {
+        color: #fff;
+        background-color: #5b7190;
+        border-color: #566b88;
+      }
     }
   }
 </style>
