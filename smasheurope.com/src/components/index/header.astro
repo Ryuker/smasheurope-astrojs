@@ -15,12 +15,13 @@ import Button from './button.astro';
       <p>Best of luck on your Smash journey!</p>
       <span>—The SmashEurope Development Team</span>
       <div id="buttons">
-        <Button />
-        <Button />
-        <Button />
-        <Button />
-        <Button />
-        <Button />
+        <Button icon="far fa-calendar-alt fa-lg fa-fw" url="https://smasheurope.com/#tournament-calendar"/>
+        <Button icon="fas fa-users fa-lg fa-fw" url="https://docs.google.com/spreadsheets/d/11ElDfT0YmpIuiuApQ95lnoKM3b6BIe8MXmPyUfK4Sx8"/>
+        <Button icon="fab fa-twitter fa-lg fa-fw" url="https://twitter.com/smasheurope"/>
+        <Button icon="fab fa-facebook-f fa-lg fa-fw" url="https://www.facebook.com/smasheurope/"/>
+        <Button icon="fab fa-twitch fa-lg fa-fw" url="https://twitch.tv/smasheurope"/>
+        <Button icon="fab fa-youtube fa-lg fa-fw" url="https://youtube.com/smasheurope"/>
+        <Button icon="fab fa-reddit-alien fa-lg fa-fw" url="https://www.reddit.com/r/smasheurope/"/>
       </div>
     </div>
   </div>
@@ -44,7 +45,7 @@ import Button from './button.astro';
     #info {
       // background: rgb(230, 157, 157);
       @media screen and (min-width: 800px) {
-        flex: 1;
+        flex: 2;
         order: 1;
         width: 50%;
       }
@@ -53,6 +54,7 @@ import Button from './button.astro';
       }
 
       #buttons {
+        margin-top: 20px;
         width: 100%;
         @media screen and (min-width: 800px) {
           flex: 0 0 100%;

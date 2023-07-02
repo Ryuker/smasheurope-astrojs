@@ -10,6 +10,42 @@
 
 <style lang="scss">
   a:not(:last-child) {
-    margin-right: 5px;
+    margin-right: 10px;
+
+    @media screen and (max-width: 800px) {
+      margin:0;
+    }
+
+  }
+
+  a {
+    display: inline-block;
+    color: #283e59;
+    background-color: #edf2f9;
+    border-color: #edf2f9;
+    font-weight: 400;
+    vertical-align: center;
+    text-align: middle;
+
+    padding: 0.75rem 1.25rem;
+    font-size: .9375rem;
+    line-height: 1.5;
+    border-radius: 0.5rem;
+
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s;
+
+    @media screen and (max-width: 800px) {
+        text-align: center;
+
+        &:not(:last-child) {
+          margin-bottom: 10px;
+        }
+    }
+
+    &:hover {
+      color: #283e59;
+      background-color: #d0ddef;
+      border-color: #c7d6ec;
+    }
   }
 </style>
