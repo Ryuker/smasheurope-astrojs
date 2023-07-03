@@ -1,4 +1,5 @@
 ---
+import Button from '../button.astro';
 const { 
     games = "Game", 
     image_src = "../../assets/regen2023_banner.jpg",
@@ -18,14 +19,14 @@ const {
   <p>{info}</p>
   <span>{data}</span>
   <div class="buttons">
-    <a href={trailer_url}>trailer</a>
-    <a href={reg_url}>details</a>
+    <Button  slot="button" name="trailer" icon="far fa-play-circle fa-lg fa-fw" url={trailer_url} />
+    <Button  slot="button" name="details" icon="fas fa-sitemap fa-lg fa-fw" url={reg_url}/>
   </div>
 </div>
 
 <style lang="scss">
   .card {
-    background: rgb(152, 152, 232);
+    background: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     
@@ -33,11 +34,16 @@ const {
     width: 400px;
     margin-bottom: 2em;
 
-    border: 1px black solid;
+    border: 1px #bfc5cc solid;
     border-radius: 10px;
+    padding: 40px;
 
     @media screen and (max-width: 1000px) {
         width:100%;
+    }
+
+    .buttons {
+      margin-top: 30px;
     }
 
     span {

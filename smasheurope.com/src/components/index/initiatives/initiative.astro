@@ -55,6 +55,17 @@ const {
         flex-direction: column;
         justify-content: space-between;
       }
+
+      .buttons {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        
+        @media screen and (max-width: 800px) {
+          justify-content: space-around;
+        }
+      }
     }
   }
 </style>
