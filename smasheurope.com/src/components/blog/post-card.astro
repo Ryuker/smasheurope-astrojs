@@ -1,5 +1,6 @@
 ---
 import { getEntry, CollectionEntry } from 'astro:content';
+import Button from '../universal/button.astro';
 const firstEntry = await getEntry('blog', 'welcome');
 
 interface Props {
@@ -26,22 +27,24 @@ var post_page = "/blog/" + post.data.slug;
   <span>author: {post.data.author}</span>
   
   <div class="buttons">
-    <a href={post_page}>read more</a>
+    <Button  name="learn more" styleClasses="flex-2" icon="" url={post_page}/>
   </div>
 
-  <ul style="display:flex; list-style-type: none; margin-top: 20px">
-    categories:
-    { post.data.categories.map((category:string) => <li>{category}</li> )} 
-  </ul>
-  <ul style="display:flex; list-style-type: none;">
-    tags:   
-    { post.data.tags.map((tag:string) => <li>{tag} </li> )} 
-  </ul>
+  <div class="data">
+    <ul>
+      categories:
+      { post.data.categories.map((category:string) => <li>{category}</li> )} 
+    </ul>
+    <ul style="flex:3">
+      tags:   
+      { post.data.tags.map((tag:string) => <li>{tag} </li> )} 
+    </ul>
+  </div>
 </div>
 
 <style lang="scss">
   .card {
-    background: rgb(152, 152, 232);
+    background: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     
@@ -49,8 +52,10 @@ var post_page = "/blog/" + post.data.slug;
     width: 400px;
     margin-bottom: 2em;
 
-    border: 1px black solid;
+    border: 1px rgb(108, 106, 106) solid;
     border-radius: 10px;
+
+    padding: 10px;
 
     @media screen and (max-width: 1000px) {
         width:100%;
@@ -75,6 +80,27 @@ var post_page = "/blog/" + post.data.slug;
       width: 100%;
       img {
         width: 100%;
+      }
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+
+      margin: 10px 0;
+    }
+    
+    .data {
+      display: flex;
+      flex-wrap: wrap;
+
+      & > ul {
+        display:flex; 
+        list-style-type: none;
+        flex-wrap: wrap;
+        margin: 0 10px;
+        flex: 2;
+        align-items: center;
       }
     }
   }
