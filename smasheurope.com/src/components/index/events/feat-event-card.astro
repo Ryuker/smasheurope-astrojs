@@ -1,5 +1,5 @@
 ---
-import Button from '../button.astro';
+import Button from '../../universal/button.astro';
 const { 
     games = "Game", 
     image_src = "../../assets/regen2023_banner.jpg",
@@ -13,7 +13,7 @@ const {
 <div class="card">
   <span class="game">{games}</span>
   <div class="image">
-    <img src="../../assets/regen2023_banner.jpg"/>
+    <img src={image_src}/>
   </div>
   <span>{title}</span>
   <p>{info}</p>

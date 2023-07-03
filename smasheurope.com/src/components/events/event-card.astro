@@ -1,5 +1,6 @@
 ---
 import { getEntry, CollectionEntry } from 'astro:content';
+import Button from '../universal/button.astro';
 const firstEntry = await getEntry('events', 'regen-2023');
 
 interface Props {
@@ -48,15 +49,17 @@ var event_page = "/events/" + event.data.slug;
   
   <span>{month} {start}-{end}, {city}, {country}</span>
   <div class="buttons">
-    <a href={trailer_url}>trailer</a>
-    <a href={reg_url}>details</a>
-    <a href={event_page}>page</a>
+    <Button  name="trailer" styleClasses="flex-1" icon="far fa-play-circle fa-lg fa-fw" url={trailer_url} />
+    <Button  name="details" styleClasses="flex-1" icon="fas fa-sitemap fa-lg fa-fw" url={reg_url}/>
+  </div>
+  <div class="buttons learn-more">
+    <Button  name="learn more" styleClasses="flex-2" icon="" url={event_page}/>
   </div>
 </div>
 
 <style lang="scss">
   .card {
-    background: rgb(152, 152, 232);
+    background: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     
@@ -64,8 +67,9 @@ var event_page = "/events/" + event.data.slug;
     width: 400px;
     margin-bottom: 2em;
 
-    border: 1px black solid;
+    border: 1px rgb(83, 83, 83) solid;
     border-radius: 10px;
+    padding: 10px;
 
     @media screen and (max-width: 1000px) {
         width:100%;
@@ -81,6 +85,17 @@ var event_page = "/events/" + event.data.slug;
     .image {
       width: 100%;
       img {
+        width: 100%;
+      }
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: space-around;
+      margin: 20px 0px 2px;
+
+      &.learn-more {
+        margin: 10px 0;
         width: 100%;
       }
     }
