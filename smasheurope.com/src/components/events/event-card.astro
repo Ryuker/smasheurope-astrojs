@@ -43,9 +43,10 @@ var event_page = "/events/" + event.data.slug;
   <div class="image">
     <img src={image_src}/>
   </div>
-  <span>{title}</span>
+  <h2>{title}</h2>
+  <p>{desc}</p>
 
-  { Content != undefined ? <Content/> : "" }
+  <!-- { Content != undefined ? <Content/> : "" } -->
   
   <span>{month} {start}-{end}, {city}, {country}</span>
   <div class="buttons">
