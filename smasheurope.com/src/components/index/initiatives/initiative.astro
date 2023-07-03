@@ -1,4 +1,5 @@
 ---
+import Button from '../button.astro';
 const { 
     title = "The S.A.M.E Circuit 2021", 
     image_src = "/assets/same-sticker.png",
@@ -17,6 +18,8 @@ const {
         <span class="card-title">{title}</span>
         <Fragment set:html={info}/>
         <div class="buttons">
+          <Button  slot="button" name="trailer" icon="far fa-play-circle fa-lg fa-fw" url={trailer_url} />
+          <Button  slot="button" name="details" icon="fas fa-sitemap fa-lg fa-fw" url={details_url}/>
           <slot name="button"/>
         </div>
       </div>
