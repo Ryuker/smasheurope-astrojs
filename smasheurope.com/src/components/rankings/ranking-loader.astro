@@ -2,9 +2,7 @@
 import Button from '../universal/button.astro';
 import { getCollection, getEntry } from 'astro:content';
 
-const { collection = 'rankings' } = Astro.props
-const allRankings = await getCollection(collection);
-const ultRanking = await getEntry(collection, 'ultimate/01_ult-rank-2023');
+const ultRanking = await getEntry('rankings', 'ultimate/01_ult-rank-2023');
 
 ---
 <section id="rankings" class="container">
