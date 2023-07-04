@@ -1,0 +1,74 @@
+{
+  "ranked-players": [
+    {
+      "rank": 1,
+      "tag": "Link Maestro",
+      "name": "Bob De Marquis",
+      "country": "France", 
+      "characters": [ "Link", "Pikachu"]
+    },
+    {
+      "rank": 2,
+      "tag": "Falcon Blaster",
+      "name": "Jim Donder",
+      "country": "England", 
+      "characters": [ "Marth", "Fox"]
+    },
+    {
+      "rank": 3,
+      "tag": "Ganon Dwarf",
+      "name": "Gunther Strünter",
+      "country": "Germany", 
+      "characters": [ "Steve", "Ridley"]
+    }, 
+    {
+      "rank": 4,
+      "tag": "SpaceWays",
+      "name": "Andreas Lindstrom",
+      "country": "Sweden", 
+      "characters": [ "Kirby", "Bayonetta"]
+    },
+    {
+      "rank": 5,
+      "tag": "Fire Karter",
+      "name": "Jane Swain",
+      "country": "Ireland", 
+      "characters": [ "Mario", "Luigi"]
+    },
+    {
+      "rank": 6,
+      "tag": "Combo Shaker",
+      "name": "Jan de Jager",
+      "country": "Netherlands", 
+      "characters": [ "Lucina", "Villager"]
+    },
+    {
+      "rank": 7,
+      "tag": "L337State",
+      "name": "Juan Garciéra",
+      "country": "Spain", 
+      "characters": [ "Joker", "Falco"]
+    },
+    {
+      "rank": 8,
+      "tag": "HandyMan",
+      "name": "Lorenzo di Ferenza",
+      "country": "Italy", 
+      "characters": [ "King K Rool", "Inkling"]
+    },
+    {
+      "rank": 9,
+      "tag": "Puncher",
+      "name": "Gustav Strüdel",
+      "country": "Austria", 
+      "characters": [ "King K Rool", "Inkling"]
+    },
+    {
+      "rank": 10,
+      "tag": "Puncher",
+      "name": "Gustav Strüdel",
+      "country": "Austria", 
+      "characters": [ "King K Rool", "Inkling"]
+    }
+  ]
+}

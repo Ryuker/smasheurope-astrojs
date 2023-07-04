@@ -1,0 +1,45 @@
+---
+import Button from '../universal/button.astro';
+import { getCollection, getEntry } from 'astro:content';
+
+const { collection = 'rankings' } = Astro.props
+const allRankings = await getCollection(collection);
+const ultRanking = await getEntry('rankings', '01_ult-rank-2023');
+
+
+
+---
+<section id="rankings" class="container">
+  
+  <h3>{ultRanking}</h3>
+  <h2>Ranking Loader Component</h2>
+  <ul>
+    <li>01 | Player 1 - Name - Country - Characters </li>
+    <li>02 | Player 1 - Name - Country - Characters </li>
+    <li>03 | Player 1 - Name - Country - Characters </li>
+    <li>04 | Player 1 - Name - Country - Characters </li>
+    <li>05 | Player 1 - Name - Country - Characters </li>
+    <li>06 | Player 1 - Name - Country - Characters </li>
+    <li>07 | Player 1 - Name - Country - Characters </li>
+    <li>08 | Player 1 - Name - Country - Characters </li>
+    <li>09 | Player 1 - Name - Country - Characters </li>
+    <li>10 | Player 1 - Name - Country - Characters </li>
+  </ul>
+  <div>
+    <Button name="full ranking" icon="fas fa-award" url="/rankings"/>
+  </div>
+</section>
+
+<style>
+  .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: inherit;
+    margin-bottom: 50px;
+  }
+
+  ul {
+      list-style: none;
+  }
+</style>
