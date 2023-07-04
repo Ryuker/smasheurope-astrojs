@@ -18,7 +18,7 @@ const ultRanking = await getEntry('rankings', 'ultimate/01_ult-rank-2023');
           {player.country} - 
           chars: 
           {player.characters.map((character:String, index) => (
-            index == 0 ? character + " - " : character
+            index == 0 ? character + " , " : character
             ))
           }
         </li>
