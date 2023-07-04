@@ -10,14 +10,14 @@ const ultRanking = await getEntry('rankings', 'ultimate/01_ult-rank-2023');
   <h1>Rankings</h1>
   <h2>{ultRanking?.data.game} - Ranking</h2>
   <ul>
-    { ultRanking?.data.rankedPlayers.slice(0,5).map((player, index) => (
+    { ultRanking?.data.rankedPlayers.slice(0,5).map((player:any, index:any) => (
         <li>
           {player.rank} | 
           {player.tag} - 
           {player.name} - 
           {player.country} - 
           chars: 
-          {player.characters.map((character:String, index) => (
+          {player.characters.map((character:String, index:any) => (
             index == 0 ? character + " , " : character
             ))
           }
