@@ -1,0 +1,24 @@
+---
+import '../../styles/global.scss';
+import { getEntry } from 'astro:content';
+
+import RankingLoader from '../../components/rankings/ranking-loader.astro';
+import BaseLayout from '../../layouts/base-layout.astro';
+
+const ranking = await getEntry('rankings', 'brawl/01_brawl-rank-2023');
+
+---
+
+<BaseLayout title="Home">
+  <div class="container">
+    <h1>Full Smash Bros. Brawl Ranking</h1>
+  </div>
+  <RankingLoader ranking={ranking} limit="10" isFull={true} />
+</BaseLayout>
+
+<style lang="scss">
+  .container {
+    max-width: inherit;
+  }
+
+</style>

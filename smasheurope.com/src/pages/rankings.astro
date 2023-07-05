@@ -9,6 +9,8 @@ const ultRanking = await getEntry('rankings', 'ultimate/01_ult-rank-2023');
 const meleeRanking = await getEntry('rankings', 'melee/01_melee-rank-2023');
 const projectPlusRanking = await getEntry('rankings', 'project+/01_project-plus-rank-2023');
 const smashBrosForWiiURanking = await getEntry('rankings', 'smash-bros-for-wii-u/01_smash-bros-for-wii-u-rank-2023');
+const brawlRanking = await getEntry('rankings', 'brawl/01_brawl-rank-2023');
+const smash64Ranking = await getEntry('rankings', 'smash64/01_smash64-rank-2023');
 
 
 ---
@@ -20,6 +22,8 @@ const smashBrosForWiiURanking = await getEntry('rankings', 'smash-bros-for-wii-u
     <RankingLoader ranking={meleeRanking} isFull={false} slug="melee-ranking" />
     <RankingLoader ranking={projectPlusRanking} isFull="false" slug="project-plus-ranking" />
     <RankingLoader ranking={smashBrosForWiiURanking} isFull="false" slug="smash-bros-for-wii-u-ranking" />
+    <RankingLoader ranking={brawlRanking} isFull="false" slug="brawl-ranking" />
+    <RankingLoader ranking={smash64Ranking} isFull="false" slug="smash64-ranking" />
   </div>
   
 </BaseLayout>
