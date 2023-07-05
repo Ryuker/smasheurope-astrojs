@@ -2,16 +2,17 @@
 import Button from '../universal/button.astro';
 import { getEntry } from 'astro:content';
 
-const ultRanking = await getEntry('rankings', 'ultimate/01_ult-rank-2023');
 
 const  {
+  isFull = false,
   limit = 5,
+  slug,
   ranking } = Astro.props;
+
+console.log("is it full: " + isFull);
 
 ---
 <section id="rankings" class="container">
-  
-  <h1>Rankings</h1>
   <h2>{ranking.data.game} - Ranking</h2>
   <ul>
     { ranking.data.rankedPlayers.slice(0,limit).map((player:any, index:any) => (
@@ -30,7 +31,10 @@ const  {
     }
   </ul>
   <div>
-    <Button name="full ranking" icon="fas fa-award" url="/rankings/ultimate-ranking"/>
+    {console.log("full: " + isFull)}
+    {isFull == true 
+      ? <Button name="back to all rankings" icon="fas fa-award" url="/rankings/"/> 
+      : <Button name="full ranking" icon="fas fa-award" url={"/rankings/" + slug} />  }
   </div>
 </section>
 

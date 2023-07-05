@@ -5,15 +5,15 @@ import { getEntry } from 'astro:content';
 import RankingLoader from '../../components/rankings/ranking-loader.astro';
 import BaseLayout from '../../layouts/base-layout.astro';
 
-const ultRanking = await getEntry('rankings', 'ultimate/01_ult-rank-2023');
+const ranking = await getEntry('rankings', 'melee/01_melee-rank-2023');
 
 ---
 
 <BaseLayout title="Home">
   <div class="container">
-    <h1>Full Smash Bros. Ultimate Ranking</h1>
+    <h1>Full Smash Bros. Melee Ranking</h1>
   </div>
-  <RankingLoader ranking={ultRanking} limit="10" isFull={true} />
+  <RankingLoader ranking={ranking} limit="10" isFull={true} />
 </BaseLayout>
 
 <style lang="scss">

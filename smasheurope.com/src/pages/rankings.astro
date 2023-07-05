@@ -1,10 +1,31 @@
 ---
 import '../styles/global.scss';
+import { getEntry } from 'astro:content';
 
 import RankingLoader from '../components/rankings/ranking-loader.astro';
 import BaseLayout from '../layouts/base-layout.astro';
+
+const ultRanking = await getEntry('rankings', 'ultimate/01_ult-rank-2023');
+
+const meleeRanking = await getEntry('rankings', 'melee/01_melee-rank-2023');
+
+
 ---
 
 <BaseLayout title="Home">
-  <RankingLoader />
+  <div class="container">
+    <h1>Rankings</h1>
+    <RankingLoader ranking={ultRanking} isFull={false} slug="ultimate-ranking" />
+    <RankingLoader ranking={meleeRanking} isFull={false} slug="melee-ranking" />
+    <!-- <RankingLoader ranking={meleeRanking} isFull="false" slug="melee-ranking" /> -->
+  </div>
+  
 </BaseLayout>
+
+<style lang="scss">
+  .container {
+    display:flex;
+    flex-direction: column;
+    max-width: inherit;
+  }
+</style>
