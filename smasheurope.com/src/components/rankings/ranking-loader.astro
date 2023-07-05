@@ -4,13 +4,16 @@ import { getEntry } from 'astro:content';
 
 const ultRanking = await getEntry('rankings', 'ultimate/01_ult-rank-2023');
 
+const  {
+  ranking } = Astro.props;
+
 ---
 <section id="rankings" class="container">
   
   <h1>Rankings</h1>
-  <h2>{ultRanking?.data.game} - Ranking</h2>
+  <h2>{ranking.data.game} - Ranking</h2>
   <ul>
-    { ultRanking?.data.rankedPlayers.slice(0,5).map((player:any, index:any) => (
+    { ranking.data.rankedPlayers.slice(0,5).map((player:any, index:any) => (
         <li>
           {player.rank} | 
           {player.tag} - 
@@ -26,7 +29,7 @@ const ultRanking = await getEntry('rankings', 'ultimate/01_ult-rank-2023');
     }
   </ul>
   <div>
-    <Button name="full ranking" icon="fas fa-award" url="/rankings"/>
+    <Button name="full ranking" icon="fas fa-award" url="/rankings/ultimate-ranking"/>
   </div>
 </section>
 

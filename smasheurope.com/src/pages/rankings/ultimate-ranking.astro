@@ -1,0 +1,24 @@
+---
+import '../../styles/global.scss';
+import { getEntry } from 'astro:content';
+
+import RankingLoader from '../../components/rankings/ranking-loader.astro';
+import BaseLayout from '../../layouts/base-layout.astro';
+
+const ultRanking = await getEntry('rankings', 'ultimate/01_ult-rank-2023');
+
+---
+
+<BaseLayout title="Home">
+  <div class="container">
+    <h1>Full Ultimate Ranking</h1>
+  </div>
+  <RankingLoader ranking={ultRanking} />
+</BaseLayout>
+
+<style lang="scss">
+  .container {
+    max-width: inherit;
+  }
+
+</style>
