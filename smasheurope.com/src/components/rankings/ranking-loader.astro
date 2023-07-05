@@ -9,8 +9,6 @@ const  {
   slug,
   ranking } = Astro.props;
 
-console.log("is it full: " + isFull);
-
 ---
 <section id="rankings" class="container">
   <h2>{ranking.data.game} - Ranking</h2>
@@ -31,7 +29,6 @@ console.log("is it full: " + isFull);
     }
   </ul>
   <div>
-    {console.log("full: " + isFull)}
     {isFull == true 
       ? <Button name="back to all rankings" icon="fas fa-arrow-circle-left" url="/rankings/"/> 
       : <Button name="full ranking" icon="fas fa-award" url={"/rankings/" + slug} />  }
