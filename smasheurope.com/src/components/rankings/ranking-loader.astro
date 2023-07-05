@@ -5,6 +5,7 @@ import { getEntry } from 'astro:content';
 const ultRanking = await getEntry('rankings', 'ultimate/01_ult-rank-2023');
 
 const  {
+  limit = 5,
   ranking } = Astro.props;
 
 ---
@@ -13,7 +14,7 @@ const  {
   <h1>Rankings</h1>
   <h2>{ranking.data.game} - Ranking</h2>
   <ul>
-    { ranking.data.rankedPlayers.slice(0,5).map((player:any, index:any) => (
+    { ranking.data.rankedPlayers.slice(0,limit).map((player:any, index:any) => (
         <li>
           {player.rank} | 
           {player.tag} - 
