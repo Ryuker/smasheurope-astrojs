@@ -13,7 +13,7 @@ import Button from '../universal/button.astro';
       <p>You're encouraged to follow our social accounts to stay in the loop of developments in the scene.</p>
       <p>The European Smash community has been active for over two decades. It's made up of a grassroots scene fragmented into various communities. SmashEurope was launched in January of 2015 as central hub into this community.</p>  
       <p>Best of luck on your Smash journey!</p>
-      <span>—The SmashEurope Development Team</span>
+      <span class="text-dark">—The SmashEurope Development Team</span>
       <div id="buttons">
         <Button icon="far fa-calendar-alt fa-lg fa-fw" url="https://smasheurope.com/#tournament-calendar"/>
         <Button icon="fas fa-users fa-lg fa-fw" url="https://docs.google.com/spreadsheets/d/11ElDfT0YmpIuiuApQ95lnoKM3b6BIe8MXmPyUfK4Sx8"/>
@@ -32,6 +32,16 @@ import Button from '../universal/button.astro';
     // background: rgb(116, 116, 208);
     display: flex;
     justify-content: center;
+
+    .container {
+      background-color: #fff;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      border-color: #edf2f9;
+      border-radius: 0.5rem;
+      box-shadow: 0 0.75rem 1.5rem rgba(18,38,63,.03);
+    }
+
     #image {
       // background: rgb(156, 156, 196);
       flex: 0 0 100%;
