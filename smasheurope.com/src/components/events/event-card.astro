@@ -43,18 +43,18 @@ var event_page = "/events/" + event.data.slug;
   <div class="image">
     <img src={image_src}/>
   </div>
-  <h2>{title}</h2>
-  <p>{desc}</p>
-
-  <!-- { Content != undefined ? <Content/> : "" } -->
+  <div class="info">
+    <h2>{title}</h2>
+    <p>{desc}</p>
   
-  <span>{month} {start}-{end}, {city}, {country}</span>
-  <div class="buttons">
-    {trailer_url ? <Button  name="trailer" styleClasses="flex-1" icon="far fa-play-circle fa-lg fa-fw" url={trailer_url}/> : "" }  
-    <Button  name="details" styleClasses="flex-1" icon="fas fa-sitemap fa-lg fa-fw" url={reg_url}/>
-  </div>
-  <div class="buttons learn-more">
-    <Button  name="learn more" styleClasses="flex-2" icon="" url={event_page}/>
+    <span>{month} {start}-{end}, {city}, {country}</span>
+    <div class="buttons">
+      {trailer_url ? <Button  name="trailer" styleClasses="flex-1" icon="far fa-play-circle fa-lg fa-fw" url={trailer_url}/> : "" }  
+      <Button  name="details" styleClasses="flex-1" icon="fas fa-sitemap fa-lg fa-fw" url={reg_url}/>
+    </div>
+    <div class="buttons learn-more">
+      <Button  name="learn more" styleClasses="flex-2" icon="" url={event_page}/>
+    </div>
   </div>
 </div>
 
@@ -65,12 +65,11 @@ var event_page = "/events/" + event.data.slug;
     flex-direction: column;
     
     min-height: 200px;
-    width: 400px;
+    width: 512px;
     margin-bottom: 2em;
 
-    border: 1px rgb(83, 83, 83) solid;
+    border: 1px rgb(208, 207, 207) solid;
     border-radius: 10px;
-    padding: 10px;
 
     @media screen and (max-width: 1000px) {
         width:100%;
@@ -90,10 +89,26 @@ var event_page = "/events/" + event.data.slug;
       }
     }
 
+    .info {
+      padding: 10px 40px;
+     
+      @media screen and (max-width: 1000px) {
+        padding: 10px 20px;
+      }
+
+    }
+
     .buttons {
       display: flex;
       justify-content: space-around;
       margin: 20px 0px 2px;
+
+      a {
+      
+        @media screen and (max-width: 1000px) {
+          margin-right: 10px;    
+        }
+      }
 
       &.learn-more {
         margin: 10px 0;

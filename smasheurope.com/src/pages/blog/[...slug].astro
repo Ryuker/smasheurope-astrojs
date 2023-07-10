@@ -44,15 +44,16 @@ const { Content } = await post.render();
     align-items: center;
 
     .card {
-      background: rgb(152, 152, 232);
+      // background: rgb(152, 152, 232);
       display: flex;
       flex-direction: column;
       
       min-height: 200px;
-      width: 400px;
+      width: 800px;
       margin-bottom: 2em;
 
-      border: 1px black solid;
+      border: 1px rgb(229, 236, 249) solid;
+      padding: 20px;
       border-radius: 10px;
 
       @media screen and (max-width: 1000px) {
@@ -68,8 +69,10 @@ const { Content } = await post.render();
 
       .image {
         width: 100%;
+        display: flex;
+        justify-content: center;
         img {
-          width: 100%;
+          width: 40%;
         }
       }
 
