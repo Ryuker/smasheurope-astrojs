@@ -7,7 +7,10 @@
 
 ---
 
-<a href={url} class={styleClasses}><i class={icon}></i><span>{name}</span></a>
+<a href={url} class={styleClasses}>
+  <i class={icon}></i>
+  {name != "" ? <span>{name}</span> : "" }
+</a>
 
 <style lang="scss">
   a:not(:last-child) {
