@@ -1,9 +1,19 @@
 ---
+import type { HtmlTag } from 'svelte/internal';
 import Button from '../../universal/button.astro';
+
+interface Props {
+  info: string,
+  title: string,
+  image_src: string,
+  trailer_url: string,
+  details_url: string
+}
+
 const { 
     title = "The S.A.M.E Circuit 2021", 
     image_src = "/assets/same-sticker.png",
-    info = "<p>Times had changed but we were S till. A rranging. M elee. E vents</p><p>In 2021 a collective of 11 premier European TO teams joined forces under the S.A.M.E Circuit to give an online taste of some the best that European Melee could still offer (under the COVID-19 pandemic regulations). The circuit consisted of 9 online major qualifier events each offering Singles, Teams and International Crews. Competitors earned points in order to qualify for the circuit Finale where coveted prizes could be earned.</p><p>S.A.M.E circuit partnered with Beyond The Summit and was streamed entirely on their Twitch Channel. In return funds were given to production and two invites to Smash Summits could be earned. Additional partners included Kone's Academy which offered free coaching trials to placement in the amateur brackets, Metafy which offered a prizepool for the Finale and Poilon Software which provided the circuit ranking website.</p>",  
+    info = `"<p>Times had changed but we were <strong>S</strong> till. <strong>A</strong> rranging. <strong>M</strong> elee. E vents</p><p>In 2021 a collective of 11 premier European TO teams joined forces under the S.A.M.E Circuit to give an online taste of some the best that European Melee could still offer (under the COVID-19 pandemic regulations). The circuit consisted of 9 online major qualifier events each offering Singles, Teams and International Crews. Competitors earned points in order to qualify for the circuit Finale where coveted prizes could be earned.</p><p>S.A.M.E circuit partnered with <a target="_blank" href="https://www.youtube.com/watch?v=pCGLUPCRxuY">Beyond The Summit</a> and was streamed entirely on their Twitch Channel. In return funds were given to production and two invites to Smash Summits could be earned. Additional partners included Kone's Academy which offered free coaching trials to placement in the amateur brackets, Metafy which offered a prizepool for the Finale and Poilon Software which provided the circuit ranking website.</p>"`,  
     trailer_url = "https://www.youtube.com/watch?v=pCGLUPCRxuY",
     details_url = "https://smash.gg/SAMEcircuit"  } = Astro.props;
 ---
@@ -15,7 +25,7 @@ const {
         <img src={image_src}/>  
       </div>
       <div class="info">
-        <span class="card-title">{title}</span>
+        <span class="h1">{title}</span>
         <Fragment set:html={info}/>
         <div class="buttons">
           <Button  slot="button" name="trailer" icon="far fa-play-circle fa-lg fa-fw" url={trailer_url} />

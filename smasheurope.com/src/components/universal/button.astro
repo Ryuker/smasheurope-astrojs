@@ -7,7 +7,7 @@
 
 ---
 
-<a href={url} class={styleClasses}>
+<a class={"btn " + styleClasses} href={url} class={styleClasses}>
   <i class={icon}></i>
   {name != "" ? <span>{name}</span> : "" }
 </a>
@@ -22,7 +22,7 @@
     }
   }
 
-  a {
+  a.btn {
     display: inline-block;
     text-align: center;
     color: #283e59;

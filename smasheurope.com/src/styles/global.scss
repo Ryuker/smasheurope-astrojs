@@ -19,14 +19,29 @@ p, ul, li {
   color: #95aac9;
 }
 
-.text-dark{
+p > a {
+  color: #2c7be5;
+  text-decoration: none;
+  background-color: transparent;
+
+  &:hover {
+    color: #1657af;
+    text-decoration: none;
+  }
+}
+
+strong {
+  font-weight: 300;
+}
+
+.text-dark, strong{
   color: #12263f;
 }
 
 
 .container {
   // background: blue;
-  max-width: 1000px;
+  max-width: 1137px;
   margin: 0px 5%;
   display: flex;
   justify-content: center;
