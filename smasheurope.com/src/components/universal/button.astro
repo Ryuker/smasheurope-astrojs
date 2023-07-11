@@ -1,15 +1,25 @@
 ---
-  const { 
-    name = "",
-    styleClasses ="",
-    icon = "far fa-calendar-alt fa-lg fa-fw",    
-    url="https://google.com" } = Astro.props;
+import Tooltip from './tooltip.astro';
+
+const { 
+  name = "",
+  tooltipName="",
+  styleClasses ="",
+  mobileNameOnly= false,
+  icon = "far fa-calendar-alt fa-lg fa-fw",    
+  url="https://google.com" } = Astro.props;
 
 ---
 
-<a class={"btn" + styleClasses} href={url} class={styleClasses}>
+<a class={"btn" + (mobileNameOnly ? " flex-1": "")+ (tooltipName != "" ? " tooltip" : "") + (styleClasses != "" ? " " + styleClasses : "" ) }href={url} class={styleClasses}>
   <i class={icon}></i>
-  {name != "" ? <span>{name}</span> : "" }
+  
+  {name != "" && mobileNameOnly == false  
+    ? <span class="name">{name}</span> //  display name regardless of screen rez
+    : name != "" && mobileNameOnly ? <span class="name mobileOnly">{name}</span> : ""   //  display name only on mobile
+    }
+  {name != "" && mobileNameOnly == false  ? "" : <Tooltip class="tooltiptext"name={tooltipName} /> }
+
 </a>
 
 <style lang="scss">
@@ -83,8 +93,37 @@
       }
     }
 
-    span {
+    span.name {
       margin-left: 0.2rem;
+      &.mobileOnly {
+        display: none;
+        @media screen and (max-width: 800px) {
+          display: block;
+        }
+      }
+    }
+
+    &.tooltip { /* Tooltip container */
+      position: relative;
+      display: inline-block;
+      // border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+      
+      @media screen and (min-width: 800px) {
+        &:hover {
+          & > span.tooltiptext {
+            visibility: visible;
+          }
+        }
+      }
+
+      @media screen and (max-width: 800px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+      }
     }
   }
+
+  
 </style>

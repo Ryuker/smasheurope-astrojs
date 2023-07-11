@@ -15,13 +15,13 @@ import Button from '../universal/button.astro';
       <p>Best of luck on your Smash journey!</p>
       <span class="text-dark">—The SmashEurope Development Team</span>
       <div id="buttons">
-        <Button icon="far fa-calendar-alt fa-lg fa-fw" url="https://smasheurope.com/#tournament-calendar"/>
-        <Button icon="fas fa-users fa-lg fa-fw" url="https://docs.google.com/spreadsheets/d/11ElDfT0YmpIuiuApQ95lnoKM3b6BIe8MXmPyUfK4Sx8"/>
-        <Button icon="fab fa-twitter fa-lg fa-fw" url="https://twitter.com/smasheurope"/>
-        <Button icon="fab fa-facebook-f fa-lg fa-fw" url="https://www.facebook.com/smasheurope/"/>
-        <Button icon="fab fa-twitch fa-lg fa-fw" url="https://twitch.tv/smasheurope"/>
-        <Button icon="fab fa-youtube fa-lg fa-fw" url="https://youtube.com/smasheurope"/>
-        <Button icon="fab fa-reddit-alien fa-lg fa-fw" url="https://www.reddit.com/r/smasheurope/"/>
+        <Button name="Calendar" mobileNameOnly={true} tooltipName="Calendar" icon="far fa-calendar-alt fa-lg fa-fw" url="https://smasheurope.com/#tournament-calendar"/>
+        <Button name="Communities" mobileNameOnly={true} tooltipName="Communities" icon="fas fa-users fa-lg fa-fw" url="https://docs.google.com/spreadsheets/d/11ElDfT0YmpIuiuApQ95lnoKM3b6BIe8MXmPyUfK4Sx8"/>
+        <Button name="Twitter" mobileNameOnly={true} tooltipName="Twitter" icon="fab fa-twitter fa-lg fa-fw" url="https://twitter.com/smasheurope"/>
+        <Button name="Facebook" mobileNameOnly={true} tooltipName="Facebook" icon="fab fa-facebook-f fa-lg fa-fw" url="https://www.facebook.com/smasheurope/"/>
+        <Button name="Twitch" mobileNameOnly={true} tooltipName="Twitch" icon="fab fa-twitch fa-lg fa-fw" url="https://twitch.tv/smasheurope"/>
+        <Button name="YouTube" mobileNameOnly={true} tooltipName="YouTube" icon="fab fa-youtube fa-lg fa-fw" url="https://youtube.com/smasheurope"/>
+        <Button name="Reddit" mobileNameOnly={true} tooltipName="Reddit" icon="fab fa-reddit-alien fa-lg fa-fw" url="https://www.reddit.com/r/smasheurope/"/>
       </div>
     </div>
   </div>
@@ -40,6 +40,11 @@ import Button from '../universal/button.astro';
       border-color: #edf2f9;
       border-radius: 0.5rem;
       box-shadow: 0 0.75rem 1.5rem rgba(18,38,63,.03);
+
+      @media screen and (max-width: 800px) {
+        display: flex;
+        flex-direction: column;
+      }
     }
 
     #image {
@@ -70,6 +75,11 @@ import Button from '../universal/button.astro';
           flex: 0 0 100%;
           order: 3;
         }
+
+        @media screen and (max-width: 987px) {
+          display: flex;
+        }
+
         @media screen and (max-width: 799px) {
           display: flex;
           flex-direction: column;
