@@ -7,7 +7,8 @@ const {
     info = "Praesent luctus lacus in rutrum aliquet. Pellentesque tristique tortor id finibus mollis. Phasellus id leo ac ante luctus ultricies. Vestibulum molestie mi viverra.", 
     data = "August 18-20th, Birmingham, England",  
     trailer_url = "http://google.com", 
-    reg_url = "https://start.gg"  } = Astro.props;
+    reg_url = "https://start.gg",
+    eventSlug = "regen-2023"   } = Astro.props;
 ---
 
 <div class="card">
@@ -19,8 +20,9 @@ const {
   <p>{info}</p>
   <span>{data}</span>
   <div class="buttons">
-    <Button  slot="button" name="trailer" icon="far fa-play-circle fa-lg fa-fw" url={trailer_url} />
-    <Button  slot="button" name="details" icon="fas fa-sitemap fa-lg fa-fw" url={reg_url}/>
+    <Button  slot="button" name="trailer" icon="far fa-play-circle fa-lg fa-fw" styleClasses="flex-1" url={trailer_url} />
+    <Button  slot="button" name="details" icon="fas fa-sitemap fa-lg fa-fw" styleClasses="flex-1" url={reg_url}/>
+    <Button  slot="button" name="more info" icon="" styleClasses="flex-1" url={"/events/" + eventSlug}/>
   </div>
 </div>
 
@@ -45,7 +47,15 @@ const {
     }
 
     .buttons {
+      display: flex;
+      justify-content: center;
+      flex:auto;
       margin-top: 30px;
+
+      @media screen and (max-width: 1000px) {
+        display: flex;
+        flex-wrap: wrap;
+      }
     }
 
     span {
