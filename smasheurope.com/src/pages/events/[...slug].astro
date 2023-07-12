@@ -1,4 +1,5 @@
 ---
+import Button from '../../components/universal/button.astro';
 import BaseLayout from '../../layouts/base-layout.astro';
 import { getCollection } from 'astro:content';
 
@@ -15,50 +16,78 @@ const { Content } = await entry.render();
 
 ---
 <BaseLayout>
-  <section id={entry.data.title} class="container">
+  <div id={entry.data.title} class="container">
     <div class="card">
       <span class="game">{entry.data.games}</span>
       <div class="image">
         <img src={entry.data.image}/>
       </div>
-      <span>{entry.data.title}</span>
-    
-      <Content/>
-      
-      <span>{entry.data.month} {entry.data.start}-{entry.data.end}, {entry.data.city}, {entry.data.country}</span>
-      <div class="buttons">
-        <a href={entry.data.trailer_url}>trailer</a>
-        <a href={entry.data.reg_url}>details</a>
-        <a href={entry.data.event_page}>page</a>
+      <div class="title-container">
+        <span class="h1">{entry.data.title}</span>
+        <span class="date_location-info">{entry.data.month} {entry.data.start}-{entry.data.end}, {entry.data.city}, {entry.data.country}</span>
       </div>
+      <div class="buttons">
+        {entry.data.trailer_url 
+          ? <Button  name="trailer" styleClasses="flex-1" icon="far fa-play-circle fa-lg fa-fw" url={entry.data.trailer_url}/> 
+          : ""
+        }  
+        <Button  name="details" styleClasses="flex-1" icon="fas fa-sitemap fa-lg fa-fw" url={entry.data.reg_url}/>
+      </div>
+
+      <Content/>
+
     </div>
-    </div> 
-  
+  </section>
+  <div class="more-button">
+    <Button name="more events" styleClasses="dark" icon="far fa-calendar-alt fa-lg fa-fw" url="/events"/>
+  </div>
 </BaseLayout>
 
 <style lang="scss">
   .container {
     max-width: inherit;
-    background: red;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 
     .card {
-      background: rgb(152, 152, 232);
       display: flex;
       flex-direction: column;
       
       min-height: 200px;
-      width: 400px;
-      margin-bottom: 2em;
+      width: 800px;
+      margin-bottom: 1.0em;
 
-      border: 1px black solid;
+      border: 1px rgb(229, 236, 249) solid;
+      padding: 20px;
       border-radius: 10px;
+
+
+      & > .title-container {
+        display: flex;
+        align-items: center;
+
+        & > .date_location-info {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        @media screen and (max-width: 1000px) {
+          flex-direction: column;
+          & > .date_location-info {
+            justify-content: flex-start;
+          }
+        }  
+      }
 
       @media screen and (max-width: 1000px) {
           width:100%;
+      }
+
+      .buttons {
+        margin-top: 0.8rem;
+        display: flex;
       }
 
       span {
@@ -74,6 +103,11 @@ const { Content } = await entry.render();
           width: 100%;
         }
       }
+    }
+
+    .more-button {
+      margin: 10px 0 30px ;
+      flex: 0 0 100%;
     }
   }
 </style>

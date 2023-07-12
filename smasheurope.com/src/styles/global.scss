@@ -52,3 +52,10 @@ strong {
     flex-direction: column;
   }
 }
+
+// Custom Markdown Classes
+.flex-column-center {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
