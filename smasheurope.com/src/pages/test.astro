@@ -1,0 +1,15 @@
+---
+import Modal from '../components/universal/modal.astro';
+import BaseLayout from '../layouts/base-layout.astro';
+--- 
+
+<BaseLayout>
+  <Modal id="dialog" open="Open modal">
+    <main slot="main">
+        <p>Insert Modal content here</p>
+        <hr />
+        <!-- <img width="60" height="80" src="/assets/logo.svg" alt="Astro logo"> -->
+    </main>
+    <button slot="close">Close modal</button>
+  </Modal>
+</BaseLayout>
