@@ -6,7 +6,7 @@
   [v] Install and configure Tailwind
   [v] Install Vue
   [v] update config to run in server mode (SSR)
-  [] set folder aliasses in `tsconfig.json` so `@` can be used in imports to shorten path
+  [v] set folder aliasses in `tsconfig.json` so `@` can be used in imports to shorten path
 
 ## Structure
   layout:
@@ -15,8 +15,9 @@
   pages:
     [v] index
     [v] past events
+    [v] events page
+      [] design layout
     [v] dynamic event page
-    [] 
     
   components:
     [v] Navbar
