@@ -18,6 +18,8 @@
     [v] events page
       [] design layout
     [v] dynamic event page
+    [] 404 page
+      - added but marked it `_` so we don't use it yet
     
   components:
     [v] Navbar
