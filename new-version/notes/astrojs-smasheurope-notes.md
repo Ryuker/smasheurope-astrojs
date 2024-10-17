@@ -2,7 +2,7 @@
 - Full SSR version of SmashEurope.com
 
 **uses:**
-- Node 20 (use NVM use 20)
+- Node v20.16.0 (use NVM use 20)
 
 ## To Use:
 - Tailwind
