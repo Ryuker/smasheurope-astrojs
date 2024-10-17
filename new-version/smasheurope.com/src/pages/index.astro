@@ -1,12 +1,16 @@
 ---
+// layouts
+import MainLayout from "@layouts/MainLayout.astro";
+import RepeatedLayout from "@layouts/RepeatedLayout.astro";
+// components
 import Hero from "@components/Hero.astro";
 import UpcomingEvents from "@components/UpcomingEvents.astro";
-import MainLayout from "@layouts/MainLayout.astro";
 
 ---
 
 <MainLayout title="smasheurope.com">
 	<Hero />
 	<UpcomingEvents />
+	<RepeatedLayout />
 </MainLayout>
 

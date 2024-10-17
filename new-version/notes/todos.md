@@ -23,5 +23,7 @@
       [] skeleton
       [] styling
     [v] Hero
-    [] Upcoming Events
-    [] Footer
+    [v] Upcoming Events
+    [v] SE-Teaser
+    [v] Initiatives
+    [v] Footer
