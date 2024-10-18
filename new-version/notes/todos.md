@@ -32,3 +32,8 @@
     [v] SE-Teaser
     [v] Initiatives
     [v] Footer
+  
+  Api:
+    []events
+      [v] GET all events - /api/events
+      [] GET event by Slug - /api/events/[eventSlug]
