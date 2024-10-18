@@ -18,8 +18,7 @@ const events = eventsData.slice(0, limit || eventsData.length);
   </h2>
   <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
     {events.map(event => (
-      <div>{event.title}</div>
-      <EventCard />
+      <EventCard key={event.id} event={event} />
     ))}
   </div>
 </section>

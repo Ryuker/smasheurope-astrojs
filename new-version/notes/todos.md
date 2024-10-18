@@ -37,6 +37,8 @@
     
     [v] UI:
       [v] EventCard
+        [] display event title
+        [] display other event data
   
   Api:
     []events
