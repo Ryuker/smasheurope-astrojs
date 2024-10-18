@@ -29,9 +29,14 @@
       [] styling
     [v] Hero
     [v] Upcoming Events
+      [v] fetch events
+      [v] display events data 
     [v] SE-Teaser
     [v] Initiatives
     [v] Footer
+    
+    [v] UI:
+      [v] EventCard
   
   Api:
     []events

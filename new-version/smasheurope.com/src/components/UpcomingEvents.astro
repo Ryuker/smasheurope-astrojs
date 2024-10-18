@@ -1,2 +1,28 @@
+---
+import EventCard from "./ui/EventCard.astro";
+
+const { limit } = Astro.props;
+
+const api_url = new URL(`/api/events/`, Astro.url);
+const response = await fetch(api_url);
+const data = await response.json();
+
+const eventsData = data;
+
+const events = eventsData.slice(0, limit || eventsData.length);
+---
+
+<section>
+  <h2 class="text-3xl font-bold text-green-500 mb-6 text-center">
+    Events
+  </h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    {events.map(event => (
+      <div>{event.title}</div>
+      <EventCard />
+    ))}
+  </div>
+</section>
+
 <h1>Upcoming Events Components</h1>
 <p>To display a grid of upcoming events with games, promo-image, title, date, description, and buttons</p>
