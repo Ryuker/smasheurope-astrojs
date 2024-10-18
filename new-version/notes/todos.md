@@ -40,5 +40,6 @@
       [] GET event by Slug
         - won't work with json-server, so it's for later
       [v] POST new event - /api/events
+      [] PUT event handler by ID - /api/events/[eventId]
         
 
