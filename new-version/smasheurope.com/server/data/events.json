@@ -1,0 +1,55 @@
+{
+  "events": [
+    {
+      "id": "1",
+      "banner": "sunrise_2024_banner.png",
+      "title": "Sunrise 2024",
+      "games": "Ultimate",
+      "description": "Cicadas Gaming, the city of Hyères and the Espace Jeunesse, present to you, the return of Sunrise, bigger than ever with a capacity of for 512+ competitors and singles, doubles, squad strike and ladder competitons as well as several side events!",
+      "dates": "October 26th-27th",
+      "location": "Hyères, France",
+      "details":"https://www.start.gg/sunrise-2024/"
+    },
+    {
+      "id": "2",
+      "banner": "sapf-banner.png",
+      "title": "SAPF",
+      "games": "Melee",
+      "description": "The first German Melee major since Awakening 5, back in 2019, features top talent from Europe and beyond with competitions for Singles, Doubles and Crews in 800 m2 of space and over 60 setups for a capacity of 256 competitors.",
+      "dates": "November 1st-3rd",
+      "location": "Hanover, Germany",
+      "details":"https://www.start.gg/tournament/sapf"
+    },
+    {
+      "id": "3",
+      "banner": "gh2024-banner.jpg",
+      "title": "GameHotel 2024",
+      "games": "Ultimate",
+      "description": "The whole Hotel & Conference Center Sempachersee will morph into \"GameHotel\" to fill the whole GZI building (around 2000m²) with a FGC tournament feat. a capacity of 192 competitors for Smash Bros. Ultimate. There are singles and doubles competitions.",
+      "dates": "November 2nd-3rd",
+      "location": "Nottwil, Switzerland",
+      "details":"https://www.start.gg/gamehotel-2024/"
+    },
+    {
+      "id": "4",
+      "banner": "tartarus2024_banne.png",
+      "title": "Tartarus",
+      "subtitle": "A Netrock Spikedown Major",
+      "games": "Ultimate",
+      "description": "Tartarus is a new major tournament series in Vienna in partnership with <a target=`_black` href=`https://challengersarena.com/`>VCA</a> held at the <a target='_blank' href='https://viecc.com/en/'>Vienna Comic Con 2024</a> and promises a top-tier production. There's a capacity for 512 competitors and regular singles, doubles and ladder competitions.",
+      "dates": "November 23rd-24th",
+      "location": "Vienna, Austria",
+      "details":"https://start.gg/tartarus2024"
+    },
+    {
+      "id": "5",
+      "banner": "nttt-banner-se.png",
+      "title": "No Time To Tilt",
+      "games": "Ultimate",
+      "description": "A German Smash Bros. Ultimate major hosted in the <a target=`_blank` href=`https://direct-book.com/properties/sleepbeeonedirect?locale=de&amp;promocode=NoTimeToTilt&amp;items[0][adults]=2&amp;items[0][children]=0&amp;items[0][infants]=0&amp;currency=EUR&amp;checkInDate=2024-11-23&amp;checkOutDate=2024-11-24&amp;trackPage=no`>SLEEP[BEE]ONE Hotel</a> in Mörfelden-Walldorf. There's capacity for 450 competitors and singles, doubles and ladder competitions. Accomodation can be booked at the hotel.",
+      "dates": "November 23rd-24th",
+      "location": "Mörfelden-Walldorf, Germany",
+      "details":"https://www.start.gg/ntt"
+    }
+  ]
+}
