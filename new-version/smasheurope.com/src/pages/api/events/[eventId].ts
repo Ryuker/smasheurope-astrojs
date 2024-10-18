@@ -45,3 +45,23 @@ export const PUT: APIRoute = async ({ params, request }) => {
   return new Response(dataStr);
 
 }
+
+// Delete event handler, deletes and event by ID from api_endpoint and returns a response
+export const DELETE: APIRoute = async ({ params, request }) => {
+  console.log('Delete request received');
+  const eventId = params.eventId;
+
+  // Fetch the data from the external API
+  const api_endpoint = 'http://localhost:5000/events';
+  const uri = `${api_endpoint}/${eventId}`;
+  const response = await fetch(uri, {
+    method: 'DELETE'
+  });
+  const eventData = await response.json();
+
+  const data = eventData;
+
+  const dataStr = JSON.stringify(data);
+
+  return new Response(dataStr);
+}
