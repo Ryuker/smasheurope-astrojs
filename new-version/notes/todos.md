@@ -39,4 +39,6 @@
       [v] GET event by id - /api/events/[eventId]
       [] GET event by Slug
         - won't work with json-server, so it's for later
+      [v] POST new event - /api/events
+        
 

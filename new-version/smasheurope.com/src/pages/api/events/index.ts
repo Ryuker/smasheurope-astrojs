@@ -1,5 +1,6 @@
 import type { APIRoute } from "astro"
 
+// Get all events handler, returns all events from the api_endpoint
 export const GET: APIRoute = async ({ params, request }) => {
   console.log('Get request received');
 
@@ -16,24 +17,25 @@ export const GET: APIRoute = async ({ params, request }) => {
   return new Response(dataStr);
 }
 
-// export const POST: APIRoute = async ({ params, request }) => {
-//   console.log('Post request received');
+// Post new event, adds the new event to the api_endpoint and returns the new event that created
+export const POST: APIRoute = async ({ params, request }) => {
+  console.log('Post request received');
 
-//   const newJob = await request.json();
+  const newEvent = await request.json();
 
-//   // Fetch the data from the external API
-//   const api_endpoint = 'http://localhost:5000/jobs';
-//   const uri = `${api_endpoint}`;
-//   const response = await fetch(uri, {
-//     method: 'POST',
-//     body: JSON.stringify(newJob)
-//   });
+  // Fetch the data from the external API
+  const api_endpoint = 'http://localhost:5000/events';
+  const uri = `${api_endpoint}`;
+  const response = await fetch(uri, {
+    method: 'POST',
+    body: JSON.stringify(newEvent)
+  });
 
-//   const jobsData = await response.json();
+  const eventData = await response.json();
 
-//   const data = jobsData;
+  const data = eventData;
 
-//   const dataStr = JSON.stringify(data);
+  const dataStr = JSON.stringify(data);
 
-//   return new Response(dataStr);
-// }
+  return new Response(dataStr);
+}
