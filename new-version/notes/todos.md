@@ -7,6 +7,8 @@
   [v] Install Vue
   [v] update config to run in server mode (SSR)
   [v] set folder aliasses in `tsconfig.json` so `@` can be used in imports to shorten path
+  [v] install json-server
+    [v] add "server" script to package.json
 
 ## Structure
   layout:
