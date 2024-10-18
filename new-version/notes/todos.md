@@ -36,4 +36,7 @@
   Api:
     []events
       [v] GET all events - /api/events
-      [] GET event by Slug - /api/events/[eventSlug]
+      [v] GET event by id - /api/events/[eventId]
+      [] GET event by Slug
+        - won't work with json-server, so it's for later
+

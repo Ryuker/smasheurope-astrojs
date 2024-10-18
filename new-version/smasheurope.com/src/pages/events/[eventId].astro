@@ -1,12 +1,12 @@
 ---
 import MainLayout from "@layouts/MainLayout.astro";
 
-const { eventSlug } = Astro.params;
+const { eventId } = Astro.params;
 
 ---
 
-<MainLayout title={eventSlug}>
-  <h1>Dynamic Events Page Displaying Upcoming Events for {eventSlug}</h1>
+<MainLayout title={eventId}>
+  <h1>Dynamic Events Page Displaying Upcoming Events for {eventId}</h1>
   <p> - data imported from an external api through astro's api endpoints</p>
   <p> - displays events (needs a layout design)</p>
 </MainLayout>
