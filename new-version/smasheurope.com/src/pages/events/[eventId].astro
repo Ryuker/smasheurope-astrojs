@@ -3,10 +3,17 @@ import MainLayout from "@layouts/MainLayout.astro";
 
 const { eventId } = Astro.params;
 
+const api_url = new URL(`/api/events/${eventId}`, Astro.url);
+
+const response = await fetch(api_url);
+const data = await response.json();
+
+const event = data;
+
 ---
 
 <MainLayout title={eventId}>
-  <h1>Dynamic Events Page Displaying Upcoming Events for {eventId}</h1>
+  <h1>Dynamic Events Page Displaying Upcoming Events for {event.title}</h1>
   <p> - data imported from an external api through astro's api endpoints</p>
   <p> - displays events (needs a layout design)</p>
 </MainLayout>

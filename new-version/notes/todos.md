@@ -20,6 +20,7 @@
     [v] events page
       [] design layout
     [v] dynamic event page
+      [v] fetch the event from the api
     [] 404 page
       - added but marked it `_` so we don't use it yet
     
