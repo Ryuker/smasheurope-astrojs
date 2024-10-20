@@ -11,6 +11,9 @@
     [v] add "server" script to package.json
 
 ## Structure
+  utils: 
+    [v] getDateFormatted
+
   layout:
     [v] main layout
 
@@ -21,6 +24,9 @@
       [] design layout
     [v] dynamic event page
       [v] fetch the event from the api
+      [v]dates
+        [v] format to correct string and render
+
     [] 404 page
       - added but marked it `_` so we don't use it yet
     

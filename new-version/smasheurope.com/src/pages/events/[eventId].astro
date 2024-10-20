@@ -1,5 +1,6 @@
 ---
 import MainLayout from "@layouts/MainLayout.astro";
+import getDateFormatted from "@utils/getDateFormatted.js";
 
 const { eventId } = Astro.params;
 
@@ -10,10 +11,24 @@ const data = await response.json();
 
 const event = data;
 
+// Get the dates info and formatting
+const startDate = new Date(event.dates[0]);
+const endDate = new Date(event.dates[1]);
+
+const dates = {
+  startDate: getDateFormatted(startDate),
+  endDate: getDateFormatted(endDate),
+}
+
+// compile dates to a string for easy rendering
+const datesStr = `
+    ${dates.startDate.month} ${dates.startDate.day}${dates.startDate.suffix}-${dates.endDate.day}${dates.endDate.suffix}
+    ${dates.endDate.month !== dates.startDate.month ? dates.endDate.month : ''}`
 ---
 
 <MainLayout title={eventId}>
   <h1>Dynamic Events Page Displaying Upcoming Events for {event.title}</h1>
+  <p>dates: {datesStr}</p>
   <p> - data imported from an external api through astro's api endpoints</p>
   <p> - displays events (needs a layout design)</p>
 </MainLayout>
