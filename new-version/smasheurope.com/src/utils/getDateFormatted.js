@@ -22,7 +22,7 @@ function getDateFormatted(date) {
 
   const month = getMonthStr(date);
   const day = getDayNumeric(date);
-  const suffix = nthNumber(date);
+  const suffix = nthNumber(day);
 
   return {month, day, suffix};
 }
