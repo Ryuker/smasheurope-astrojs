@@ -46,6 +46,9 @@
       [v] EventCard
         [] display event title
         [] display other event data
+      [v] EventImage
+        [v] dynamically import images using `import.meta.glob`
+        [v] render with Image component
   
   Api:
     []events
