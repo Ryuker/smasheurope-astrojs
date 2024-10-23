@@ -9,8 +9,11 @@
       "dates": [
         "2024-10-26T00:00:00.000Z",
         "2024-10-27T00:00:00.000Z"
-      ],      
-      "location": "Hyères, France",
+      ],   
+      "location": {
+        "municipality": "Hyères",
+        "country": "France"
+      },   
       "details": "https://www.start.gg/sunrise-2024/",
       "slug": "sunrise-2024"
     },
@@ -24,7 +27,10 @@
         "2024-11-01T00:00:00.000Z",
         "2024-11-03T00:00:00.000Z"
       ],
-      "location": "Hanover, Germany",
+      "location": {
+        "municipality": "Hanover",
+        "country": "Germany"
+      },
       "details": "https://www.start.gg/tournament/sapf",
       "slug": "sapf"
     },
@@ -38,7 +44,10 @@
         "2024-11-02T00:00:00.000Z",
         "2024-11-03T00:00:00.000Z"
       ],
-      "location": "Nottwil, Switzerland",
+      "location": {
+        "municipality": "Nottwil",
+        "country": "Switzerland"
+      },
       "details": "https://www.start.gg/gamehotel-2024/",
       "slug": "gamehotel-2024"
     },
@@ -53,7 +62,10 @@
         "2024-11-23T00:00:00.000Z",
         "2024-11-24T00:00:00.000Z"
       ],
-      "location": "Vienna, Austria",
+      "location": {
+        "municipality": "Vienna",
+        "country": "Austria"
+      },
       "details": "https://start.gg/tartarus2024",
       "slug": "tartarus"
     },
@@ -67,7 +79,12 @@
         "2024-11-23T00:00:00.000Z",
         "2024-11-24T00:00:00.000Z"
       ],
-      "location": "Mörfelden-Walldorf, Germany",
+      "location": {
+        "municipality": "Mörfelden-Walldorf",
+        "country": "Germany"
+      },
+      "municipality": "Leicester",
+      "country": "England",
       "details": "https://www.start.gg/ntt",
       "slug": "no-time-to-tilt"
     },
@@ -81,7 +98,10 @@
         "2025-08-23T00:00:00.000Z",
         "2025-08-25T00:00:00.000Z"
       ],
-      "location": "Leicester, England",
+      "location": {
+        "municipality": "Leicester",
+        "country": "England"
+      },
       "details": "https://www.start.gg/tournament/regen-2024/details",
       "slug": "regen-2025"
     }
