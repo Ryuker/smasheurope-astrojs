@@ -17,6 +17,8 @@ const datesStr = `
     ${dates.endDate.month !== dates.startDate.month ? dates.endDate.month : ''}`
 ---
 <div>
-  <p>title: {event.title}</p>
-  <p>dates: {datesStr}</p>
+  <a href={`/events/${event.id}`}>
+    <p>title: {event.title}</p>
+    <p>dates: {datesStr}</p>
+  </a>
 </div>
