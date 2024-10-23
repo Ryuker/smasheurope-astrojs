@@ -2,7 +2,7 @@
   "events": [
     {
       "id": "1",
-      "banner": "sunrise_2024_banner.png",
+      "banner": "sunrise_2024-banner.png",
       "title": "Sunrise 2024",
       "games": "Ultimate",
       "description": "Cicadas Gaming, the city of Hyères and the Espace Jeunesse, present to you, the return of Sunrise, bigger than ever with a capacity of for 512+ competitors and singles, doubles, squad strike and ladder competitons as well as several side events!",
@@ -53,7 +53,7 @@
     },
     {
       "id": "4",
-      "banner": "tartarus2024_banner.png",
+      "banner": "tartarus2024-banner.png",
       "title": "Tartarus",
       "subtitle": "A Netrock Spikedown Major",
       "games": "Ultimate",
@@ -90,7 +90,7 @@
     },
     {
       "id": "7917",
-      "banner": "regen-2025_banner.png",
+      "banner": "regen-2025-banner.png",
       "title": "Regen 2025",
       "games": "Ultimate | Melee | Brawl",
       "description": "The Summertime blockbuster returns and aims to be the biggest Smash Bros. Ultimate event in UK history with a 3 day major hosted in the prestigious Athena Venue in Leicester feat. all Bo5 singles, a capacity of 1024, a line up of global top players in attendance and many social events.",
