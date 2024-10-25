@@ -1,4 +1,30 @@
 ---
+import EventCard from "./ui/EventCard.astro";
+
+const api_url = new URL(`/api/events/`, Astro.url);
+const response = await fetch(api_url);
+const data = await response.json();
+
+const eventsData = data;
+
+const events = eventsData;
+
+const today = new Date();
+
+function CheckIfInThePast(event) {
+  const endDate = new Date(event.dates[1]);
+  return endDate < today ? true : false;
+}
+
 ---
 
-<h1>Past Events Component</h1>
+<section>
+  <h2 class="text-3xl font-bold text-green-500 mb-6 text-center">
+    Events
+  </h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    {events.map(event => (
+      CheckIfInThePast(event) ? <EventCard key={event.id} event={event} /> : ""
+    ))}
+  </div>
+</section>

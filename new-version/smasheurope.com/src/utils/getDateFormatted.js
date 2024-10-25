@@ -2,7 +2,6 @@
 
 // Return a formatted date object in order: 'month: "december", day:"23", suffix: "rd/th" ';
 function getDateFormatted(date) {
-  console.log('date: ', date);
   const getMonthStr = (date) => date.toLocaleString("en-US", {
     month:"long",
   });
