@@ -24,6 +24,7 @@
       [] design layout
     [v] dynamic event page
       [v] fetch the event from the api
+      [] 404 redirect if 404 is received from api
       [v]dates
         [v] format to correct string and render
 
@@ -59,6 +60,7 @@
     []events
       [v] GET all events - /api/events
       [v] GET event by id - /api/events/[eventId]
+        [] return `404` if event ID isn't found
       [] GET event by Slug
         - won't work with json-server, so it's for later
       [v] POST new event - /api/events

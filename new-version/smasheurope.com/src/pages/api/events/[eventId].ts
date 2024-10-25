@@ -1,4 +1,4 @@
-import type { APIRoute } from "astro"
+import type { APIRoute } from "astro";
 
 // GET event handler, gets and event by id from api_endpoint and returns the results
 export const GET: APIRoute = async ({ params, request }) => {
@@ -9,6 +9,14 @@ export const GET: APIRoute = async ({ params, request }) => {
   const api_endpoint = 'http://localhost:5000/events';
   const uri = `${api_endpoint}/${eventId}`;
   const response = await fetch(uri);
+
+  if (response.status === 404) {
+    return new Response(null, {
+      status: 404,
+      statusText: 'Not found'
+    });
+  }
+
   const eventData = await response.json();
 
   const data = eventData;
@@ -57,6 +65,7 @@ export const DELETE: APIRoute = async ({ params, request }) => {
   const response = await fetch(uri, {
     method: 'DELETE'
   });
+
   const eventData = await response.json();
 
   const data = eventData;
