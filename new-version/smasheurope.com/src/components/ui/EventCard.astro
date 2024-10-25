@@ -24,6 +24,11 @@ const datesStr = `
     <EventImage imagePath=`${event.banner}` alt=`${event.title} banner` />
 
     <p>title: {event.title}</p>
+    {event.subtitle &&
+      <p>subtitle: {event.subtitle}</p>
+    }
+    <p set:html={event.description} />
     <p>dates: {datesStr}</p>
+    <p>location: {event.location.municipality}, {event.location.country}</p>
   </a>
 </div>
