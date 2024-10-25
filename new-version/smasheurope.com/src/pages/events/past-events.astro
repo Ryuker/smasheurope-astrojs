@@ -1,9 +1,12 @@
 ---
+
 import MainLayout from "@layouts/MainLayout.astro";
+import PastEvents from "@components/PastEvents.astro";
 ---
 
 <MainLayout title="Past Events">
-  <h1>Events Page Displaying Upcoming Events</h1>
+  <h1>Events Page Displaying Past Events</h1>
+  <PastEvents />
   <p>- displays events in a grid</p>
-  <p>- has buttons to navigate to past-events page</p>
+  <p>- has buttons to navigate to the upcoming-events page and to display the calendar for all events</p>
 </MainLayout>
