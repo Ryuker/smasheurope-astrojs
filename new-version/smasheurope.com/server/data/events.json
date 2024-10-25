@@ -1,6 +1,7 @@
 {
   "events": [
     {
+      "id": "1",
       "banner": "UFA2024/ufa_2024-banner.png",
       "title": "Ultimate Fighting Arena 2024",
       "games": "Utimate",
@@ -17,7 +18,7 @@
       "slug": "regen-2025"
     },
     {
-      "id": "1",
+      "id": "2",
       "banner": "Sunrise2024/sunrise_2024-banner.png",
       "title": "Sunrise 2024",
       "games": "Ultimate",
@@ -34,7 +35,7 @@
       "slug": "sunrise-2024"
     },
     {
-      "id": "2",
+      "id": "3",
       "banner": "SAPF/sapf-banner.png",
       "title": "SAPF",
       "games": "Melee",
@@ -51,7 +52,7 @@
       "slug": "sapf"
     },
     {
-      "id": "3",
+      "id": "4",
       "banner": "GH2024/gh_2024-banner.jpg",
       "title": "GameHotel 2024",
       "games": "Ultimate",
@@ -68,7 +69,7 @@
       "slug": "gamehotel-2024"
     },
     {
-      "id": "4",
+      "id": "5",
       "banner": "Tartarus2024/tartarus_2024-banner.jpg",
       "title": "Tartarus",
       "subtitle": "A Netrock Spikedown Major",
@@ -86,7 +87,7 @@
       "slug": "tartarus"
     },
     {
-      "id": "5",
+      "id": "6",
       "banner": "NTTT/nttt-banner-se-banner.png",
       "title": "No Time To Tilt",
       "games": "Ultimate",
