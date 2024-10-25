@@ -37,6 +37,11 @@
     [v] Hero
     [v] Upcoming Events
       [v] fetch events
+      [v] filter events to an upcomingEvents array only including events newer or equeal to today
+      [v] display events data 
+    [v] Past Events
+      [v] fetch events
+      [v] filter events to a pastEvents array only including events older than today
       [v] display events data 
     [v] SE-Teaser
     [v] Initiatives

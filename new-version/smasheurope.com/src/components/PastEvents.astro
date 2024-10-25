@@ -7,15 +7,16 @@ const data = await response.json();
 
 const eventsData = data;
 
-const events = eventsData;
-
 const today = new Date();
+
+const pastEvents = eventsData.filter(event => {
+  return CheckIfInThePast(event) ? event : "";
+});
 
 function CheckIfInThePast(event) {
   const endDate = new Date(event.dates[1]);
   return endDate < today ? true : false;
 }
-
 ---
 
 <section>
@@ -23,8 +24,8 @@ function CheckIfInThePast(event) {
     Events
   </h2>
   <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-    {events.map(event => (
-      CheckIfInThePast(event) ? <EventCard key={event.id} event={event} /> : ""
+    {pastEvents.map(event => (
+      <EventCard key={event.id} event={event} />
     ))}
   </div>
 </section>
