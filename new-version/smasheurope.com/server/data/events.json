@@ -57,7 +57,7 @@
       "title": "Tartarus",
       "subtitle": "A Netrock Spikedown Major",
       "games": "Ultimate",
-      "description": "Tartarus is a new major tournament series in Vienna in partnership with <a target=`_blank` href=`https://challengersarena.com/`>VCA</a> held at the <a target='_blank' href='https://viecc.com/en/'>Vienna Comic Con 2024</a> and promises a top-tier production. There's a capacity for 512 competitors and regular singles, doubles and ladder competitions.",
+      "description": "Tartarus is a new major tournament series in Vienna in partnership with <a target=\"_blank\" href=\"https://challengersarena.com/\">VCA</a> held at the <a target=\"_blank\" href=\"https://viecc.com/en/\">Vienna Comic Con 2024</a> and promises a top-tier production. There's a capacity for 512 competitors and regular singles, doubles and ladder competitions.",
       "dates": [
         "2024-11-23T00:00:00.000Z",
         "2024-11-24T00:00:00.000Z"
@@ -71,10 +71,10 @@
     },
     {
       "id": "5",
-      "banner": "NTTT/nttt-banner-se.png",
+      "banner": "NTTT/nttt-banner-se-banner.png",
       "title": "No Time To Tilt",
       "games": "Ultimate",
-      "description": "A German Smash Bros. Ultimate major hosted in the <a target=`_blank` href=`https://direct-book.com/properties/sleepbeeonedirect?locale=de&amp;promocode=NoTimeToTilt&amp;items[0][adults]=2&amp;items[0][children]=0&amp;items[0][infants]=0&amp;currency=EUR&amp;checkInDate=2024-11-23&amp;checkOutDate=2024-11-24&amp;trackPage=no`>SLEEP[BEE]ONE Hotel</a> in Mörfelden-Walldorf. There's capacity for 450 competitors and singles, doubles and ladder competitions. Accomodation can be booked at the hotel.",
+      "description": "A German Smash Bros. Ultimate major hosted in the <a target=\"_blank\" href=\"https://direct-book.com/properties/sleepbeeonedirect?locale=de&amp;promocode=NoTimeToTilt&amp;items[0][adults]=2&amp;items[0][children]=0&amp;items[0][infants]=0&amp;currency=EUR&amp;checkInDate=2024-11-23&amp;checkOutDate=2024-11-24&amp;trackPage=no\">SLEEP[BEE]ONE Hotel</a> in Mörfelden-Walldorf. There's capacity for 450 competitors and singles, doubles and ladder competitions. Accomodation can be booked at the hotel.",
       "dates": [
         "2024-11-23T00:00:00.000Z",
         "2024-11-24T00:00:00.000Z"
