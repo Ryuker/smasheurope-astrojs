@@ -4,7 +4,9 @@ export default {
 	theme: {
 		extend: {
 			colors: {
-				'se-blue': '#f9fbfd'
+				'se-blue': '#f9fbfd',
+				'se-muted': '#95aac9',
+				'se-dark': '#12263f'
 			}
 		},
 	},
