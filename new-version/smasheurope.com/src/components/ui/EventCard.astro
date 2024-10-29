@@ -18,7 +18,7 @@ const datesStr = `
     ${dates.startDate.month} ${dates.startDate.day}${dates.startDate.suffix}-${dates.endDate.day}${dates.endDate.suffix}
     ${dates.endDate.month !== dates.startDate.month ? dates.endDate.month : ''}`
 ---
-<div>
+<div class="bg-white rounded-lg p-8 shadow-md">
   <a href={`/events/${event.id}`}>
     <p>game(s): {event.games}</p>
     <EventImage imagePath=`${event.banner}` alt=`${event.title} banner` />
