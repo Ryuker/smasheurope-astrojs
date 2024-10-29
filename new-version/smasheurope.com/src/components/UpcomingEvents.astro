@@ -24,10 +24,10 @@ function CheckIfInThePast(event) {
 ---
 
 <section>
-  <h2 class="text-3xl font-bold text-green-500 mb-6 text-center">
-    Events
+  <h2 class="text-3xl font-bold text-se-dark my-10 text-center">
+    Upcoming Events
   </h2>
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+  <div class="m-auto grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl px-10">
     {events.map(event => (
       <EventCard key={event.id} event={event} />
     ))}
