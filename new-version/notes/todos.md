@@ -55,6 +55,12 @@
       [v] EventImage
         [v] dynamically import images using `import.meta.glob`
         [v] render with Image component
+      [v] InitiativeCard
+        [v] display Initiative title
+        [] display slot content
+          [v] content
+          [] buttons
+        [v] styling
   
   Api:
     []events
