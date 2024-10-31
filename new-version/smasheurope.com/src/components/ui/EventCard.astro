@@ -1,5 +1,6 @@
 ---
 import { Image } from 'astro:assets';
+import { Icon } from 'astro-icon/components';
 import EventImage from './EventImage.astro';
 import getDateFormatted from "@utils/getDateFormatted";
 const { event } = Astro.props;
@@ -54,9 +55,14 @@ const datesStr = `
     </div>
     
     <div class="flex basis-full py-3">
-      <a target="_blank" href={event.details}>Trailer</a>
-      <a target="_blank" href={event.details} class="flex-1">EventDetails Button</a>
-      <a target="_blank" href={`/events/${event.id}`} class="flex-1">Event Page</a>
+      <a target="_blank" href={event.details}>
+        <Icon name="trailer"></a>
+      <a target="_blank" href={event.details} class="flex-1">
+        <Icon name="tournament" />
+      </a>
+      <a target="_blank" href={`/events/${event.id}`} class="flex-1">
+        <Icon name="info" />
+      </a>
     </div>
   </div>
 </div>

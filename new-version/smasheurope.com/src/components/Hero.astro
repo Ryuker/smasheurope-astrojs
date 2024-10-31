@@ -1,4 +1,7 @@
 ---
+import { Icon } from 'astro-icon/components';
+
+
 const { title } = Astro.props;
 ---
 <div>
@@ -9,12 +12,15 @@ const { title } = Astro.props;
         <slot />
       </div>
       <div class="flex gap-2">
-        <a>Tournament Calendar</a>
-        <a target="_blank" href="https://docs.google.com/spreadsheets/d/11ElDfT0YmpIuiuApQ95lnoKM3b6BIe8MXmPyUfK4Sx8">Communities</a>
-        <a target="_blank" href="https://twitter.com/smasheurope">Twitter</a>
-        <a target="_blank" href="https://www.facebook.com/smasheurope/">Facebook</a>
-        <a target="_blank" href="https://twitch.tv/smasheurope">Twitch.tv</a>
-        <a target="_blank" href="https://www.reddit.com/r/smasheurope/">Subreddit</a>
+        <a><Icon name="calendar"/></a>
+        <a target="_blank" href="https://docs.google.com/spreadsheets/d/11ElDfT0YmpIuiuApQ95lnoKM3b6BIe8MXmPyUfK4Sx8">
+          <Icon name="community"/>
+        </a>
+        <a target="_blank" href="https://twitter.com/smasheurope"><Icon name="x"/></a>
+        <a target="_blank" href="https://www.facebook.com/smasheurope/"><Icon name="fb"/></a>
+        <a target="_blank" href="https://twitch.tv/smasheurope"><Icon name="twitch"/></a>
+        <a target="_blank" href="https://youtube.com/smasheurope"><Icon name="yt"/></a>
+        <a target="_blank" href="https://www.reddit.com/r/smasheurope/"><Icon name="reddit"/></a>
       </div>
     </div>
     <div class="flex flex-1 justify-center items-center">

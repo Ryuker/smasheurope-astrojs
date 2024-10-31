@@ -1,4 +1,5 @@
 ---
+import { Icon } from 'astro-icon/components';
 import InitiativeCard from "./ui/InitiativeCard.astro"
 ---
 
@@ -22,11 +23,13 @@ import InitiativeCard from "./ui/InitiativeCard.astro"
         <p>S.A.M.E circuit partnered with <a target="_blank" href="https://beyondthesummit.tv/">Beyond The Summit</a> and was streamed entirely on their <a target="_blank" href="https://twitch.tv/btssmash">Twitch Channel</a>. In return funds were given to production and two invites to Smash Summits could be earned. Additional partners included Kone's Academy which offered free coaching trials to placement in the amateur brackets, <a target="_blank" href="https://metafy.gg/">Metafy</a> which offered a prizepool for the Finale and <a target="_blank" href="https://poilon.com/">Poilon Software</a> which provided the circuit ranking website.</p>
       </Fragment>
       <Fragment slot="buttons">
-        <a target="_blank" href="/" class="flex-1">Trailer</a>
-        <a target="_blank" href="/" class="flex-1">Details</a>
-        <a target="_blank" href="/" class="flex-1">Discord</a>
-        <a target="_blank" href="/" class="flex-1">Finale</a>
-        <a target="_blank" href="/" class="flex-1">Credits</a>
+        <a target="_blank" href="/" class="flex-1">
+          <Icon name="trailer"/>
+        </a>
+        <a target="_blank" href="https://smash.gg/SAMEcircuit" class="flex-1"><Icon name="tournament"/></a>
+        <a target="_blank" href="/" class="flex-1"><Icon name="discord"/></a>
+        <a target="_blank" href="/" class="flex-1"><Icon name="trophy"/></a>
+        <a target="_blank" href="/" class="flex-1"><Icon name="heart"/></a>
       </Fragment>
     </InitiativeCard>
 
@@ -37,8 +40,8 @@ import InitiativeCard from "./ui/InitiativeCard.astro"
         <p>The circuit featured a points-based ranking system based on performance in each tournament. Fifteen percent of the prize pool from each tournament went toward a final prize pool, which was paid out to the top 3 points earners.</p>
       </Fragment>
       <Fragment slot="buttons">
-        <a target="_blank" href="/" class="flex-1">Trailer</a>
-        <a target="_blank" href="/" class="flex-1">Details</a>
+        <a target="_blank" href="/" class="flex-1"><Icon name="trailer"/></a>
+        <a target="_blank" href="/" class="flex-1"><Icon name="info"/></a>
       </Fragment>
     </InitiativeCard>
   </div>

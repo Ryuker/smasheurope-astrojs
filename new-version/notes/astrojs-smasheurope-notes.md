@@ -11,6 +11,8 @@
 
 
 ## Usefull:
+- open source icons - [iconify](https://iconify.design/)
+- implementation of icons in astro - [astro icon](https://www.astroicon.dev/guides/customization/)
 
 **Event JSON**
 ``` JSON
