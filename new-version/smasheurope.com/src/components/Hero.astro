@@ -1,28 +1,42 @@
 ---
 import { Icon } from 'astro-icon/components';
+import Button from './ui/Button.astro';
+import LinkButton from './ui/LinkButton.astro';
 
 
 const { title } = Astro.props;
 ---
 <div>
   <div class="container bg-white flex mx-auto p-8 rounded-lg max-w-6xl shadow-lg">
-    <div class="flex flex-col space-y-2 w-2/3">
+    <div class="flex flex-col space-y-3 w-2/3">
       <h1 class="text-se-dark text-xl font-bold">{title}</h1>
       <div class="text-se-muted space-y-3 text-sm">
         <slot />
       </div>
-      <div class="flex gap-2">
-        <a><Icon name="calendar"/></a>
-        <a target="_blank" href="https://docs.google.com/spreadsheets/d/11ElDfT0YmpIuiuApQ95lnoKM3b6BIe8MXmPyUfK4Sx8">
-          <Icon name="community"/>
-        </a>
-        <a target="_blank" href="https://twitter.com/smasheurope"><Icon name="x"/></a>
-        <a target="_blank" href="https://www.facebook.com/smasheurope/"><Icon name="fb"/></a>
-        <a target="_blank" href="https://twitch.tv/smasheurope"><Icon name="twitch"/></a>
-        <a target="_blank" href="https://youtube.com/smasheurope"><Icon name="yt"/></a>
-        <a target="_blank" href="https://www.reddit.com/r/smasheurope/"><Icon name="reddit"/></a>
+      <div class="pt-4">
+        <div class="flex space-x-3">
+          <Button icon="calendar" />
+          <LinkButton icon="community" newTab={true} 
+            url="https://docs.google.com/spreadsheets/d/11ElDfT0YmpIuiuApQ95lnoKM3b6BIe8MXmPyUfK4Sx8"
+          />
+          <LinkButton icon="x" newTab={true} 
+            url="https://twitter.com/smasheurope"
+          />
+          <LinkButton icon="fb" newTab={true} 
+            url="https://www.facebook.com/smasheurope/"
+          />
+          <LinkButton icon="twitch" newTab={true} 
+            url="https://twitch.tv/smasheurope"
+          />
+          <LinkButton icon="yt" newTab={true} 
+            url="https://youtube.com/smasheurope"
+          />
+          <LinkButton icon="reddit" newTab={true} 
+            url="https://www.reddit.com/r/smasheurope/"
+          />
+        </div>
       </div>
-    </div>
+    </div>  
     <div class="flex flex-1 justify-center items-center">
       <p>logo</p>
     </div>
