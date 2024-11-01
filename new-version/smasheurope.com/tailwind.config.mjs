@@ -4,12 +4,16 @@ export default {
 	theme: {
 		extend: {
 			colors: {
-				'se-blue': '#f9fbfd',
 				'se-muted': '#95aac9',
 				'se-dark': '#12263f',
-				'se-lite-blue': '#edf2f9',
-				'se-darker-blue': '#d0ddef'
-			}
+				'se-blue': {
+					50: '#f9fbfd',
+					100: '#edf2f9', 
+					200: '#d0ddef',
+					300: '#6e84a3',
+					400: '#5b7190'
+				}
+			},
 		},
 	},
 	plugins: [],
