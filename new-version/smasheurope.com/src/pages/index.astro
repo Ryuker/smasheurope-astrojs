@@ -23,16 +23,13 @@ import LinkButton from "@components/ui/LinkButton.astro";
 	</Hero>
 	<UpcomingEvents limit="4"/>
 	<section>
-		<div class="container mx-auto max-w-6xl my-10 space-y-4">
+		<div class="container mx-auto max-w-6xl my-10 space-y-8">
 			<div class="flex justify-center">
-				<Button icon="calendar"/> 
-			</div>
-			
-			<div class="flex justify-center">
-				
-				<div class="flex space-x-4">
-					<LinkButton text="More Events" url="/events" colorClasses="bg-se-blue-300 hover:bg-se-blue-400 text-white"/>
-					
+
+				<div class="grid grid-cols-3">
+					<LinkButton text="More Events" url="/events" colors="bg-se-blue-300 hover:bg-se-blue-400 text-white" 
+						classes="flex justify-center"/>
+					<Button icon="calendar" classes="justify-self-center"/> 
 					<LinkButton icon="history" text="Past Events" url="/events/past-events" classes="flex gap-2 items-center" />
 				</div>
 			</div>

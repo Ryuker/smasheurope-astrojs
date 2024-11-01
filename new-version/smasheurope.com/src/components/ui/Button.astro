@@ -3,13 +3,13 @@ import { Icon } from 'astro-icon/components';
 const {
   icon, 
   text, 
-  classes,
-  colorClasses = 'bg-se-blue-100 hover:bg-se-blue-200', 
+  classes = " ",
+  colors = 'bg-se-blue-100 hover:bg-se-blue-200', 
 } = Astro.props;
 
 ---
 
-<button class={`${classes} ${colorClasses}  px-6 py-3 rounded-lg`}>
+<button class={`${classes} ${colors} px-6 py-3 rounded-lg`}>
   {icon && <Icon name={icon} class="text-lg" /> }
   {text && text}
 </button>

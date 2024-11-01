@@ -4,14 +4,14 @@ const {
   icon, 
   text, 
   url,
-  classes,
-  colorClasses = 'bg-se-blue-100 hover:bg-se-blue-200', 
+  classes = " ",
+  colors = 'bg-se-blue-100 hover:bg-se-blue-200', 
   newTab = false
 } = Astro.props;
 
 ---
 
-<a target={newTab} href={url} class={`${classes} ${colorClasses} px-6 py-3 rounded-lg`}>
+<a target={newTab} href={url} class={`${classes} ${colors} px-6 py-3 rounded-lg`}>
   {icon && <Icon name={icon} class="text-lg" />}
   {text && text}
 </a>
