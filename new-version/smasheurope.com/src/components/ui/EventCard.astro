@@ -1,9 +1,8 @@
 ---
-import { Image } from 'astro:assets';
-import { Icon } from 'astro-icon/components';
 import LinkButton from './LinkButton.astro';
 import EventImage from './EventImage.astro';
 import getDateFormatted from "@utils/getDateFormatted";
+import Button from './Button.astro';
 const { event } = Astro.props;
 
 // Get the dates info and formatting
@@ -57,7 +56,7 @@ const datesStr = `
     
     <div class="grid grid-cols-3 gap-3">
       <div class="col-span-2 flex space-x-2">
-        <LinkButton icon="trailer" url={event.details} />
+        <Button icon="trailer" url={event.details} />
         <LinkButton icon="tournament" url={event.details} newTab={true} />
       </div>
       <LinkButton icon="info" url={`/events/${event.id}`} classes="justify-self-end"/>

@@ -1,0 +1,14 @@
+---
+import { Icon } from 'astro-icon/components';
+const {
+  icon, 
+  text, 
+  classes, 
+} = Astro.props;
+
+---
+
+<button class={`${classes} bg-se-lite-blue hover:bg-se-darker-blue px-6 py-3 rounded-lg`}>
+  <Icon name={icon} class="text-lg" />
+  {text}
+</button>
