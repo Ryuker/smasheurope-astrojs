@@ -6,7 +6,9 @@ export default {
 			colors: {
 				'se-blue': '#f9fbfd',
 				'se-muted': '#95aac9',
-				'se-dark': '#12263f'
+				'se-dark': '#12263f',
+				'se-lite-blue': '#edf2f9',
+				'se-darker-blue': '#d0ddef'
 			}
 		},
 	},

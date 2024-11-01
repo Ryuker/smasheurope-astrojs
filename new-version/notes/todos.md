@@ -61,6 +61,10 @@
           [v] content
           [] buttons
         [v] styling
+      [v] LinkButton
+        [v] icon
+        [v] props
+        [v] styling
   
   Api:
     []events

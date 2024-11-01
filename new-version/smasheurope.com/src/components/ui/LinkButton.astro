@@ -1,0 +1,15 @@
+---
+import { Icon } from 'astro-icon/components';
+const {
+  icon, 
+  text, 
+  url, 
+  newTab = false
+} = Astro.props;
+
+---
+
+<a target={newTab} href={url} class="bg-se-lite-blue hover:bg-se-darker-blue px-6 py-3 rounded-lg">
+  <Icon name={icon} class="text-lg" />
+  {text}
+</a>

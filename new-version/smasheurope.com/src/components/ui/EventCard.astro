@@ -1,6 +1,7 @@
 ---
 import { Image } from 'astro:assets';
 import { Icon } from 'astro-icon/components';
+import LinkButton from './LinkButton.astro';
 import EventImage from './EventImage.astro';
 import getDateFormatted from "@utils/getDateFormatted";
 const { event } = Astro.props;
@@ -54,15 +55,10 @@ const datesStr = `
       <span>{`, ${event.location.municipality}, ${event.location.country}`}</span>
     </div>
     
-    <div class="flex basis-full py-3">
-      <a target="_blank" href={event.details}>
-        <Icon name="trailer"></a>
-      <a target="_blank" href={event.details} class="flex-1">
-        <Icon name="tournament" />
-      </a>
-      <a target="_blank" href={`/events/${event.id}`} class="flex-1">
-        <Icon name="info" />
-      </a>
+    <div class="flex basis-full py-3 space-x-2">
+      <LinkButton icon="trailer" url={event.details} />
+      <LinkButton icon="tournament" url={event.details} newTab={true} />
+      <LinkButton icon="info" url={`/events/${event.id}`} />
     </div>
   </div>
 </div>
