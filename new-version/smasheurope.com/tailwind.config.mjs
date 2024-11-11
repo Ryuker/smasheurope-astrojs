@@ -4,6 +4,10 @@ export default {
 	theme: {
 		extend: {
 			colors: {
+				'se-link':  {
+					200: '#2c7be5',
+					300: '#1657af'
+				},
 				'se-muted': '#95aac9',
 				'se-dark': '#12263f',
 				'se-blue': {
