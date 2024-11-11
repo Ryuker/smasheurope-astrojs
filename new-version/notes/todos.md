@@ -36,6 +36,9 @@
       [] skeleton
       [] styling
     [v] Hero
+    [] VideoEmbedded
+      [] Embed Video
+      [] styling
     [v] Upcoming Events
       [v] fetch events
       [v] filter events to an upcomingEvents array only including events newer or equeal to today
