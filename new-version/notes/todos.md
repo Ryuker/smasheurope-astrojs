@@ -47,6 +47,8 @@
       [v] fetch events
       [v] filter events to a pastEvents array only including events older than today
       [v] display events data 
+    [] EventFilter
+      - filters events based on title
     [v] SE-Teaser
     [v] Initiatives
     [v] Footer
