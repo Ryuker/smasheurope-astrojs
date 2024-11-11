@@ -2,11 +2,33 @@
 
 import MainLayout from "@layouts/MainLayout.astro";
 import PastEvents from "@components/PastEvents.astro";
+import Button from "@components/ui/Button.astro";
+import LinkButton from "@components/ui/LinkButton.astro";
 ---
 
 <MainLayout title="Past Events">
-  <h1>Events Page Displaying Past Events</h1>
+  <section>
+		<div class="container mx-auto max-w-6xl my-10 space-y-8">
+			<div class="flex justify-center">
+
+				<div class="grid grid-cols-1">
+					<LinkButton icon="arrow-left" text="Back to Homepage" url="/" colors="bg-se-blue-300 hover:bg-se-blue-400 text-white" classes="flex gap-2 items-center"/>
+				</div>
+			</div>
+		</div>
+		
+	</section>
   <PastEvents />
-  <p>- displays events in a grid</p>
-  <p>- has buttons to navigate to the upcoming-events page and to display the calendar for all events</p>
+  <section>
+		<div class="container mx-auto max-w-6xl my-10 space-y-8">
+			<div class="flex justify-center">
+
+				<div class="grid grid-cols-2 gap-5">
+					<LinkButton icon="arrow-left" text="Upcoming Majors" url="/events" colors="bg-se-blue-300 hover:bg-se-blue-400 text-white" classes="flex gap-2 items-center"/>
+					<LinkButton icon="calendar" text="More Events" url="/events/past-events" classes="flex gap-2 items-center" />
+				</div>
+			</div>
+		</div>
+		
+	</section>
 </MainLayout>
