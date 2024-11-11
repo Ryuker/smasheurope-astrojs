@@ -80,5 +80,8 @@
       [v] PUT event handler by ID - /api/events/[eventId] 
         - ! important to make sure we send over the full event object, JSON-SERVER replaces the whole object
       [v] DELETE event handler - /api/events/[eventId]
+
+# Responsive
+  [] Responsive style all component and pages
         
 
