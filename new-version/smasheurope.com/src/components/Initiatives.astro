@@ -3,6 +3,10 @@ import { Icon } from 'astro-icon/components';
 import InitiativeCard from "./ui/InitiativeCard.astro"
 import LinkButton from './ui/LinkButton.astro';
 import Button from './ui/Button.astro';
+
+// images
+import SameSticker from '@assets/images/global/same-sticker.png';
+import ESCLogo from '@assets/images/global/esc2015-logo.png';
 ---
 
 <section>
@@ -10,7 +14,7 @@ import Button from './ui/Button.astro';
     Past joined community initiatives
   </h2>
   <div class="mx-auto grid grid-cols-1 gap-8 max-w-6xl">
-    <InitiativeCard title="The S.A.M.E Circuit 2021">
+    <InitiativeCard title="The S.A.M.E Circuit 2021" image={SameSticker} alt="S.A.M.E Logo">
       <Fragment slot="content">
         <p>
           Times had changed but we were <br> <span class="text-se-dark">S</span>
@@ -35,7 +39,7 @@ import Button from './ui/Button.astro';
       </Fragment>
     </InitiativeCard>
 
-    <InitiativeCard title="The European Smash Circuit 2015">
+    <InitiativeCard title="The European Smash Circuit 2015" image={ESCLogo} alt="European Smash Circuit Logo" >
       <Fragment slot="content">
         <p>The European Smash Circuit 2015 was a tournament circuit consisting of seven European tournaments: HFLAN Melee Edition, Heir II the Throne, Helix, Avalon M, Eclipse, Òssom Fights 2015, and B.E.A.S.T 6.</p>
 
