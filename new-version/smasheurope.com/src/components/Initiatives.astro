@@ -29,12 +29,12 @@ import ESCLogo from '@assets/images/global/esc2015-logo.png';
         <p>S.A.M.E circuit partnered with <a target="_blank" href="https://beyondthesummit.tv/">Beyond The Summit</a> and was streamed entirely on their <a target="_blank" href="https://twitch.tv/btssmash">Twitch Channel</a>. In return funds were given to production and two invites to Smash Summits could be earned. Additional partners included Kone's Academy which offered free coaching trials to placement in the amateur brackets, <a target="_blank" href="https://metafy.gg/">Metafy</a> which offered a prizepool for the Finale and <a target="_blank" href="https://poilon.com/">Poilon Software</a> which provided the circuit ranking website.</p>
       </Fragment>
       <Fragment slot="buttons">
-        <div class="flex space-x-4">
-          <Button icon="trailer" />
-          <LinkButton icon="tournament" url="https://smash.gg/SAMEcircuit" newTab={true}/>
-          <LinkButton icon="discord" url="https://discord.gg/zBr4Ce33mC" newTab={true} />
-          <LinkButton icon="trophy" url="https://www.start.gg/tournament/same-finale-2021/details" newTab={true} />
-          <LinkButton icon="heart" url="https://youtu.be/fmBuDu3YlD4" newTab={true} />
+        <div class="flex md:space-x-4 flex-wrap w-full gap-3 md:gap-0 justify-between">
+          <Button icon="trailer" classes="basis-[36%] md:basis-auto md:grow"/>
+          <LinkButton icon="tournament" url="https://smash.gg/SAMEcircuit" newTab={true} classes="basis-[20 md:basis-auto grow"/>
+          <LinkButton icon="discord" url="https://discord.gg/zBr4Ce33mC" newTab={true} classes="basis-[36%] md:basis-auto md:grow"/>
+          <LinkButton icon="trophy" url="https://www.start.gg/tournament/same-finale-2021/details" newTab={true} classes="basis-[48%] md:basis-auto grow"/>
+          <LinkButton icon="heart" url="https://youtu.be/fmBuDu3YlD4" newTab={true} classes="basis-[48%] md:basis-auto grow"/>
         </div>
       </Fragment>
     </InitiativeCard>
@@ -46,9 +46,9 @@ import ESCLogo from '@assets/images/global/esc2015-logo.png';
         <p>The circuit featured a points-based ranking system based on performance in each tournament. Fifteen percent of the prize pool from each tournament went toward a final prize pool, which was paid out to the top 3 points earners.</p>
       </Fragment>
       <Fragment slot="buttons">
-        <div class="flex space-x-4">
-          <Button icon="trailer" newTab={true} />
-          <LinkButton icon="info" url="https://liquipedia.net/smash/European_Smash_Circuit_2015" newTab={true} />
+        <div class="flex space-x-4 w-full">
+          <Button icon="trailer" newTab={true} classes="min-w-28 basis-1/2 md:basis-auto"/>
+          <LinkButton icon="info" url="https://liquipedia.net/smash/European_Smash_Circuit_2015" newTab={true} classes="min-w-28 basis-1/2 md:basis-auto"/>
         </div>
       </Fragment>
     </InitiativeCard>
