@@ -3,6 +3,9 @@ export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
 		extend: {
+			fontSize: {
+				m: '.9375rem'
+			},
 			colors: {
 				'se-link':  {
 					200: '#2c7be5',

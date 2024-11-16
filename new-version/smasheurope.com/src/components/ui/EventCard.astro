@@ -21,7 +21,7 @@ const datesStr = `
 ---
 <div class="bg-white h-full rounded-lg p-8 shadow-md">
   <div class="flex min-h-full flex-col justify-start">
-    <span class="flex basis-full leading-none mb-3 items-center justify-center text-se-dark font-bold">
+    <span class="flex basis-full leading-none mb-3 items-center justify-center text-se-dark text-base font-semibold">
       {event.games}
     </span>
     <div class="flex basis-full">
@@ -42,7 +42,7 @@ const datesStr = `
       }
     </div>
     <div class="flex grow min-h-32">
-      <p set:html={event.description} class="text-se-muted text-sm text-justify leading-relaxed" />
+      <p set:html={event.description} class="text-se-muted text-m text-justify leading-relaxed" />
     </div>
     
     <!-- <Fragment >
