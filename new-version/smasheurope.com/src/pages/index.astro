@@ -24,11 +24,11 @@ import LinkButton from "@components/ui/LinkButton.astro";
 	<UpcomingEvents limit="4"/>
 	<section>
 		<div class="container mx-auto max-w-6xl my-10 space-y-8">
-			<div class="flex justify-center">
+			<div class="flex justify-center px-5">
 
 				<div class="grid grid-cols-3">
-					<LinkButton text="More Events" url="/events" colors="bg-se-blue-300 hover:bg-se-blue-400 text-white" 
-						classes="flex justify-center"/>
+					<LinkButton icon="more" text="More Events" url="/events" colors="bg-se-blue-300 hover:bg-se-blue-400 text-white" 
+						classes="flex gap-2 items-center"/>
 					<Button icon="calendar" classes="justify-self-center"/> 
 					<LinkButton icon="history" text="Past Events" url="/events/past-events" classes="flex gap-2 items-center" />
 				</div>
