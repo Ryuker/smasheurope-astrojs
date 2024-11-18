@@ -1,0 +1,42 @@
+---
+const {id, open} = Astro.props;
+---
+
+<button onclick={`this.nextElementSibling.showModal()`}>{open}</button>
+
+<dialog id={id} class="rounded-lg p-5" 
+  onclick="closeOutsideEvent(this)"
+  onclose="this.returnValue==-1 && console.log('closed by clicking outside ' + this.returnValue )">
+  
+  <slot name="main" />
+  <form method="dialog">
+    <slot name="close"/>
+  </form>
+</dialog>
+
+<style>
+  dialog {
+    position: relative;
+    background: green;
+  }
+
+  dialog::backdrop {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    /* height: 100vh; */
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background: rgba(255, 0, 0, 0.1);
+    /* overflow: hidden; */
+  }
+</style>
+
+<script is:inline>
+  function closeOutsideEvent(t) {
+    // event.target==this
+    t.close()
+  }
+</script>

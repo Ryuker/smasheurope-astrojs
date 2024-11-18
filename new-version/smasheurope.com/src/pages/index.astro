@@ -7,10 +7,25 @@ import Hero from "@components/Hero.astro";
 import UpcomingEvents from "@components/UpcomingEvents.astro";
 import Button from "@components/ui/Button.astro";
 import LinkButton from "@components/ui/LinkButton.astro";
+import Modal from "@components/ui/Modal.astro";
+
+import { Image } from 'astro:assets';
+import logo from "@assets/images/global/se-logo.png";
 
 ---
 
 <MainLayout title="smasheurope.com">
+	
+	<Modal id="dialog" open="Open modal">
+		<main slot="main">
+				<p>Some extra content you would like here</p>
+				<hr />
+				<Image src={logo} alt="logo" class="flex basis-full items-center py-2 object-contain"/>
+		</main>
+		<button slot="close" class="bg-red-200">Close modal</button>
+	</Modal>
+	
+
 	<Hero title="Welcome to SmashEurope!">
 		<p>Here you can find your local European Smash community and an overview of events to compete in.</p>
 		<p>You're encouraged to follow our social accounts to stay in the loop of developments in the scene.</p>
