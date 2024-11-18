@@ -31,5 +31,23 @@
 }
 ```
 
+modal notes:
+[explanation](https://stackoverflow.com/questions/25864259/how-to-close-the-new-html-dialog-tag-by-clicking-on-its-backdrop)
+``` HTML
+<button onclick="this.nextElementSibling.showModal()">Test</button>
+
+<dialog style="padding: 0" onmousedown="event.target==this && this.close()">
+  <form style="padding: 1rem" method="dialog">
+    <p>Click outside to close the dialog.</p>
+    <button>Click here</button>
+  </form>
+</dialog>
+
+<dialog style="padding: 0"
+  onmousedown="event.target==this && this.close(-1)"
+  onclose="this.returnValue==-1 && alert('closed by clicking outside')"
+>
+```
+
 
 
