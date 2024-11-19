@@ -8,7 +8,7 @@ const {
 } = Astro.props;
 ---
 <astro-modal>
-  <button class={`${classes} ${colors} px-4 md:px-6 py-3 min-w-20 rounded-lg flex justify-center items-center`}>
+  <button class={`${classes} ${colors} w-full md:w-inherit px-4 md:px-6 py-3 min-w-20 rounded-lg flex justify-center items-center`}>
     {icon && <Icon name={icon} class="text-lg" /> }
     {openText && openText}
   </button>
