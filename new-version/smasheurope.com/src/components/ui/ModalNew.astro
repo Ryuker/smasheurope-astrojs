@@ -1,0 +1,45 @@
+---
+const { id, open } = Astro.props;
+---
+<astro-modal id={id}>
+  <button>{open}</button>
+  
+  <dialog id={id} class="rounded-lg p-5">
+  
+  <slot name="main" />
+  <form method="dialog">
+    <slot name="close"/>
+  </form>
+  </dialog>
+</astro-modal>
+
+
+<script>
+
+  class Modal extends HTMLElement {
+    connectedCallback() {
+      // const id = this.id;
+      const button = this.querySelector('button');
+      const dialog = this.querySelector('dialog');
+
+      if (dialog) {
+        dialog?.addEventListener('click', event => {
+        if (event.target === dialog) {
+          dialog.close(); 
+        }
+      });
+      }
+      
+      if (button) {
+        button?.addEventListener('click', () => {
+          if (dialog) {
+            dialog.showModal();
+          }
+        });
+      }
+      
+    }
+  }
+
+  customElements.define('astro-modal', Modal);
+</script>
