@@ -15,8 +15,6 @@ const {openText } = Astro.props;
 
 
 <script>
-import { swapBodyElement } from "astro/virtual-modules/transitions-swap-functions.js";
-
   class Modal extends HTMLElement {
     connectedCallback() {
       const button = this.querySelector('button');
@@ -52,7 +50,7 @@ import { swapBodyElement } from "astro/virtual-modules/transitions-swap-function
 
 <style is:global>
   astro-modal dialog::backdrop {
-    overscroll-behavior: contain;
+    background: rgba(81, 66, 66, 0.1);
   }
 
   .lock-scroll {
