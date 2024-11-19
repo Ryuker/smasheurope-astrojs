@@ -1,42 +1,66 @@
 ---
-const {id, open} = Astro.props;
+import { Icon } from 'astro-icon/components';
+const {
+  openText,
+  icon, 
+  classes = " ",
+  colors = 'bg-se-blue-100 hover:bg-se-blue-200', 
+} = Astro.props;
 ---
-
-<button onclick={`this.nextElementSibling.showModal()`}>{open}</button>
-
-<dialog id={id} class="rounded-lg p-5" 
-  onclick="closeOutsideEvent(this)"
-  onclose="this.returnValue==-1 && console.log('closed by clicking outside ' + this.returnValue )">
+<astro-modal>
+  <button class={`${classes} ${colors} px-4 md:px-6 py-3 min-w-20 rounded-lg flex justify-center items-center`}>
+    {icon && <Icon name={icon} class="text-lg" /> }
+    {openText && openText}
+  </button>
+  
+  <dialog class="rounded-lg p-5">
   
   <slot name="main" />
   <form method="dialog">
     <slot name="close"/>
   </form>
-</dialog>
+  </dialog>
+</astro-modal>
 
-<style>
-  dialog {
-    position: relative;
-    background: green;
+
+<script>
+  class Modal extends HTMLElement {
+    connectedCallback() {
+      const button = this.querySelector('button');
+      const dialog = this.querySelector('dialog');
+      
+      if (dialog) {
+        dialog.addEventListener('click', event => {
+          if (event.target === dialog) {
+            dialog.close();
+          }
+        });
+
+        dialog.addEventListener('close', () => {
+          document.body.classList.remove('lock-scroll'); 
+        });
+      }
+      
+      if (button) {
+        button?.addEventListener('click', () => {
+          if (dialog) {
+            dialog.showModal();
+            document.body.classList.add('lock-scroll');
+          }
+        });
+      }
+    }
   }
 
-  dialog::backdrop {
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    /* height: 100vh; */
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    background: rgba(255, 0, 0, 0.1);
-    /* overflow: hidden; */
+  customElements.define('astro-modal', Modal);
+</script>
+
+<style is:global>
+  astro-modal dialog::backdrop {
+    background: rgba(81, 66, 66, 0.1);
+  }
+
+  .lock-scroll {
+    overflow: hidden;
   }
 </style>
-
-<script is:inline>
-  function closeOutsideEvent(t) {
-    // event.target==this
-    t.close()
-  }
-</script>

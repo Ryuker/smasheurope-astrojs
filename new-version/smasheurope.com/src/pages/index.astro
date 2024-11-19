@@ -11,38 +11,29 @@ import Modal from "@components/ui/Modal.astro";
 
 import { Image } from 'astro:assets';
 import logo from "@assets/images/global/se-logo.png";
-import ModalNew from "@components/ui/ModalNew.astro";
+
 
 ---
 
 <MainLayout title="smasheurope.com">
 
-	<ModalNew openText="Open modal 1">
+	<Modal icon="yt" >
 		<main slot="main">
 			<p>Some extra content you would like here</p>
 			<hr />
 			<Image src={logo} alt="logo" class="flex basis-full items-center py-2 object-contain"/>
 		</main>
 		<button slot="close" class="bg-red-200">Close modal</button>
-	</ModalNew>
+	</Modal>
 
-	<ModalNew openText="Open modal 2">
+	<Modal openText="Open modal 2">
 		<main slot="main">
 			<p>Some extra content in dialog 2 you would like here</p>
 			<hr />
 			<Image src={logo} alt="logo" class="flex basis-full items-center py-2 object-contain"/>
 		</main>
 		<button slot="close" class="bg-red-200">Close modal</button>
-	</ModalNew>
-	
-	<!-- <Modal id="dialog" open="Open modal">
-		<main slot="main">
-				<p>Some extra content you would like here</p>
-				<hr />
-				<Image src={logo} alt="logo" class="flex basis-full items-center py-2 object-contain"/>
-		</main>
-		<button slot="close" class="bg-red-200">Close modal</button>
-	</Modal> -->
+	</Modal>
 	
 
 	<Hero title="Welcome to SmashEurope!">
