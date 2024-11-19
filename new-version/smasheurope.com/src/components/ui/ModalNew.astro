@@ -1,10 +1,10 @@
 ---
-const { id, open } = Astro.props;
+const {openText } = Astro.props;
 ---
-<astro-modal id={id}>
-  <button>{open}</button>
+<astro-modal>
+  <button>{openText}</button>
   
-  <dialog id={id} class="rounded-lg p-5">
+  <dialog class="rounded-lg p-5">
   
   <slot name="main" />
   <form method="dialog">
@@ -15,31 +15,47 @@ const { id, open } = Astro.props;
 
 
 <script>
+import { swapBodyElement } from "astro/virtual-modules/transitions-swap-functions.js";
 
   class Modal extends HTMLElement {
     connectedCallback() {
-      // const id = this.id;
       const button = this.querySelector('button');
       const dialog = this.querySelector('dialog');
+      
 
       if (dialog) {
-        dialog?.addEventListener('click', event => {
-        if (event.target === dialog) {
-          dialog.close(); 
-        }
-      });
+        dialog.addEventListener('click', event => {
+          if (event.target === dialog) {
+            dialog.close();
+          }
+        });
+
+        dialog.addEventListener('close', () => {
+          document.body.classList.remove('lock-scroll'); 
+        });
       }
       
       if (button) {
         button?.addEventListener('click', () => {
           if (dialog) {
             dialog.showModal();
+            // document.body.classList('overflow', 'hidden');
+            document.body.classList.add('lock-scroll');
           }
         });
       }
-      
     }
   }
 
   customElements.define('astro-modal', Modal);
 </script>
+
+<style is:global>
+  astro-modal dialog::backdrop {
+    overscroll-behavior: contain;
+  }
+
+  .lock-scroll {
+    overflow: hidden;
+  }
+</style>

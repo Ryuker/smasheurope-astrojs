@@ -17,9 +17,18 @@ import ModalNew from "@components/ui/ModalNew.astro";
 
 <MainLayout title="smasheurope.com">
 
-	<ModalNew id="dialog01" open="Open modal new">
+	<ModalNew openText="Open modal 1">
 		<main slot="main">
 			<p>Some extra content you would like here</p>
+			<hr />
+			<Image src={logo} alt="logo" class="flex basis-full items-center py-2 object-contain"/>
+		</main>
+		<button slot="close" class="bg-red-200">Close modal</button>
+	</ModalNew>
+
+	<ModalNew openText="Open modal 2">
+		<main slot="main">
+			<p>Some extra content in dialog 2 you would like here</p>
 			<hr />
 			<Image src={logo} alt="logo" class="flex basis-full items-center py-2 object-contain"/>
 		</main>
