@@ -49,5 +49,7 @@ modal notes:
 >
 ```
 
+format string to proper json - [link](https://jsonformatter.org/json-stringify-online) 
+
 
 

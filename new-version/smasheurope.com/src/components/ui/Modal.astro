@@ -47,7 +47,11 @@ const {
         });
 
         dialog.addEventListener('close', () => {
-          document.body.classList.remove('lock-scroll'); 
+          document.body.classList.remove('lock-scroll');
+          
+          // stop trailers from playing
+          const memory = dialog.innerHTML;
+          dialog.innerHTML = memory;
         });
       }
       
