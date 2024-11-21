@@ -3,6 +3,7 @@ import LinkButton from './LinkButton.astro';
 import EventImage from './EventImage.astro';
 import getDateFormatted from "@utils/getDateFormatted";
 import Button from './Button.astro';
+import Modal from './Modal.astro';
 const { event } = Astro.props;
 
 // Get the dates info and formatting
@@ -57,6 +58,15 @@ const datesStr = `
     <div class="grid grid-cols-3 gap-3">
       <div class="col-span-2 flex space-x-2">
         <Button icon="trailer" />
+        <Modal icon="trailer" title={`${event.title} Trailer`}>
+          <main slot="main" class="flex basis-full w-full">
+            <div class="flex justify-center w-[800px]">
+              <div class="video w-full h-full">
+                <iframe src="https://www.youtube-nocookie.com/embed/U7V9tovp_gE?si=Yjk44fe7US7tePo0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+              </div>
+            </div>
+          </main>
+        </Modal>
         <LinkButton icon="tournament" url={event.details} newTab={true} />
       </div>
       <LinkButton icon="info" url={`/events/${event.id}`} classes="justify-self-end"/>
