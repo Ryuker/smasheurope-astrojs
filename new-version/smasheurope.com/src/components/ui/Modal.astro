@@ -70,9 +70,87 @@ const {
 </script>
 
 <style is:global>
-  astro-modal dialog::backdrop {
-    background: rgba(81, 66, 66, 0.5);
+
+  astro-modal dialog {
+    /* transition: fade-out 1s allow-discrete, slide-out 1s allow-discrete; */
+    transition: display 1s allow-discrete, overlay 1s allow-discrete, opacity 1s, transform 1s;
+    transform: translate(0, -150px);
+    opacity: 0;
+    
+    animation: fade-out 0.5s forwards, slide-out 0.5s forwards;
+  
+    &[open] {
+      animation: fade-in 0.5s forwards, slide-in 0.5s forwards 0.5s;
+    }
   }
+
+  @keyframes slide-in {
+    from {
+      transform: translate(0, -150px);
+    }
+    to {
+      transform: translate(0, 0);
+    }
+  }
+
+  @keyframes slide-out {
+    from {
+      transform: translate(0, 0);
+    }
+    to {
+      transform: translate(0, -150px);
+    }
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fade-out {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+
+  /* astro-modal dialog::backdrop {
+    background: rgba(81, 66, 66, 0.5);
+    transition: opacity 1s;
+    
+    animation: fade-out 0.5s forwards;
+  }
+
+  astro-modal dialog[open]::backdrop {
+    animation: fade-in 0.5s forwards;
+  }
+
+  
+
+  /* astro-modal dialog[open]::backdrop {
+    transition:
+      display 1s allow-discrete,
+      overlay 1s allow-discrete;
+      animation: open 1s forwards;
+      /* background: rgba(81, 66, 66, 0.5); */
+  /* } */ 
+
+  /* @keyframes open {
+    from { opacity: 0 }
+    to   { opacity: 1 }
+  } */
+
+
+  /* astro-modal dialog.closed::backdrop {
+    animation: backdrop-fade 3s ease backwards;
+    animation-direction: reverse;
+  }  */
 
   .lock-scroll {
     overflow: hidden;
