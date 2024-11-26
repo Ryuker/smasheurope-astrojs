@@ -51,5 +51,7 @@ modal notes:
 
 format string to proper json - [link](https://jsonformatter.org/json-stringify-online) 
 
+modal animation - [link](https://frontendmasters.com/blog/animating-dialog/)
+
 
 
