@@ -47,9 +47,15 @@
       [v] fetch events
       [v] filter events to a pastEvents array only including events older than today
       [v] display events data 
-    [] Modal
-      - overlays over whole page with content (trailer, twitter embed etc)
-      - triggered by button click 
+    [v] Modal
+      [v] overlays over whole page with content (trailer, twitter embed etc)
+      [v] triggered by button click 
+      [v] animates in and out smoothly
+      [v] closes when clicked on (x) or outside of element
+    [] Tooltip
+      [] displays centered over buttons on hover
+      [] fades in and out
+
     [] EventFilter
       - filters events based on title
     [v] SE-Teaser
