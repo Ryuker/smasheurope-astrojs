@@ -49,10 +49,12 @@ const {
         dialog.addEventListener('close', () => {
           document.body.classList.remove('lock-scroll');
           
-          // pause for 1s
+
+          // stop trailers from playing 
+          const memory = dialog.innerHTML;
+          // pause for 1s and then refresh innerhtml
           setTimeout(() => {
-            // stop trailers from playing
-            const memory = dialog.innerHTML;
+            
             dialog.innerHTML = memory;
           }, 1000);
           
