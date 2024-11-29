@@ -35,7 +35,15 @@ import logo from "@assets/images/global/se-logo.png";
 				<div class="grid grid-cols-3">
 					<LinkButton icon="more" text="More Events" url="/events" colors="bg-se-blue-300 hover:bg-se-blue-400 text-white" 
 						classes="flex gap-2 items-center"/>
-					<Button icon="calendar" classes="justify-self-center"/> 
+					<Modal icon="calendar" title="European Tournament Calendar" 
+						dialogClasses="w-9/12" classes="justify-self-center" btnClasses="h-full">
+            <main slot="main" class="block w-full h-full">
+              <div class="relative w-full h-full p-5 pt-0">
+                <iframe src="https://teamup.com/ksbsj1366v93kqovju?showLogo=0&showSearch=1&showProfileAndInfo=0&showSidepanel=1&showTitle=0&showMenu=1&showAgendaHeader=1&showAgendaDetails=0&showYearViewHeader=1" style="height: 70vh; width: 100%; overflow-x: hidden;" frameborder="0"></iframe>
+              </div>
+              
+            </main>
+          </Modal>
 					<LinkButton icon="history" text="Past Events" url="/events/past-events" classes="flex gap-2 items-center" />
 				</div>
 			</div>
