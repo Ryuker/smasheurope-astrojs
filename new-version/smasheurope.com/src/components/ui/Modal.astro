@@ -49,9 +49,13 @@ const {
         dialog.addEventListener('close', () => {
           document.body.classList.remove('lock-scroll');
           
-          // stop trailers from playing
-          const memory = dialog.innerHTML;
-          dialog.innerHTML = memory;
+          // pause for 1s
+          setTimeout(() => {
+            // stop trailers from playing
+            const memory = dialog.innerHTML;
+            dialog.innerHTML = memory;
+          }, 1000);
+          
         });
       }
       
@@ -72,18 +76,14 @@ const {
 <style is:global>
 
   astro-modal dialog {
-    /* transition: fade-out 1s allow-discrete, slide-out 1s allow-discrete; */
-    opacity: 0;
     transform: translate(0, -150px);
 
-    transition: 
-      display 2s allow-discrete, overlay 2s allow-discrete, 
-      opacity 1s allow-discrete, transform 1s allow-discrete;
+    transition: display 1s allow-discrete, overlay 1s allow-discrete, opacity 1s;
       
-    animation: fade-out 0.5s forwards, slide-out 0.5s forwards;
+    animation: slide-out 0.2s forwards, fade-out 0.5s forwards 0.1s;
   
     &[open] {
-      animation: fade-in 0.5s forwards, slide-in 0.5s forwards 0.5s;
+      animation: fade-in 0.2s forwards, slide-in 0.3s forwards 0.1s;
     }
   }
 
@@ -123,37 +123,16 @@ const {
     }
   }
 
-  /* astro-modal dialog::backdrop {
+  astro-modal dialog::backdrop {
     background: rgba(81, 66, 66, 0.5);
     transition: opacity 1s;
     
     animation: fade-out 0.5s forwards;
-  }
+  } 
 
   astro-modal dialog[open]::backdrop {
     animation: fade-in 0.5s forwards;
   }
-
-  
-
-  /* astro-modal dialog[open]::backdrop {
-    transition:
-      display 1s allow-discrete,
-      overlay 1s allow-discrete;
-      animation: open 1s forwards;
-      /* background: rgba(81, 66, 66, 0.5); */
-  /* } */ 
-
-  /* @keyframes open {
-    from { opacity: 0 }
-    to   { opacity: 1 }
-  } */
-
-
-  /* astro-modal dialog.closed::backdrop {
-    animation: backdrop-fade 3s ease backwards;
-    animation-direction: reverse;
-  }  */
 
   .lock-scroll {
     overflow: hidden;
