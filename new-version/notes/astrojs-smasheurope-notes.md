@@ -13,6 +13,7 @@
 ## Usefull:
 - open source icons - [iconify](https://iconify.design/)
 - implementation of icons in astro - [astro icon](https://www.astroicon.dev/guides/customization/)
+- tooltip library - [floating ui](https://floating-ui.com/docs/getting-started#vanilla)
 
 **Event JSON**
 ``` JSON
