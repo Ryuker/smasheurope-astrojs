@@ -1,9 +1,12 @@
 ---
 import { Icon } from 'astro-icon/components';
+import Tooltip from './Tooltip.astro';
 const {
   openText,
   title,
   icon, 
+  buttonId,
+  tooltipText = '',
   btnClasses = " ",
   dialogClasses = " ",
   classes = " ",
@@ -11,10 +14,15 @@ const {
 } = Astro.props;
 ---
 <astro-modal class={`${classes}`}>
-  <button class={`${btnClasses} ${colors} w-full md:w-inherit px-4 md:px-6 py-3 min-w-20 rounded-lg flex justify-center items-center`}>
+  <button id={`btn-${buttonId}`} aria-describedby="tooltip" 
+    class={`${btnClasses} ${colors} w-full md:w-inherit px-4 md:px-6 py-3 min-w-20 rounded-lg flex justify-center items-center`}>
     {icon && <Icon name={icon} class="text-lg" /> }
     {openText && openText}
   </button>
+
+  { tooltipText && 
+    <Tooltip text={tooltipText} buttonId={`btn-${buttonId}`} />
+  }
   
   <dialog class={`${dialogClasses + " "}rounded-lg p-0`}>
     <div class="flex flex-col h-full">
