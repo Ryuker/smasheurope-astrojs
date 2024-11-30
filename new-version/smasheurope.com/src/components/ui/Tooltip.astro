@@ -1,0 +1,120 @@
+---
+const {
+  text,
+  buttonId
+} = Astro.props;
+---
+
+
+<astro-tooltip data-buttonid={buttonId}>
+  <div id="tooltip" role="tooltip">
+    {text}
+    <div id="arrow"></div>
+  </div>
+</astro-tooltip>
+
+<style is:global>
+  astro-tooltip {
+    position: absolute;
+  }
+
+  astro-tooltip #tooltip {
+    display: none;
+    width: max-content;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #222;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 90%;
+  }
+
+  astro-tooltip #arrow {
+    position: absolute;
+    background: #222;
+    width: 8px;
+    height: 8px;
+    transform: rotate(45deg);
+  }
+</style>
+
+<script>
+  import { computePosition, flip, shift, offset, arrow } from '@floating-ui/dom';
+
+  class Tooltip extends HTMLElement {
+    connectedCallback() {
+      const buttonId = this.dataset.buttonid;
+      const button = document.querySelector(`#${buttonId}`);
+
+      const tooltip = this.querySelector('#tooltip');
+      const arrowElement = this.querySelector('#arrow');
+
+      function update() {
+        if (tooltip && button && arrowElement) {
+          computePosition(button, tooltip, {
+            placement: 'bottom',
+            middleware: [ 
+              offset(8), 
+              flip(), 
+              shift({padding: 5}),
+              arrow({element: arrowElement})
+            ],
+          }).then(({x, y, placement, middlewareData}) => {
+            Object.assign(tooltip.style, {
+              left: `${x}px`,
+              top: `${y}px`,
+            });
+            
+            // Accessing the data
+            const { x: arrowX, y: arrowY} = middlewareData.arrow;
+
+            const staticSide = {
+              top: 'bottom',
+              right: 'left',
+              bottom: 'top',
+              left: 'right',
+            }[placement.split('-')[0]];
+          
+            Object.assign(arrowElement.style, {
+              left: arrowX != null ? `${arrowX}px` : '',
+              top: arrowY != null ? `${arrowY}px` : '',
+              right: '',
+              bottom: '',
+              [staticSide]: '-4px',
+            });
+          });
+        }
+      }
+
+      function showTooltip() {
+        console.log(this.style.display);
+        tooltip.style.display = 'block';
+        update();
+      }
+
+      function hideTooltip() {
+        tooltip.style.display = '';
+      }
+
+      [
+        ['mouseenter', showTooltip],
+        ['mouseleave', hideTooltip],
+        ['focus', showTooltip],
+        ['blur', hideTooltip],
+      ].forEach(([event, listener]) => {
+        button.addEventListener(event, listener);
+      });
+
+    }
+  }
+
+  customElements.define('astro-tooltip', Tooltip);
+  
+</script>
+
+
+
+
