@@ -78,9 +78,11 @@ const datesStr = `
           </Modal>
         }
         
-        <LinkButton icon="tournament" url={event.details} newTab={true} />
+        <LinkButton icon="tournament" url={event.details} newTab={true}
+          id={`${event.slug}-details`} tooltipText="Event Details" />
       </div>
-      <LinkButton icon="info" url={`/events/${event.id}`} classes="justify-self-end"/>
+      <LinkButton icon="info" url={`/events/${event.id}`} classes="justify-self-end"
+        id={`${event.slug}-info`} tooltipText="View Event Page"/>
     </div>
   </div>
 </div>
