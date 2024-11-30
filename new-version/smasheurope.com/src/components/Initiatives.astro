@@ -32,7 +32,8 @@ import Modal from './ui/Modal.astro';
       <Fragment slot="buttons">
         <div class="flex md:space-x-4 flex-wrap w-full gap-3 md:gap-0 justify-between">
           <!-- <Button icon="trailer" classes="basis-[36%] md:basis-auto md:grow"/> -->
-          <Modal icon="trailer" title="S.A.M.E Circuit 2021 Trailer" classes="basis-[36%] md:basis-auto md:grow">
+          <Modal icon="trailer" title="S.A.M.E Circuit 2021 Trailer" classes="basis-[36%] md:basis-auto md:grow"
+            buttonId={'same-trailer'} tooltipText={`Watch Trailer`}>
             <main slot="main" class="flex basis-full w-full">
               <div class="flex justify-center w-[800px]">
                 <div class="video w-full h-full">
@@ -41,10 +42,11 @@ import Modal from './ui/Modal.astro';
               </div>
             </main>
           </Modal>
-          <LinkButton icon="tournament" url="https://smash.gg/SAMEcircuit" newTab={true} classes="basis-[20 md:basis-auto grow"/>
-          <LinkButton icon="discord" url="https://discord.gg/zBr4Ce33mC" newTab={true} classes="basis-[36%] md:basis-auto md:grow"/>
-          <LinkButton icon="trophy" url="https://www.start.gg/tournament/same-finale-2021/details" newTab={true} classes="basis-[48%] md:basis-auto grow"/>
-          <LinkButton icon="heart" url="https://youtu.be/fmBuDu3YlD4" newTab={true} classes="basis-[48%] md:basis-auto grow"/>
+          <LinkButton icon="tournament" url="https://smash.gg/SAMEcircuit" newTab={true} classes="basis-[20 md:basis-auto grow" id="same-details" tooltipText="Circuit Details" />
+          <LinkButton icon="discord" url="https://discord.gg/zBr4Ce33mC" newTab={true} classes="basis-[36%] md:basis-auto md:grow" id="same-discord" tooltipText="Discord" />
+          <LinkButton icon="trophy" url="https://www.start.gg/tournament/same-finale-2021/details" newTab={true} classes="basis-[48%] md:basis-auto grow" id="same-finale" tooltipText="Finale" />
+          <LinkButton icon="heart" url="https://youtu.be/fmBuDu3YlD4" newTab={true} classes="basis-[48%] md:basis-auto grow" 
+            id="same-credits" tooltipText="Credits Compilation" />
         </div>
       </Fragment>
     </InitiativeCard>
@@ -58,7 +60,8 @@ import Modal from './ui/Modal.astro';
       <Fragment slot="buttons">
         <div class="flex space-x-4 w-full">
           <Modal icon="trailer" title="European Smash Circuit Trailer" 
-            classes="min-w-28 basis-1/2 md:basis-auto">
+            classes="min-w-28 basis-1/2 md:basis-auto"
+            buttonId={'esc-trailer'} tooltipText={`Watch Trailer`}>
             <main slot="main" class="flex basis-full w-full">
               <div class="flex justify-center w-[800px]">
                 <div class="video w-full h-full">
@@ -67,7 +70,7 @@ import Modal from './ui/Modal.astro';
               </div>
             </main>
           </Modal>
-          <LinkButton icon="info" url="https://liquipedia.net/smash/European_Smash_Circuit_2015" newTab={true} classes="min-w-28 basis-1/2 md:basis-auto"/>
+          <LinkButton icon="info" url="https://liquipedia.net/smash/European_Smash_Circuit_2015" newTab={true} classes="min-w-28 basis-1/2 md:basis-auto" id="esc-details" tooltipText="Circuit Details" />
         </div>
       </Fragment>
     </InitiativeCard>
