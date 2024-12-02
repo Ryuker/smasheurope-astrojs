@@ -16,6 +16,7 @@ export default {
 				'se-blue': {
 					50: '#f9fbfd',
 					100: '#edf2f9', 
+					150: '#e0e7f2', 
 					200: '#d0ddef',
 					300: '#6e84a3',
 					400: '#5b7190'

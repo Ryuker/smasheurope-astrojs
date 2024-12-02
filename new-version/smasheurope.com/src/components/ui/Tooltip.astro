@@ -7,9 +7,9 @@ const {
 
 
 <astro-tooltip data-buttonid={buttonId}>
-  <div id="tooltip" role="tooltip">
+  <div id="tooltip" role="tooltip" class="text-xs text-se-blue-500 bg-se-blue-150">
     {text}
-    <div id="arrow"></div>
+    <div id="arrow" class="bg-se-blue-150"></div>
   </div>
 </astro-tooltip>
 
@@ -24,17 +24,17 @@ const {
     position: absolute;
     top: 0;
     left: 0;
-    background: #222;
-    color: white;
-    font-weight: bold;
+    /* background: #e0e7f2; */
+    /* background: #222; */
+    /* color: white; */
+    /* font-weight: bold; */
     padding: 5px;
     border-radius: 4px;
-    font-size: 90%;
+    /* font-size: 90%; */
   }
 
   astro-tooltip #arrow {
     position: absolute;
-    background: #222;
     width: 8px;
     height: 8px;
     transform: rotate(45deg);
