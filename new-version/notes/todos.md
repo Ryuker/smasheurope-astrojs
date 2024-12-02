@@ -52,9 +52,9 @@
       [v] triggered by button click 
       [v] animates in and out smoothly
       [v] closes when clicked on (x) or outside of element
-    [] Tooltip
-      [] displays centered over buttons on hover
-      [] fades in and out
+    [v] Tooltip
+      [v] displays centered over buttons on hover
+      [v] fades in and out
 
     [] EventFilter
       - filters events based on title
