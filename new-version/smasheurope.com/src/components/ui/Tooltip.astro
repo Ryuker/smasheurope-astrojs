@@ -7,7 +7,7 @@ const {
 
 
 <astro-tooltip data-buttonid={buttonId}>
-  <div id="tooltip" role="tooltip" class="text-xs text-se-blue-500 bg-se-blue-150">
+  <div id="tooltip" role="tooltip" class="hide text-xs text-se-blue-500 bg-se-blue-150">
     {text}
     <div id="arrow" class="bg-se-blue-150"></div>
   </div>
@@ -19,9 +19,9 @@ const {
   }
 
   astro-tooltip #tooltip {
-    display: none;
     width: max-content;
     position: absolute;
+    
     top: 0;
     left: 0;
     /* background: #e0e7f2; */
@@ -31,6 +31,7 @@ const {
     padding: 5px 8px;
     border-radius: 4px;
     /* font-size: 90%; */
+    animation: fade-in 0.5s forwards;
   }
 
   astro-tooltip #arrow {
@@ -38,6 +39,14 @@ const {
     width: 8px;
     height: 8px;
     transform: rotate(45deg);
+    
+    animation: fade-in 0.2s forwards;
+  }
+
+  astro-tooltip #tooltip.hide {
+    transition: display 0.2s allow-discrete;
+    animation: fade-out 0.2s forwards;
+    display: none;
   }
 </style>
 
@@ -90,12 +99,13 @@ const {
       }
 
       function showTooltip() {
-        console.log(this.style.display);
+        tooltip.classList.remove('hide');
         tooltip.style.display = 'block';
         update();
       }
 
       function hideTooltip() {
+        tooltip.classList.add('hide');
         tooltip.style.display = '';
       }
 
