@@ -36,9 +36,10 @@
       [] skeleton
       [] styling
     [v] Hero
-    [] VideoEmbedded
-      [] Embed Video
-      [] styling
+    [v] TeaserVideo
+      [v] Embed Video
+      [v] styling
+        [v] responsiveness
     [v] Upcoming Events
       [v] fetch events
       [v] filter events to an upcomingEvents array only including events newer or equeal to today
@@ -58,7 +59,7 @@
 
     [v] EventFilter
       [v] filters events based text in title
-      
+
     [v] SE-Teaser
     [v] Initiatives
     [v] Footer
