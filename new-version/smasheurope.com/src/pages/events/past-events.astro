@@ -4,6 +4,7 @@ import MainLayout from "@layouts/MainLayout.astro";
 import PastEvents from "@components/PastEvents.astro";
 import Button from "@components/ui/Button.astro";
 import LinkButton from "@components/ui/LinkButton.astro";
+import EventsFilter from "@components/EventsFilter.astro";
 ---
 
 <MainLayout title="Past Events">
@@ -18,6 +19,7 @@ import LinkButton from "@components/ui/LinkButton.astro";
 		</div>
 		
 	</section>
+	<EventsFilter />
   <PastEvents />
   <section>
 		<div class="container mx-auto max-w-6xl my-10 space-y-8">

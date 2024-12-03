@@ -1,10 +1,12 @@
 ---
 import MainLayout from "@layouts/MainLayout.astro";
 import UpcomingEvents from "@components/UpcomingEvents.astro";
+import EventsFilter from "@components/EventsFilter.astro";
 ---
 
 <MainLayout title="Events">
   <h1>Events Page Displaying Upcoming Events</h1>
+  <EventsFilter />
   <UpcomingEvents />
   <p>- displays events in a grid</p>
   <p>- has buttons to navigate to past-events page</p>
