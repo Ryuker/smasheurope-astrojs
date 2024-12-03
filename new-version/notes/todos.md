@@ -56,8 +56,9 @@
       [v] displays centered over buttons on hover
       [v] fades in and out
 
-    [] EventFilter
-      - filters events based on title
+    [v] EventFilter
+      [v] filters events based text in title
+      
     [v] SE-Teaser
     [v] Initiatives
     [v] Footer
