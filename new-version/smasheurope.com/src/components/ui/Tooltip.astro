@@ -24,14 +24,8 @@ const {
     
     top: 0;
     left: 0;
-    /* background: #e0e7f2; */
-    /* background: #222; */
-    /* color: white; */
-    /* font-weight: bold; */
     padding: 5px 8px;
     border-radius: 4px;
-    /* font-size: 90%; */
-    animation: fade-in 0.5s forwards;
   }
 
   astro-tooltip #arrow {
@@ -39,14 +33,16 @@ const {
     width: 8px;
     height: 8px;
     transform: rotate(45deg);
-    
-    animation: fade-in 0.2s forwards;
   }
 
   astro-tooltip #tooltip.hide {
     transition: display 0.2s allow-discrete;
     animation: fade-out 0.2s forwards;
     display: none;
+  }
+
+  astro-tooltip #tooltip.show {
+    animation: fade-in 0.2s forwards;
   }
 </style>
 
@@ -100,11 +96,13 @@ const {
 
       function showTooltip() {
         tooltip.classList.remove('hide');
-        tooltip.style.display = 'block';
+        tooltip.classList.add('show');
+        // tooltip.style.display = 'block';
         update();
       }
 
       function hideTooltip() {
+        tooltip.classList.remove('show');
         tooltip.classList.add('hide');
       }
 
