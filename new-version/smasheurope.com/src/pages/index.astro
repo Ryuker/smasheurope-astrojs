@@ -4,6 +4,7 @@ import MainLayout from "@layouts/MainLayout.astro";
 import RepeatedLayout from "@layouts/RepeatedLayout.astro";
 // components
 import Hero from "@components/Hero.astro";
+import EventsFilter from "@components/EventsFilter.astro";
 import UpcomingEvents from "@components/UpcomingEvents.astro";
 import Button from "@components/ui/Button.astro";
 import LinkButton from "@components/ui/LinkButton.astro";
@@ -27,6 +28,7 @@ import logo from "@assets/images/global/se-logo.png";
 
 		<p class="text-se-dark">—The SmashEurope Development Team</p>
 	</Hero>
+	<EventsFilter />
 	<UpcomingEvents limit="4"/>
 	<section>
 		<div class="container mx-auto max-w-6xl my-10 space-y-8">
