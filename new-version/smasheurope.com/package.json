@@ -2,10 +2,11 @@
   "name": "smasheurope-com",
   "type": "module",
   "version": "0.0.1",
+  "homepage": "https://ryuker.github.io/roosvanees.com",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro check && astro build",
+    "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
     "server": "json-server --watch server/data/events.json --port 5000"

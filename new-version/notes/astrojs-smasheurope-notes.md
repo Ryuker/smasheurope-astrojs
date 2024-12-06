@@ -55,4 +55,14 @@ format string to proper json - [link](https://jsonformatter.org/json-stringify-o
 modal animation - [link](https://frontendmasters.com/blog/animating-dialog/)
 
 
+## SSG MODE Steps:
+- set STATIC_MODE to true in .env file in the root
+  - this is used to modify the urls to go to the right endpoint
+
+- change `output` to static in `astro.config.mjs`
+
+- api endpoints need .json in the file name to indicate the proper type
+  - in SSR mode this need to be removed
+
+
 

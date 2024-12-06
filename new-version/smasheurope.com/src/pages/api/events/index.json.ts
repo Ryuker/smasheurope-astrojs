@@ -1,5 +1,6 @@
 import type { APIRoute } from "astro"
 
+
 // Get all events handler, returns all events from the api_endpoint
 export const GET: APIRoute = async ({ params, request }) => {
   console.log('Get request received');
@@ -39,3 +40,25 @@ export const POST: APIRoute = async ({ params, request }) => {
 
   return new Response(dataStr);
 }
+
+// for static version only
+export async function getStaticPaths() {
+  if (!import.meta.env.STATIC_MODE){
+    return [];
+  }
+  
+  // Fetch the data from the external API
+  const api_endpoint = 'http://localhost:5000/events';
+  const uri = `${api_endpoint}`;
+  const response = await fetch(uri);
+  const eventsData = await response.json();
+
+  const data = eventsData;
+
+  return data.flatMap(event => {
+    return [
+      { params: { eventId: event.id } },
+    ]
+  });
+}
+

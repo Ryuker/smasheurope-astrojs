@@ -2,19 +2,47 @@
 import EventCard from "@components/ui/EventCard.astro";
 import MainLayout from "@layouts/MainLayout.astro";
 import getDateFormatted from "@utils/getDateFormatted.js";
-import { responseSentSymbol } from "node_modules/astro/dist/core/constants";
 
 const { eventId } = Astro.params;
 
-const api_url = new URL(`/api/events/${eventId}`, Astro.url);
+export async function getStaticPaths(){
+  if (!import.meta.env.STATIC_MODE){
+    return [];
+  }
+  const api_endpoint = 'http://localhost:5000/events';
+  const uri = `${api_endpoint}`;
+  const response = await fetch(uri);
+  const eventsData = await response.json();
 
-const response = await fetch(api_url);
+  return eventsData.flatMap(event => {
+    return [
+      { params: { eventId: event.id }, props:{ event } }
+    ]
+  });
+}
 
-// redirect if we recieved a 404 error from api
-if (response.status === 404) return Astro.redirect('/404', 404);
+const { event: staticEvent } = Astro.props;
+let event;
 
-const data = await response.json();
-const event = data;
+// we're in SSR mode, fetch data dynamically
+if (!staticEvent){
+  console.log('id:', eventId);
+  const api_url = new URL(`/api/events/${eventId}`, Astro.url);
+  const response = await fetch(api_url);
+
+  // redirect if we recieved a 404 error from api
+  if (response.status === 404) return Astro.redirect('/404', 404);
+
+  const data = await response.json();
+
+  event = data;
+
+  console.log('event:', event.title);
+}
+
+staticEvent ? event = staticEvent : '';
+
+console.log(event);
 
 // Get the dates info and formatting
 const startDate = new Date(event.dates[0]);
