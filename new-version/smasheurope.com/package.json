@@ -4,11 +4,12 @@
   "version": "0.0.1",
   "homepage": "https://ryuker.github.io/smasheurope-astrojs.com",
   "scripts": {
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d dist",
+    "deploy" : "gh-pages -d ./",
+    "help": "gh-pages --help",
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build",
+    "build": "astro build astro build --base=/your-project-name/",
+    "build:gh-pages": "astro build --base=/your-project-name/",
     "preview": "astro preview",
     "astro": "astro",
     "server": "json-server --watch server/data/events.json --port 5000"
