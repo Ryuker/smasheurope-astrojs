@@ -18,13 +18,13 @@ export default defineConfig({
       }
     })
   ],
-  output: 'server',
-  // output: 'static',
-  // site: 'https://ryuker.github.io',
-  // outDir: './dist/docs',
+  // output: 'server',
+  output: 'static',
+  site: 'https://ryuker.github.io',
+  outDir: './dist/docs',
   build: {
-    // assets: 'astro',
-    // assetsPrefix: './'
+    assets: 'astro',
+    assetsPrefix: './'
   },
-  //  trailingSlash: 'always'
+   trailingSlash: 'always'
 });
