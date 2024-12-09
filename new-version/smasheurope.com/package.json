@@ -3,13 +3,21 @@
   "type": "module",
   "version": "0.0.1",
   "homepage": "https://ryuker.github.io/smasheurope-astrojs.com",
+  "standard": {
+    "ignore": [ 
+      "node_modules",
+      ".astro",
+      ".env"
+    ]
+  },
   "scripts": {
-    "deploy" : "gh-pages -d ./",
+    "predeploy" : "npm run build:gh-pages",
+    "deploy" : "gh-pages -d dist",
     "help": "gh-pages --help",
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build astro build --base=/your-project-name/",
-    "build:gh-pages": "astro build --base=/your-project-name/",
+    "build:gh-pages": "astro build --base=/smasheurope-astrojs/",
     "preview": "astro preview",
     "astro": "astro",
     "server": "json-server --watch server/data/events.json --port 5000"

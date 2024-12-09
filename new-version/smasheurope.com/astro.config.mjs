@@ -21,6 +21,7 @@ export default defineConfig({
   // output: 'server',
   output: 'static',
   site: 'https://ryuker.github.io/',
+  base: '/smasheurope-astrojs/',
   outDir: './dist/docs',
   build: {
     assets: 'astro',
