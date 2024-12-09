@@ -3,13 +3,6 @@
   "type": "module",
   "version": "0.0.1",
   "homepage": "https://ryuker.github.io/smasheurope-astrojs.com",
-  "standard": {
-    "ignore": [
-      "node_modules",
-      ".astro",
-      ".env"
-    ]
-  },
   "scripts": {
     "predeploy": "npm run build:gh-pages",
     "deploy": "gh-pages -d dist",
