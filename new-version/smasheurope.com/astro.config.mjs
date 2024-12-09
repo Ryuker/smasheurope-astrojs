@@ -7,9 +7,13 @@ import vue from '@astrojs/vue';
 
 import icon from 'astro-icon';
 
+import relativeLinks from 'astro-relative-links';
+
+// const url = 'https://github.com/Ryuker/smasheurope-astrojs/docs/';
+
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), vue(), 
+  integrations: [tailwind(), vue(), relativeLinks(),
     icon({
       iconDir: "src/assets/icons",
       include: {
@@ -21,11 +25,11 @@ export default defineConfig({
   // output: 'server',
   output: 'static',
   site: 'https://ryuker.github.io/',
-  base: '/smasheurope-astrojs/',
-  outDir: './dist/docs',
+  // base: '/smasheurope-astrojs/',
+  outDir: './dist/docs/',
   build: {
     assets: 'astro',
-    assetsPrefix: './'
+    // assetsPrefix: url
   },
-   trailingSlash: 'ignore'
+  //  trailingSlash: 'ignore'
 });

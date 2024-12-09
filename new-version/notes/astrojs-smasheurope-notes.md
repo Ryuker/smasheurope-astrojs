@@ -65,4 +65,7 @@ modal animation - [link](https://frontendmasters.com/blog/animating-dialog/)
   - in SSR mode this need to be removed
 
 
+## Supporting relative links
+- done through a package - [astro-relative-links](https://www.npmjs.com/package/astro-relative-links)
+
 
