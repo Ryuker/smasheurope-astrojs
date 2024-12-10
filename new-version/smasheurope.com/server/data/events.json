@@ -8,7 +8,7 @@
       "description": "The UK's premier melee tournament, Fête, returns and is bigger than ever!",
       "dates": [
         "2023-07-14T00:00:00.000Z",
-        "2023-07-16T23:59:00.000Z"
+        "2023-07-16T20:00:00.000Z"
       ],
       "location": {
         "municipality": "Camber",
@@ -26,7 +26,7 @@
       "description": "The premier UK Smash Ultimate tournament is back, this time for 3 DAYS!",
       "dates": [
         "2023-08-18T00:00:00.000Z",
-        "2023-08-20T23:59:00.000Z"
+        "2023-08-20T20:00:00.000Z"
       ],
       "location": {
         "municipality": "Birmingham",
@@ -44,7 +44,7 @@
       "description": "Europe's very first Super Major with room for 1000+ attendees feat. various top international players.",
       "dates": [
         "2023-09-01T00:00:00.000Z",
-        "2023-09-03T23:59:00.000Z"
+        "2023-09-03T20:00:00.000Z"
       ],
       "location": {
         "municipality": "Paris",
@@ -62,7 +62,7 @@
       "description": "Spain's well established Smash Bros. Ultimate Major in Barcelona returns with its 7th edition featuring a capacity of 600+ players.",
       "dates": [
         "2023-11-03T00:00:00.000Z",
-        "2023-11-05T23:59:00.000Z"
+        "2023-11-05T20:00:00.000Z"
       ],
       "location": {
         "municipality": "Barcelona",
@@ -80,7 +80,7 @@
       "description": "Arcamelee is fruits of a strong partnership between the local Melee community and the Arcaneum gaming bar. Some of the greatest players from around the world like Cody Schwab and moky will be attending this edition. There's a cap op 256 players.",
       "dates": [
         "2023-11-18T00:00:00.000Z",
-        "2023-11-19T23:59:00.000Z"
+        "2023-11-19T20:00:00.000Z"
       ],
       "location": {
         "municipality": "Lyon",
@@ -98,7 +98,7 @@
       "description": "Since 2017 Vienna Challengers Arena has been a big part of VIECC© Vienna Comic Con and its Super Smash Bros competitions established itself as one of the biggest tournaments in the German-speaking region! This year's edition has a capacity for 512 Smash Bros. Ultimate participants. Partcipation includes access to the entire Vienna Comic Con.",
       "dates": [
         "2023-11-18T00:00:00.000Z",
-        "2023-11-19T23:59:00.000Z"
+        "2023-11-19T20:00:00.000Z"
       ],
       "location": {
         "municipality": "Vienna",
@@ -116,7 +116,7 @@
       "description": "One of the most prestigious fighting game events in the world makes it return with another 3 day event featuring Smash Bros. Ultimate and various other Fighting games.",
       "dates": [
         "2023-11-24T00:00:00.000Z",
-        "2023-11-26T23:59:00.000Z"
+        "2023-11-26T20:00:00.000Z"
       ],
       "location": {
         "municipality": "Paris",
@@ -134,7 +134,7 @@
       "description": "The Cicadas Gaming in collaboration with the city of Hyères and all the T.Os of the south-east region of France offer you the very first Smash Bros. Ultimate Major of the region!",
       "dates": [
         "2023-12-02T00:00:00.000Z",
-        "2023-12-03T23:59:00.000Z"
+        "2023-12-03T20:00:00.000Z"
       ],
       "location": {
         "municipality": "Hyères",
@@ -143,6 +143,60 @@
       "details": "https://www.start.gg/tournament/sunrise-2023/details",
       "embedCode": "<blockquote class=\"twitter-tweet\"><p lang=\"fr\" dir=\"ltr\">L&#39;heure d&#39;enfin venir dans le sud !<br><br>On vous tiens au courant sur <a href=\"https://twitter.com/Sunrise_Lan?ref_src=twsrc%5Etfw\">@Sunrise_Lan</a> 👀 <a href=\"https://t.co/t2wnvx6mJA\">pic.twitter.com/t2wnvx6mJA</a></p>&mdash; CICADAS Gaming (@CicadasGaming) <a href=\"https://twitter.com/CicadasGaming/status/1680211709049421824?ref_src=twsrc%5Etfw\">July 15, 2023</a></blockquote> <script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>",
       "slug": "sunrise-2023"
+    },
+    {
+      "id": "1b25",
+      "banner": "Valhalla4/valhalla_4-banner-se.png",
+      "title": "Valhalla IV",
+      "games": "Melee | Ultimate",
+      "description": "By joining forces with PXB, Scandinavia's most exciting Smash tournament makes a return at the Nørrebrohalle with a 4 day event that offers Singles and Doubles competitions for Melee and Ultimate and various FGC side events. There's room for 512 players.",
+      "dates": [
+        "2024-01-01T00:00:00.000Z",
+        "2024-04-04T20:00:00.000Z"
+      ],
+      "location": {
+        "municipality": "Copenhagen",
+        "country": "Denmark"
+      },
+      "details": "https://www.start.gg/tournament/valhalla-iv/details",
+      "embedCode": "<blockquote class=\"twitter-tweet\" data-media-max-width=\"560\"><p lang=\"en\" dir=\"ltr\">Valhalla IV takes place on February 1st-4th, 2023!<br>Check out our official trailer below! 👇<a href=\"https://t.co/a55eAjOcBe\">https://t.co/a55eAjOcBe</a> <a href=\"https://t.co/EIPYthLGcg\">pic.twitter.com/EIPYthLGcg</a></p>&mdash; Valhalla Events (@ValhallaSeries) <a href=\"https://twitter.com/ValhallaSeries/status/1742248998361268337?ref_src=twsrc%5Etfw\">January 2, 2024</a></blockquote> <script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>",
+      "slug": "valhalla-4"
+    },
+    {
+      "id": "cb9f",
+      "banner": "KC2024/king_con_2024-banner-se.png",
+      "title": "King Con",
+      "games": "Ultimate",
+      "description": "With 3 floors and a capacity for 1024 players King Con is looking to bring all of the biggest names in Europe under one roof for a one-of-a-kind experience that's never been seen before in partnership with Villette eSport Festival. Competitions: 1 vs 1, 2 vs 2 and Squad Strike.",
+      "dates": [
+        "2024-02-24T00:00:00.000Z",
+        "2024-02-25T20:00:00.000Z"
+      ],
+      "location": {
+        "municipality": "Paris",
+        "country": "France"
+      },
+      "details": "https://www.start.gg/tournament/king-con/details",
+      "trailerUrl": "https://www.youtube-nocookie.com/embed/1T0_6XV05dc?si=oCCEJ43qc8ZNuQAo",
+      "slug": "king-con"
+    },
+    {
+      "id": "14b7",
+      "banner": "GC2024/gc_2024-banner-se.png",
+      "title": "Grand Conquest 2024",
+      "games": "Ultimate",
+      "description": "StreetSmash Manchester(SSM) are highly experienced organisers of Smash Bros. events, having organised events in the North West of England since 2015. They bring you a 2 day Ultimate major with a capacity for 256 players, singles / doubles competitions, a Chaos Bracket and venue pub quiz(18+).",
+      "dates": [
+        "2024-02-02T00:00:00.000Z",
+        "2024-02-03T20:00:00.000Z"
+      ],
+      "location": {
+        "municipality": "Manchester",
+        "country": "England"
+      },
+      "details": "https://www.start.gg/tournament/grand-conquest-2024/",
+      "trailerUrl": "https://www.youtube-nocookie.com/embed/6qtc73oNB8c?si=n7zr_U-yeRNPLWY2",
+      "slug": "gc-2024"
     }
   ]
 }
