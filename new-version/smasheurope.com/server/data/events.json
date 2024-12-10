@@ -215,6 +215,42 @@
       "details": "https://www.start.gg/tournament/somnio-5",
       "embedCode": "<blockquote class=\"twitter-tweet\" data-media-max-width=\"560\"><p lang=\"en\" dir=\"ltr\">Somnio 5 🌗<br><br>🗓06 04 2024<br>🚩Eindhoven <a href=\"https://t.co/nXWDSb7anY\">https://t.co/nXWDSb7anY</a> <br><br>More information on the <a href=\"https://t.co/bBof6GAlo5\">https://t.co/bBof6GAlo5</a>! We hope to see you there, grab those early bird tickets 👀 <a href=\"https://t.co/994Ln4vr9T\">pic.twitter.com/994Ln4vr9T</a></p>&mdash; Somnio (@SomnioEvents) <a href=\"https://twitter.com/SomnioEvents/status/1754185225037299770?ref_src=twsrc%5Etfw\">February 4, 2024</a></blockquote> <script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>",
       "slug": "somnio-v"
+    },
+    {
+      "id": "7e14",
+      "banner": "Invasion2024/invasion_2024-banner-se.jpg",
+      "title": "Invasion 2024",
+      "games": "Ultimate | Melee",
+      "description": "Europe's premier Spring major returns for 2 days with competitions for Ultimate and Melee, a total capacity for 512 players, an all Bo5 singles bracket and many social events. Some staff of Fête is involved with running the Melee portion while Ultimate is ran by Team Regen.",
+      "dates": [
+        "2024-04-13T00:00:00.000Z",
+        "2024-04-14T20:00:00.000Z"
+      ],
+      "location": {
+        "municipality": "Birmingham",
+        "country": "England"
+      },
+      "details": "https://www.start.gg/tournament/invasion-2024/",
+      "trailerUrl": "https://www.youtube-nocookie.com/embed/QTMq-ck8pb4?si=8j36xC6sP9uI_KJM",
+      "slug": "invasion-2024"
+    },
+    {
+      "id": "5096",
+      "banner": "NRWCUP2024/nrw_cup_2024-banner-se.png",
+      "title": "NRW CUP - Rise of Germany",
+      "games": "Ultimate | Melee",
+      "description": "NRW CUP scales up significantly with room for 400 attendees for Ultimate and 64 for Melee, offering 100 setups for Ultimate and over 20 setups for Melee all taking place in 1000 m2 of space.",
+      "dates": [
+        "2024-04-20T00:00:00.000Z",
+        "2024-04-21T20:00:00.000Z"
+      ],
+      "location": {
+        "municipality": "Dortmund",
+        "country": "Germany"
+      },
+      "details": "https://www.start.gg/tournament/nrw-cup-rise-of-germany/",
+      "trailerUrl": "https://www.youtube-nocookie.com/embed/Kz4YAbL0SUE?si=3DxPOBmBo8p8ddjj",
+      "slug": "invasion-2024"
     }
   ]
 }
