@@ -15,7 +15,12 @@ export const GET: APIRoute = async ({ params, request }) => {
 
   const dataStr = JSON.stringify(data);
 
-  return new Response(dataStr);
+  return new Response(dataStr, {
+    status: 200,
+    headers: {
+      "Content-Type": "application/json"
+    }
+  });
 }
 
 // Post new event, adds the new event to the api_endpoint and returns the new event that created
@@ -38,7 +43,12 @@ export const POST: APIRoute = async ({ params, request }) => {
 
   const dataStr = JSON.stringify(data);
 
-  return new Response(dataStr);
+  return new Response(dataStr, {
+    status: 200,
+    headers: {
+      "Content-Type": "application/json"
+    }
+  });
 }
 
 // for static version only

@@ -23,7 +23,12 @@ export const GET: APIRoute = async ({ params, request }) => {
 
   const dataStr = JSON.stringify(data);
 
-  return new Response(dataStr);
+  return new Response(dataStr, {
+    status: 200,
+    headers: {
+      "Content-Type": "application/json"
+    }
+  });
 }
 
 // PUT event handler, updates an event by ID at api_endpoint and returns the updated event
@@ -50,7 +55,13 @@ export const PUT: APIRoute = async ({ params, request }) => {
 
   const dataStr = JSON.stringify(data);
 
-  return new Response(dataStr);
+  return new Response(dataStr, {
+      status: 200,
+      headers: {
+        "Content-Type": "application/json"
+      }
+    }
+  );
 
 }
 
@@ -72,7 +83,12 @@ export const DELETE: APIRoute = async ({ params, request }) => {
 
   const dataStr = JSON.stringify(data);
 
-  return new Response(dataStr);
+  return new Response(dataStr, {
+    status: 200,
+    headers: {
+      "Content-Type": "application/json"
+    }
+  });
 }
 
 // for static version only
