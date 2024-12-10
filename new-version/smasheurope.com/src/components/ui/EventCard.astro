@@ -19,8 +19,6 @@ const datesStr = `
     ${dates.startDate.month} ${dates.startDate.day}${dates.startDate.suffix}
     ${dates.endDate.day !== dates.startDate.day ? "- "+ dates.endDate.day + dates.endDate.suffix : ''}
     ${dates.endDate.month !== dates.startDate.month ? dates.endDate.month : ''}`
-
-console.log(datesStr);
 ---
 <div class="bg-white h-full rounded-lg p-8 shadow-md" data-event>
   <div class="flex min-h-full flex-col justify-start">
