@@ -66,8 +66,9 @@
     
     [v] UI:
       [v] EventCard
-        [] display event title
-        [] display other event data
+        [v] display event title
+        [v] display other event data
+        [] display highlights/aftermovie video button (conditionally)
       [v] EventImage
         [v] dynamically import images using `import.meta.glob`
         [v] render with Image component
