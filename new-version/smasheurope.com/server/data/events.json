@@ -251,6 +251,130 @@
       "details": "https://www.start.gg/tournament/nrw-cup-rise-of-germany/",
       "trailerUrl": "https://www.youtube-nocookie.com/embed/Kz4YAbL0SUE?si=3DxPOBmBo8p8ddjj",
       "slug": "invasion-2024"
+    },
+    {
+      "id": "1f38",
+      "banner": "SBS/sbs-banner-se.png",
+      "title": "Smashborg: Siege",
+      "games": "Ultimate | Melee | Smash 64 | Brawl",
+      "description": "Smashborg: Siege here to further unite the Nordic scene and strengthen its presence in Europe! It's likely to be Norway's biggest Summer tournament this year with competitions for 4 Smash games. There's capacity for 544 players but take note the capacity differs per game.",
+      "dates": [
+        "2024-06-27T00:00:00.000Z",
+        "2024-06-30T20:00:00.000Z"
+      ],
+      "location": {
+        "municipality": "Sarpsborg",
+        "country": "Norway"
+      },
+      "details": "https://www.start.gg/tournament/smashborg-siege/details",
+      "slug": "smashborg-siege"
+    },
+    {
+      "id": "7996",
+      "banner": "SwissDome/swiss_dome-banner-se.jpg",
+      "title": "Swiss Dome",
+      "games": "Ultimate",
+      "description": "Brought to you by the TOs of GamingHotel, Orcus and Smash Contest: DoKomi comes Switzerland's biggest Smash event yet with a capacity for 400 players in a space of 680 m2 housing 70+ available setups. There's competitions for Singles, Doubles and an Amateur bracket.",
+      "dates": [
+        "2024-07-06T00:00:00.000Z",
+        "2024-07-07T20:00:00.000Z"
+      ],
+      "location": {
+        "municipality": "Basel",
+        "country": "Switzerland"
+      },
+      "details": "https://www.start.gg/tournament/swiss-dome",
+      "trailerUrl": "https://www.youtube-nocookie.com/embed/E7pG8jfFzgM?si=xiLKD4EMFayuFaMA",
+      "slug": "swiss-dome"
+    },
+    {
+      "id": "8fa2",
+      "banner": "SmashSauna2024/smash_sauna_2024-banner-se.png",
+      "title": "Smash Sauna 2024",
+      "games": "Melee | Ultimate",
+      "description": "Tr3 Gamers, Smash Finland, and Biiruken present to you the third in-person Smash Sauna which aims to be the biggest held in Finland yet! There's singles and doubles events for Melee and Ultimate and a sauna a mere 300 meters from the venue where the after party will be held.",
+      "dates": [
+        "2024-07-26T00:00:00.000Z",
+        "2024-07-27T20:00:00.000Z"
+      ],
+      "location": {
+        "municipality": "Tampere",
+        "country": "Finland"
+      },
+      "details": "https://www.start.gg/tournament/smash-sauna-2024",
+      "trailerUrl": "https://www.youtube-nocookie.com/embed/lwAC3OlHAlY?si=Rja1T6W0WdK7cPWx",
+      "slug": "smash-sauna-2024"
+    },
+    {
+      "id": "accc",
+      "banner": "Icarus2024/icarus_2024-banner-se.png",
+      "title": "Icarus 2024",
+      "games": "Ultimate",
+      "description": "Situated in the heart of Bologna this Italian Smash Bros. Ultimate major is hosted in the prestigious Royal Carlton Hotel with 800 m2 spread over 2 convention rooms. Aside from regular singles and doubles competitions there's a community area, an arcade room and much more!",
+      "dates": [
+        "2024-07-27T00:00:00.000Z",
+        "2024-07-28T20:00:00.000Z"
+      ],
+      "location": {
+        "municipality": "Bologna",
+        "country": "Italy"
+      },
+      "details": "https://www.start.gg/tournament/icarus-2024/",
+      "trailerUrl": "https://www.youtube-nocookie.com/embed/RhRgUMlrUI4?si=I-YnvSEUQdagWfkC",
+      "slug": "icarus-2024"
+    },
+    {
+      "id": "bd38",
+      "banner": "Festa2024/festa_2024-banner-se.png",
+      "title": "Festa 2024",
+      "games": "Melee",
+      "description": "A Melee experience unlike anything you've ever seen before 🌴 FESTA is a seven day event with the community in focus, packed with activities, gaming and relaxation. The venue? An island in the Stockholm archipelago. Caught your attention?",
+      "dates": [
+        "2024-08-11T00:00:00.000Z",
+        "2024-08-17T20:00:00.000Z"
+      ],
+      "location": {
+        "municipality": "Grinda",
+        "country": "Sweden"
+      },
+      "details": "https://www.start.gg/tournament/festa-2024/details",
+      "slug": "festa-2024"
+    },
+    {
+      "id": "adf5",
+      "banner": "Regen2024/regen_2024-banner-se.jpg",
+      "title": "Regen 2024",
+      "games": "Ultimate | Melee | Brawl",
+      "description": "The Summertime blockbuster returns and aims to be the biggest Smash Bros. Ultimate event in UK history with a 3 day major hosted in the prestigious Athena Venue in Leicester feat. all Bo5 singles, a capacity of 1024, a line up of global top players in attendance and many social events.",
+      "dates": [
+        "2024-08-23T00:00:00.000Z",
+        "2024-08-25T20:00:00.000Z"
+      ],
+      "location": {
+        "municipality": "Leicester",
+        "country": "England"
+      },
+      "details": "https://www.start.gg/tournament/regen-2024/details",
+      "trailerUrl": "https://www.youtube-nocookie.com/embed/BEjG79IX4hk?si=Yd6rJQhs3Aa617YI",
+      "slug": "regen-2024"
+    },
+    {
+      "id": "0e65",
+      "banner": "UFA2024/ufa_2024-banner-se.png",
+      "title": "Ultimate Fighting Arena 2024",
+      "games": "Ultimate",
+      "description": "In the tailend of the summer one of the most prestigious fighting game majors in the world returns with singles, squadstrike and doubles competitions for Ultimate alongside many other game competitions.",
+      "dates": [
+        "2024-09-13T00:00:00.000Z",
+        "2024-09-15T20:00:00.000Z"
+      ],
+      "location": {
+        "municipality": "Aubervilliers",
+        "country": "France"
+      },
+      "details": "https://www.start.gg/tournament/ultimate-fighting-arena-2024-3/details",
+      "trailerUrl": "https://www.youtube-nocookie.com/embed/2g-g4vNVX8g?si=bbd0-NAdwjfIGZWv",
+      "slug": "ufa-2024"
     }
   ]
 }
