@@ -160,6 +160,12 @@
       },
       "details": "https://www.start.gg/tournament/valhalla-iv/details",
       "embedCode": "<blockquote class=\"twitter-tweet\" data-media-max-width=\"560\"><p lang=\"en\" dir=\"ltr\">Valhalla IV takes place on February 1st-4th, 2023!<br>Check out our official trailer below! 👇<a href=\"https://t.co/a55eAjOcBe\">https://t.co/a55eAjOcBe</a> <a href=\"https://t.co/EIPYthLGcg\">pic.twitter.com/EIPYthLGcg</a></p>&mdash; Valhalla Events (@ValhallaSeries) <a href=\"https://twitter.com/ValhallaSeries/status/1742248998361268337?ref_src=twsrc%5Etfw\">January 2, 2024</a></blockquote> <script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>",
+      "extraVideos": [
+        { "id":"after-movie", 
+          "text": "After Movie", 
+          "url": "https://www.youtube-nocookie.com/embed/-KGU6XwWAuE?si=mc2WDNkPD5Y6V85G"
+        }
+      ],
       "slug": "valhalla-4"
     },
     {
