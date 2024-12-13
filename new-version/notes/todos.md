@@ -102,7 +102,8 @@
 # BUGS
   [] Safari
     [] css keyframes don't work properly (might need webkit for translate)
-    [] css opacity keyframes don't work properly
+    [v] css opacity keyframes don't work properly
+      - display block was being applied right away on safari for some reason.
     [] dialog element isn't displayed
         
 
