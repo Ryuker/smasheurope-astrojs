@@ -97,5 +97,12 @@
 
 # Responsive
   [] Responsive style all component and pages
+
+
+# BUGS
+  [] Safari
+    [] css keyframes don't work properly (might need webkit for translate)
+    [] css opacity keyframes don't work properly
+    [] dialog element isn't displayed
         
 
