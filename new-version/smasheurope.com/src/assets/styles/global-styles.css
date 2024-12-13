@@ -33,3 +33,12 @@
     opacity: 0;
   }
 }
+
+@keyframes hide-el {
+  from {
+    display: block;
+  }
+  to {
+    display: none;
+  }
+}
