@@ -25,7 +25,7 @@ const {
   }
   
   <dialog class={`${dialogClasses + " "}rounded-lg p-0`}>
-    <div class="flex flex-col h-full">
+    <div class="flex flex-col flex-1">
       <div class="flex border-b py-4 pl-5 pr-0 justify-between">
         <div class="flex items-center text-sm font-semibold">{title}</div>
         <form method="dialog">
@@ -122,7 +122,14 @@ const {
   }
 
   .video iframe {
-    bottom:0;border-radius:0 0 .375rem .375rem;height:100%;left:0;position:absolute;right:0;top:0;width:100%
+    bottom:0;
+    border-radius:0 0 .375rem .375rem;
+    height:100%;
+    left:0;
+    position:absolute;
+    right:0;
+    top:0;
+    width:100%
   }
 
 </style>
