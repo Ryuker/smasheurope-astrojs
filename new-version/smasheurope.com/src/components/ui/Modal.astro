@@ -28,13 +28,11 @@ const {
     <div class="flex flex-col flex-1">
       <div class="flex border-b py-4 pl-5 pr-0 justify-between">
         <div class="flex items-center text-sm font-semibold">{title}</div>
-        <form method="dialog">
-          <button class="px-3 font-bold text-se-muted hover:text-se-blue-300 flex items-center">
-            <Icon name="close" class="text-3xl" />
-          </button>
-        </form>
+        <button id="closeBtn" class="px-3 font-bold text-se-muted hover:text-se-blue-300 flex items-center">
+          <Icon name="close" class="text-3xl" />
+        </button>
       </div>
-      <div class="flex basis-full justify-center">
+      <div id="content" class="flex basis-full justify-center" autofocus>
         <slot name="main" />
       </div>
     </div>
@@ -47,27 +45,55 @@ const {
     connectedCallback() {
       const button = this.querySelector('button');
       const dialog = this.querySelector('dialog');
+      const closeButton = this.querySelector('#closeBtn');
+      const content = this.querySelector('#content');
+
+      function closeDialog () {
+        if (dialog){
+          dialog.classList.add('closing');
+          document.body.classList.remove('lock-scroll');
+
+          setTimeout(() => {
+            dialog.classList.remove('closing');
+            dialog.close();
+          }, 650);
+        }
+      }
       
-      if (dialog) {
+      if (dialog && content && closeButton) {
         dialog.addEventListener('click', event => {
           if (event.target === dialog) {
-            dialog.close();
+            closeDialog();
+          }
+        });
+
+
+        closeButton.addEventListener('click', () => {
+          closeDialog();
+        });
+
+        document.addEventListener('keydown', (event) => {
+          if (event.key === 'Escape') { //if esc key was not pressed in combination with ctrl or alt or shift
+            const isNotCombinedKey = !(event.ctrlKey || event.altKey || event.shiftKey);
+            if (isNotCombinedKey) {
+              if (dialog.hasAttribute('open'))
+                event.preventDefault();
+                closeDialog();
+            }
           }
         });
 
         dialog.addEventListener('close', () => {
           document.body.classList.remove('lock-scroll');
-          
 
           // stop trailers from playing 
-          const memory = dialog.innerHTML;
+          const memory = content.innerHTML;
+          
           // pause for 1s and then refresh innerhtml
           setTimeout(() => {
-            
-            dialog.innerHTML = memory;
-          }, 1000);
-          
-        });
+            content.innerHTML = memory;
+          }, 500);
+        })
       }
       
       if (button) {
@@ -87,25 +113,36 @@ const {
 <style is:global>
 
   astro-modal dialog {
+    pointer-events: none;
     transform: translate(0, -150px);
+    z-index: 9999;
 
-    transition: display 1s allow-discrete, overlay 1s allow-discrete, opacity 1s;
-      
-    animation: slide-out 0.2s forwards, fade-out 0.3s forwards 0.1s;
-  
     &[open] {
+      pointer-events: all;
       animation: fade-in 0.2s forwards, slide-in 0.3s forwards 0.1s;
     }
   }
 
-  astro-modal dialog::backdrop {
+  astro-modal dialog[open].closing {
+    transform: translate(0, -150px);
+    pointer-events: none;
+
+    transition: display 1s allow-discrete, overlay 1s allow-discrete, opacity 1s;
+      
+    animation: slide-out 0.2s forwards, fade-out 0.3s forwards 0.1s;
+  }
+
+  astro-modal dialog[open].closing::backdrop {
     background: rgba(62, 72, 103, 0.5);
+    pointer-events: none;
+
     transition: opacity 1s;
     
     animation: fade-out 0.5s forwards;
   } 
 
   astro-modal dialog[open]::backdrop {
+    background: rgba(62, 72, 103, 0.5);
     animation: fade-in 0.5s forwards;
   }
 

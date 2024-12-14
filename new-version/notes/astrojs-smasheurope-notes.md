@@ -34,6 +34,7 @@
 
 modal notes:
 [explanation](https://stackoverflow.com/questions/25864259/how-to-close-the-new-html-dialog-tag-by-clicking-on-its-backdrop)
+[explanation of light-closing dialog](https://web.dev/articles/building/a-dialog-component#adding-light-dismiss)
 ``` HTML
 <button onclick="this.nextElementSibling.showModal()">Test</button>
 
