@@ -24,15 +24,15 @@ const {
     <Tooltip text={tooltipText} buttonId={`btn-${buttonId}`} />
   }
   
-  <dialog class={`${dialogClasses + " "}rounded-lg p-0`}>
+  <dialog class={`${dialogClasses + " "}rounded-lg p-0`} autofocus>
     <div class="flex flex-col flex-1">
       <div class="flex border-b py-4 pl-5 pr-0 justify-between">
         <div class="flex items-center text-sm font-semibold">{title}</div>
-        <button id="closeBtn" class="px-3 font-bold text-se-muted hover:text-se-blue-300 flex items-center focus:outline-none focus-visible:outline-none focus-visible:text-blue-400">
+        <button id="closeBtn" class="px-3 font-bold text-se-muted hover:text-se-blue-300 flex items-center focus:outline-1 focus:outline-blue-400 [&:not(:hover)]:focus-visible:text-blue-400">
           <Icon name="close" class="text-3xl" />
         </button>
       </div>
-      <div id="content" class="flex basis-full justify-center" autofocus>
+      <div id="content" class="flex basis-full justify-center">
         <slot name="main" />
       </div>
     </div>
