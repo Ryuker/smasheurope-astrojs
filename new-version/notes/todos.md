@@ -103,5 +103,6 @@
   [v] Safari <= 17 
     [v] css transition 'allow-discrete' doesn't work with display property
     [] TODO: remove dependency of transition when this is supported in all safari's (probably in 2026)
+      - https://caniuse.com/?search=allow-discrete
         
 
