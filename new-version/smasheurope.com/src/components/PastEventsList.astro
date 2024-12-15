@@ -20,6 +20,8 @@ const pastEvents = eventsData.filter(event => {
   return CheckIfInThePast(event) ? event : "";
 });
 
+pastEvents.reverse();
+
 function CheckIfInThePast(event) {
   const endDate = new Date(event.dates[1]);
   return endDate < today ? true : false;
@@ -32,7 +34,7 @@ function CheckIfInThePast(event) {
   </h2>
   <div class="mx-auto flex flex-wrap gap-3 lg:gap-8 justify-center max-w-5xl px-5"> 
     {pastEvents.map(event => (
-      <EventCard key={event.id} event={event} />
+      <EventCard key={event.id} event={event} displayYear={true} />
     ))}
   </div>
 </section>

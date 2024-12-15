@@ -3,7 +3,10 @@ import LinkButton from './LinkButton.astro';
 import EventImage from './EventImage.astro';
 import getDateFormatted from "@utils/getDateFormatted";
 import Modal from './Modal.astro';
-const { event } = Astro.props;
+const { 
+  event, 
+  displayYear = false 
+} = Astro.props;
 
 // Get the dates info and formatting
 const startDate = new Date(event.dates[0]);
@@ -16,6 +19,7 @@ const dates = {
 
 // compile dates to a string for easy rendering
 const datesStr = `
+    ${displayYear ? startDate.getFullYear() : ''}
     ${dates.startDate.month} ${dates.startDate.day}${dates.startDate.suffix}
     ${dates.endDate.day !== dates.startDate.day ? "- "+ dates.endDate.day + dates.endDate.suffix : ''}
     ${dates.endDate.month !== dates.startDate.month ? dates.endDate.month : ''}`
