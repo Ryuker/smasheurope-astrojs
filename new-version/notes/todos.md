@@ -100,10 +100,8 @@
 
 
 # BUGS
-  [] Safari
-    [] css keyframes don't work properly (might need webkit for translate)
-    [v] css opacity keyframes don't work properly
-      - display block was being applied right away on safari for some reason.
-    [] dialog element isn't displayed
+  [v] Safari <= 17 
+    [v] css transition 'allow-discrete' doesn't work with display property
+    [] TODO: remove dependency of transition when this is supported in all safari's (probably in 2026)
         
 
