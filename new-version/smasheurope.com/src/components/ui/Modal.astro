@@ -49,18 +49,23 @@ const {
       const content = this.querySelector('#content');
 
       function closeDialog () {
+        // set classes to begin closing of the dialog, the dialog is closed when the animation has ended
         if (dialog){
           dialog.classList.add('closing');
           document.body.classList.remove('lock-scroll');
-
-          setTimeout(() => {
-            dialog.classList.remove('closing');
-            dialog.close();
-          }, 650);
         }
       }
       
       if (dialog && content && closeButton) {
+
+        // closes the dialog after the fade-out animation has ended
+        dialog.addEventListener('animationend', (e) => {
+          if (e.animationName === 'fade-out'){
+            dialog.classList.remove('closing');
+            dialog.close();
+          }
+        })
+
         dialog.addEventListener('click', event => {
           if (event.target === dialog) {
             closeDialog();
@@ -83,6 +88,7 @@ const {
           }
         });
 
+        // handle the closing of dialog after close() has been called
         dialog.addEventListener('close', () => {
           document.body.classList.remove('lock-scroll');
 
@@ -96,6 +102,7 @@ const {
         })
       }
       
+      // Opens the dialog
       if (button) {
         button?.addEventListener('click', () => {
           if (dialog) {
