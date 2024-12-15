@@ -30,10 +30,10 @@ function CheckIfInThePast(event) {
   return endDate < today ? true : false;
 }
 
-function isUneven(index : Number){
-  const result = index == events.length - 1 && (events.length % 2 == 0 ? false : true );
-  return result;
-}
+// function isUneven(index : Number){
+//   const result = index == events.length - 1 && (events.length % 2 == 0 ? false : true );
+//   return result;
+// }
 ---
 
 <section id="events">
@@ -42,14 +42,10 @@ function isUneven(index : Number){
   </h2>
   <!-- <div class="m-auto grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl px-10"> -->
   <!-- <div class="m-auto grid grid-cols-1 md:grid-cols-2 gap-8  px-10"> -->
-  <div class="mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl px-10">
-    {events.map((event, idx : Number) => (
-      <div class={`${isUneven(idx) ? "md:col-span-2 " : ''}`}>
-        <div class={`${isUneven(idx) ? 'md:w-1/2 gap-8 px-2 justify-self-center ' : ''}h-full` }>
-          <EventCard key={event.id} event={event} />
-        </div>
-      </div>
-      
+  <!-- <div class="mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl px-10"> -->
+  <div class="mx-auto flex flex-wrap gap-3 lg:gap-8 justify-center max-w-5xl px-5"> 
+    {events.map((event) => (
+      <EventCard key={event.id} event={event} />
     ))}
   </div>
 </section>
