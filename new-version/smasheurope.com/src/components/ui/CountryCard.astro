@@ -7,13 +7,16 @@ const { country } = Astro.props;
     <div class="flex min-h-full flex-col justify-start">
       <div class="flex gap-5 justify-between mb-5">
         <div>{country.name}</div>
-        <div>{country.name} flag</div>
+        <div class="bg-red-300 h-20 w-20">
+          <div class=`fib fi-${country.flag} fis block w-full h-full bg-green-400 p-0`></div>
+        </div>
       </div>
 
       <!-- Overarching Social Media -->
       <div class="text-center mb-5">
         <div class="font-semibold">Hub Social Media</div>
-        <div class="flex gap-5 justify-center">
+        <div class="flex gap-5 justify-center flex-wrap">
+          <div>Website</div>
           <div>Discord</div>
           <div>X</div>
           <div>BlueSky</div>
@@ -96,3 +99,9 @@ const { country } = Astro.props;
     </div>
   </div>
 </div>
+
+<style>
+  .country-flag {
+    width: 300px;
+  }
+</style>

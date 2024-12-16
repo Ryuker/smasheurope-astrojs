@@ -70,3 +70,7 @@ modal animation - [link](https://frontendmasters.com/blog/animating-dialog/)
 - done through a package - [astro-relative-links](https://www.npmjs.com/package/astro-relative-links)
 
 
+# Country flags
+- flag-icons package with SVG flags - [flag-icons](https://github.com/lipis/flag-icons)
+
+

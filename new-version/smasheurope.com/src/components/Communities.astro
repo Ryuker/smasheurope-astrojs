@@ -1,9 +1,24 @@
 ---
 import CountryCard from "./ui/CountryCard.astro";
 
-const country = {
-  name: 'Sweden'
-}
+const countries = [
+  {
+    name: "sweden",
+    flag: "se"
+  },
+  {
+    name: "netherlands",
+    flag: "nl"
+  },
+  {
+    name: "germany",
+    flag: "de"
+  },
+  {
+    name: "france",
+    flag: "fr"
+  }
+];
 ---
 
 <section class="mx-auto">
@@ -23,10 +38,9 @@ const country = {
   <div class="mx-auto w-full bg-red-300 py-20">
     <div class="container">
       <div class="flex justify-center gap-5 flex-wrap">
-        <CountryCard country={country} />
-        <CountryCard country={country} />
-        <CountryCard country={country} />
-        <CountryCard country={country} />
+        {countries.map(country => (
+          <CountryCard country={country} />
+        ))}
       </div>
     </div>
   </div>
