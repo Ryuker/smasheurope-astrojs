@@ -1,3 +1,11 @@
+---
+import CountryCard from "./ui/CountryCard.astro";
+
+const country = {
+  name: 'Sweden'
+}
+---
+
 <section class="mx-auto">
   <div class="flex justify-center my-4">
       <div id="filter" class="filter bg-transparent">
@@ -12,13 +20,14 @@
 </section>
 
 <section id="communities">
-  <div class="mx-auto w-full bg-red-300 my-20">
-    <div class="container"></div>
-    <div class="flex justify-center gap-5">
-      <div>Country Card</div>
-      <div>Country Card</div>
-      <div>Country Card</div>
-      <div>Country Card</div>
+  <div class="mx-auto w-full bg-red-300 py-20">
+    <div class="container">
+      <div class="flex justify-center gap-5 flex-wrap">
+        <CountryCard country={country} />
+        <CountryCard country={country} />
+        <CountryCard country={country} />
+        <CountryCard country={country} />
+      </div>
     </div>
   </div>
 </section>
