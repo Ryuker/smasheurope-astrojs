@@ -3,15 +3,14 @@ const { country } = Astro.props;
 ---
 
 <div class="min-h-[500px]">
-  <div class="bg-white h-full rounded-lg p-8 shadow-md w-[460px]">
-    <div class="flex min-h-full flex-col justify-start">
-      <div class="flex gap-5 justify-between mb-5">
-        <div>{country.name}</div>
-        <div class="bg-red-300 h-20 w-20">
-          <div class=`fib fi-${country.flag} fis block w-full h-full bg-green-400 p-0`></div>
-        </div>
+  <div class="bg-white h-full rounded-lg shadow-md w-[460px]">
+    <div class="flex justify-between mb-5">
+      <div class="flex items-center text-2xl capitalize flex-1 pl-5 border-b-2 border-gray-300">{country.name}</div>
+      <div class="h-20 w-20">
+        <div class=`fib fi-${country.flag} fis block w-full h-full p-0 rounded-tr-lg`></div>
       </div>
-
+    </div>
+    <div class="flex min-h-full flex-col justify-start p-8">
       <!-- Overarching Social Media -->
       <div class="text-center mb-5">
         <div class="font-semibold">Hub Social Media</div>
