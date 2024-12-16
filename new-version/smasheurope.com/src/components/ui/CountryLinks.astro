@@ -1,0 +1,33 @@
+---
+import LinkButton from "./LinkButton.astro";
+
+const { country, game, classes } = Astro.props;
+---
+<div class=`${classes ? classes + ' ': ''}mt-10`>
+  <div >{game}</div>
+  <div class="flex gap-3 justify-center">
+    <div class="flex w-full justify-between gap-5 pt-2 flex-wrap">
+      <LinkButton icon="globe" newTab={true} id=`${country.flag}-ultimate-website` tooltipText="Website" classes="basis-full"
+        url="https://docs.google.com/spreadsheets/d/11ElDfT0YmpIuiuApQ95lnoKM3b6BIe8MXmPyUfK4Sx8"
+      />
+      <LinkButton icon="discord" newTab={true} id=`${country.flag}-ultimate-discord` tooltipText="Discord" classes="flex-1"
+        url="https://docs.google.com/spreadsheets/d/11ElDfT0YmpIuiuApQ95lnoKM3b6BIe8MXmPyUfK4Sx8"
+      />
+      <LinkButton icon="x" newTab={true} id=`${country.flag}-ultimate-x` tooltipText="X" classes="flex-1"
+        url="https://docs.google.com/spreadsheets/d/11ElDfT0YmpIuiuApQ95lnoKM3b6BIe8MXmPyUfK4Sx8"
+      />
+      <LinkButton icon="bs" newTab={true} id=`${country.flag}-ultimate-bs` tooltipText="BlueSky" classes="flex-1"
+        url="https://docs.google.com/spreadsheets/d/11ElDfT0YmpIuiuApQ95lnoKM3b6BIe8MXmPyUfK4Sx8"
+      />
+      <LinkButton icon="fb" newTab={true} id=`${country.flag}-ultimate-fb` tooltipText="Facebook" classes="flex-1"
+        url="https://docs.google.com/spreadsheets/d/11ElDfT0YmpIuiuApQ95lnoKM3b6BIe8MXmPyUfK4Sx8"
+      />
+      <LinkButton icon="yt" newTab={true} id=`${country.flag}-ultimate-yt` tooltipText="Youtube" classes="flex-1"
+        url="https://docs.google.com/spreadsheets/d/11ElDfT0YmpIuiuApQ95lnoKM3b6BIe8MXmPyUfK4Sx8"
+      />
+      <LinkButton icon="twitch" newTab={true} id=`${country.flag}-ultimate-twitch` tooltipText="Twitch" classes="flex-1"
+        url="https://docs.google.com/spreadsheets/d/11ElDfT0YmpIuiuApQ95lnoKM3b6BIe8MXmPyUfK4Sx8"
+      />
+    </div>
+  </div>  
+</div>

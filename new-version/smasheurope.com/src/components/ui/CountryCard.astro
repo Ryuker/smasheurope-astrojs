@@ -1,106 +1,75 @@
 ---
+import Button from "./Button.astro";
+import CountryLinks from "./CountryLinks.astro";
+import LinkButton from "./LinkButton.astro";
+
 const { country } = Astro.props;
 ---
 
 <div class="min-h-[500px]">
   <div class="bg-white h-full rounded-lg shadow-md w-[460px]">
     <div class="flex justify-between mb-5">
-      <div class="flex items-center text-2xl capitalize flex-1 pl-5 border-b-2 border-gray-300">{country.name}</div>
+      <div class="flex items-center text-2xl text-se-dark capitalize flex-1 pl-5 border-b-2 border-gray-300">
+        <span>{country.name}</span>
+      </div>
       <div class="h-20 w-20">
         <div class=`fib fi-${country.flag} fis block w-full h-full p-0 rounded-tr-lg`></div>
       </div>
     </div>
-    <div class="flex min-h-full flex-col justify-start p-8">
+    <div class="flex min-h-full flex-col justify-start p-8 pt-0">
       <!-- Overarching Social Media -->
-      <div class="text-center mb-5">
-        <div class="font-semibold">Hub Social Media</div>
-        <div class="flex gap-5 justify-center flex-wrap">
-          <div>Website</div>
-          <div>Discord</div>
-          <div>X</div>
-          <div>BlueSky</div>
-          <div>Facebook</div>
-          <div>Youtube</div>
-          <div>Instagram</div>
+      <div class="font-semibold text-center mb-3">Cross Game</div>
+      <div class="text-center mb-5 border-2 rounded-lg border-se-blue-200">
+        <div class="flex justify-between gap-4 flex-wrap p-4">
+          <div class="flex w-full justify-between gap-5 pt-2">
+            <LinkButton icon="globe" newTab={true} id=`${country.flag}-website` tooltipText="Website" classes="basis-1/2 grow"
+              url="https://docs.google.com/spreadsheets/d/11ElDfT0YmpIuiuApQ95lnoKM3b6BIe8MXmPyUfK4Sx8"
+            />
+            <LinkButton icon="discord" newTab={true} id=`${country.flag}-discord` tooltipText="Discord" classes="basis-1/2 shrink"
+              url="https://docs.google.com/spreadsheets/d/11ElDfT0YmpIuiuApQ95lnoKM3b6BIe8MXmPyUfK4Sx8"
+            />
+          </div>
+          
+          <LinkButton icon="x" newTab={true} id=`${country.flag}-x` tooltipText="X" classes="flex-1"
+            url="https://docs.google.com/spreadsheets/d/11ElDfT0YmpIuiuApQ95lnoKM3b6BIe8MXmPyUfK4Sx8"
+          />
+          <LinkButton icon="bs" newTab={true} id=`${country.flag}-bs` tooltipText="BlueSky" classes="flex-1"
+            url="https://docs.google.com/spreadsheets/d/11ElDfT0YmpIuiuApQ95lnoKM3b6BIe8MXmPyUfK4Sx8"
+          />
+          <LinkButton icon="fb" newTab={true} id=`${country.flag}-fb` tooltipText="Facebook" classes="flex-1"
+            url="https://docs.google.com/spreadsheets/d/11ElDfT0YmpIuiuApQ95lnoKM3b6BIe8MXmPyUfK4Sx8"
+          />
+          <LinkButton icon="instagram" newTab={true} id=`${country.flag}-instagram` tooltipText="Instagram" classes="flex-1"
+            url="https://docs.google.com/spreadsheets/d/11ElDfT0YmpIuiuApQ95lnoKM3b6BIe8MXmPyUfK4Sx8"
+          />
+          <LinkButton icon="twitch" newTab={true} id=`${country.flag}-twitch` tooltipText="Twitch" classes="flex-1"
+            url="https://docs.google.com/spreadsheets/d/11ElDfT0YmpIuiuApQ95lnoKM3b6BIe8MXmPyUfK4Sx8"
+          />
+          <LinkButton icon="yt" newTab={true} id=`${country.flag}-yt` tooltipText="Youtube" classes="basis-3/4 grow"
+            url="https://docs.google.com/spreadsheets/d/11ElDfT0YmpIuiuApQ95lnoKM3b6BIe8MXmPyUfK4Sx8"
+          />
         </div>
       </div>
       
       <!-- Discors and Socials -->
-       <div class="font-semibold text-center">Game Specific</div>
-       <div class="text-center space-y-5">
-        <div>
-          <div>Smash Bros. Ultimate</div>
-          <div class="flex gap-3 justify-center">
-            <div>Discord</div>
-            <div>X</div>
-            <div>BlueSky</div>
-            <div>Facebook</div>
-            <div>Youtube</div>
-            <div>Twitch</div>
-          </div>
+       <div class="font-semibold text-center mb-3">Game Specific</div>
+       <div class="text-center border-2 rounded-lg border-se-blue-200 p-4">
+        <div class="flex justify-center flex-wrap gap-5">
+          <Button text="Ultimate" classes="flex-1" />
+          <Button text="Wii U / 3DS" classes="flex-1" />
+          <Button text="Melee" classes="flex-1" />
+          <Button text="Brawl" classes="flex-1" />
+          <Button text="Smash 64" classes="flex-1" />
         </div>
-        <div>
-          <div>Smash Bros. for Wii U / 3DS</div>
-          <div class="flex gap-3 justify-center">
-            <div>Discord</div>
-            <div>X</div>
-            <div>BlueSky</div>
-            <div>Facebook</div>
-            <div>Youtube</div>
-            <div>Twitch</div>
-          </div>
-        </div>
-        <div>
-          <div>Smash Bros. Melee</div>
-          <div class="flex gap-3 justify-center">
-            <div>Discord</div>
-            <div>X</div>
-            <div>BlueSky</div>
-            <div>Facebook</div>
-            <div>Youtube</div>
-            <div>Twitch</div>
-          </div>
-        </div>
-        <div>
-          <div>Project M/+</div>
-          <div class="flex gap-3 justify-center">
-            <div>Discord</div>
-            <div>X</div>
-            <div>BlueSky</div>
-            <div>Facebook</div>
-            <div>Youtube</div>
-            <div>Twitch</div>
-          </div>
-        </div>
-        <div>
-          <div>Smash Bros. Brawl</div>
-          <div class="flex gap-3 justify-center">
-            <div>Discord</div>
-            <div>X</div>
-            <div>BlueSky</div>
-            <div>Facebook</div>
-            <div>Youtube</div>
-            <div>Twitch</div>
-          </div>
-        </div>
-        <div class="">
-          <div>Smash Bros. 64</div>
-          <div class="flex gap-3 justify-center">
-            <div>Discord</div>
-            <div>X</div>
-            <div>BlueSky</div>
-            <div>Facebook</div>
-            <div>Youtube</div>
-            <div>Twitch</div>
-          </div>
+        <div class="flex flex-col">
+          <CountryLinks country={country} game="Smash Bros.Ultimate" classes="hidden" />
+          <CountryLinks country={country} game="Smash Bros. for Wii U / 3DS" classes="hidden" />
+          <CountryLinks country={country} game="Smash Bros. Melee" classes="hidden" />
+          <CountryLinks country={country} game="Project M/+" classes="hidden" />
+          <CountryLinks country={country} game="Smash Bros. Brawl" classes="hidden" />
+          <CountryLinks country={country} game="Smash Bros. 64" classes="hidden" />
         </div>
       </div>
     </div>
   </div>
 </div>
-
-<style>
-  .country-flag {
-    width: 300px;
-  }
-</style>
