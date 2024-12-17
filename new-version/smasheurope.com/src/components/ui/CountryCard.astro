@@ -19,7 +19,7 @@ const { country } = Astro.props;
     </div>
     <div class="flex min-h-full flex-col justify-start p-8 pt-0">
       <!-- Overarching Social Media -->
-      <div class="font-semibold text-center mb-3">Cross Game</div>
+      <div class="font-semibold text-center mb-3">Country Wide Community</div>
       <div class="text-center mb-5 border-2 rounded-lg border-se-blue-200">
         <div class="flex justify-between gap-4 flex-wrap p-4">
           <div class="flex w-full justify-between gap-5 pt-2">
@@ -53,14 +53,15 @@ const { country } = Astro.props;
       </div>
       
       <!-- Discors and Socials -->
-       <div class="font-semibold text-center mb-3">Game Specific</div>
+       <div class="font-semibold text-center mb-3">Game Specific Communities</div>
        <div class="text-center border-2 rounded-lg border-se-blue-200 p-4" data-game-container>
         <div class="flex justify-center flex-wrap gap-5">
-          <ToggleButton id=`${country.flag}-ultimate` text="Ultimate" classes="flex-1" target="ultimate" targetType="game"/>
-          <ToggleButton id=`${country.flag}-wii-u` text="Wii-U/3DS" classes="flex-1" target="wii-u" targetType="game"/>
-          <ToggleButton id=`${country.flag}-melee` text="Melee" classes="flex-1" target="melee" targetType="game"/>
-          <ToggleButton id=`${country.flag}-brawl` text="Brawl" classes="flex-1" target="brawl" targetType="game"/>
-          <ToggleButton id=`${country.flag}-smash-64` text="Smash 64" classes="flex-1" target="smash-64" targetType="game"/>
+          <ToggleButton id=`${country.flag}-ultimate` text="Ultimate" classes="w-full" target="ultimate" targetType="game"/>
+          <ToggleButton id=`${country.flag}-wii-u` text="Wii-U / 3DS" classes="w-full" target="wii-u" targetType="game"/>
+          <ToggleButton id=`${country.flag}-melee` text="Melee" classes="w-full" target="melee" targetType="game"/>
+          <ToggleButton id=`${country.flag}-p+` text="Project M/+" classes="w-full" target="p+" targetType="game"/>
+          <ToggleButton id=`${country.flag}-brawl` text="Brawl" classes="w-full" target="brawl" targetType="game"/>
+          <ToggleButton id=`${country.flag}-smash-64` text="Smash 64" classes="w-full" target="smash-64" targetType="game"/>
         </div>
         <div class="flex flex-col">
           <CountryLinks country={country} game="Smash Bros.Ultimate" gameId="ultimate" classes="hidden" />
