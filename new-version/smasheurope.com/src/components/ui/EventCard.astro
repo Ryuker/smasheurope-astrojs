@@ -25,7 +25,7 @@ const datesStr = `
     ${dates.endDate.month !== dates.startDate.month ? dates.endDate.month : ''}`
 ---
 <div class="min-h-[500px]">
-  <div class="bg-white h-full rounded-lg p-8 shadow-md w-[460px]" data-event>
+  <div class="bg-white h-full rounded-lg p-8 shadow-md w-full lg:w-[460px]" data-event>
     <div class="flex min-h-full flex-col justify-start">
       <span class="flex basis-full leading-none mb-3 items-center justify-center text-se-dark text-base font-semibold">
         {event.games}
@@ -35,7 +35,7 @@ const datesStr = `
       </div>
   
       <div class="flex items-center py-2 leading-relaxed space-x-1" data-event-title>
-        <p class="inline-block align-middle text-2xl font-bold text-se-dark leading-relaxed whitespace-pre">
+        <p class="align-middle text-xl md:text-2xl font-bold text-se-dark leading-relaxed whitespace-pre">
           {event.title}
         </p>
         {event.subtitle &&
