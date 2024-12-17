@@ -1,9 +1,9 @@
 ---
 import LinkButton from "./LinkButton.astro";
 
-const { country, game, classes } = Astro.props;
+const { country, game, classes, gameId } = Astro.props;
 ---
-<div class=`${classes ? classes + ' ': ''}mt-10`>
+<div class=`${classes ? classes + ' ': ''}mt-10` data-game={gameId}>
   <div >{game}</div>
   <div class="flex gap-3 justify-center">
     <div class="flex w-full justify-between gap-5 pt-2 flex-wrap">

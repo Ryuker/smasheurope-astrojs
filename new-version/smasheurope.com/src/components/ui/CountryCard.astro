@@ -2,6 +2,7 @@
 import Button from "./Button.astro";
 import CountryLinks from "./CountryLinks.astro";
 import LinkButton from "./LinkButton.astro";
+import ToggleButton from "./ToggleButton.astro";
 
 const { country } = Astro.props;
 ---
@@ -53,21 +54,21 @@ const { country } = Astro.props;
       
       <!-- Discors and Socials -->
        <div class="font-semibold text-center mb-3">Game Specific</div>
-       <div class="text-center border-2 rounded-lg border-se-blue-200 p-4">
+       <div class="text-center border-2 rounded-lg border-se-blue-200 p-4" data-game-container>
         <div class="flex justify-center flex-wrap gap-5">
-          <Button text="Ultimate" classes="flex-1" />
-          <Button text="Wii U / 3DS" classes="flex-1" />
-          <Button text="Melee" classes="flex-1" />
-          <Button text="Brawl" classes="flex-1" />
-          <Button text="Smash 64" classes="flex-1" />
+          <ToggleButton id=`${country.flag}-ultimate` text="Ultimate" classes="flex-1" target="ultimate" targetType="game"/>
+          <ToggleButton id=`${country.flag}-wii-u` text="Wii-U/3DS" classes="flex-1" target="wii-u" targetType="game"/>
+          <ToggleButton id=`${country.flag}-melee` text="Melee" classes="flex-1" target="melee" targetType="game"/>
+          <ToggleButton id=`${country.flag}-brawl` text="Brawl" classes="flex-1" target="brawl" targetType="game"/>
+          <ToggleButton id=`${country.flag}-smash-64` text="Smash 64" classes="flex-1" target="smash-64" targetType="game"/>
         </div>
         <div class="flex flex-col">
-          <CountryLinks country={country} game="Smash Bros.Ultimate" classes="hidden" />
-          <CountryLinks country={country} game="Smash Bros. for Wii U / 3DS" classes="hidden" />
-          <CountryLinks country={country} game="Smash Bros. Melee" classes="hidden" />
-          <CountryLinks country={country} game="Project M/+" classes="hidden" />
-          <CountryLinks country={country} game="Smash Bros. Brawl" classes="hidden" />
-          <CountryLinks country={country} game="Smash Bros. 64" classes="hidden" />
+          <CountryLinks country={country} game="Smash Bros.Ultimate" gameId="ultimate" classes="hidden" />
+          <CountryLinks country={country} game="Smash Bros. for Wii U / 3DS" gameId="wii-u" classes="hidden" />
+          <CountryLinks country={country} game="Smash Bros. Melee" gameId="melee" classes="hidden" />
+          <CountryLinks country={country} game="Project M/+" gameId="p+" classes="hidden" />
+          <CountryLinks country={country} game="Smash Bros. Brawl" gameId="brawl" classes="hidden" />
+          <CountryLinks country={country} game="Smash Bros. 64" gameId="smash-64" classes="hidden" />
         </div>
       </div>
     </div>
