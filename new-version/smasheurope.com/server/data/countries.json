@@ -10,7 +10,7 @@
         { "type": "fb", "url": ""},
         { "type": "instagram", "url": ""},
         { "type": "twitch", "url": ""},
-        { "type": "youtube", "url": ""},
+        { "type": "youtube", "url": ""}
       ],
       "games": [
         { 
