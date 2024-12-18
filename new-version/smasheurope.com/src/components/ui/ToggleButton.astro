@@ -27,6 +27,8 @@ const {
 
 
 <script>
+  import { scrollToAttribute } from "@utils/utils";
+
   class ToggleButton extends HTMLElement {
     connectedCallback() {
       const target = this.dataset.target;
@@ -40,6 +42,7 @@ const {
         if (container){
           const targetEl = container.querySelector(`[data-${targetType}="${target}"]`);
           targetEl?.classList.toggle('hidden');
+          targetEl?.classList.contains('hidden') ? '' : scrollToAttribute(container, `[data-${targetType}="${target}"]`);
           button?.classList.toggle('active');
         }
       }
