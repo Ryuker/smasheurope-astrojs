@@ -1,6 +1,96 @@
 {
   "events": [
     {
+      "name": "Austria",
+      "flag": "at",
+      "links": [
+        { "type": "fb", "url": "https://www.facebook.com/groups/421686951299892/"}
+      ]
+    },
+    {
+      "name": "Belgium",
+      "flag": "be",
+      "links": [
+        { "type": "discord", "url": "https://discord.gg/0W4hwWkt5MSSNhdJ"},
+        { "type": "fb", "url": "https://www.facebook.com/groups/smashBXL/"},
+        { "type": "x", "url": "https://twitter.com/Smash_Belgium"}
+      ]
+    },
+    {
+      "name": "Cyprus",
+      "flag": "cy",
+      "links": [
+        { "type": "fb", "url": "https://www.facebook.com/groups/597270823736915/"}
+      ]
+    },
+    {
+      "name": "Denmark",
+      "flag": "dk",
+      "links": [
+        { "type": "website", "url": "http://www.smashbros.dk/"},
+        { "type": "discord", "url": "https://discord.gg/cbSQX6f"},
+        { "type": "fb", "url": "https://www.facebook.com/groups/1397200900559117/?ref=bookmarks"}
+      ]
+    },
+    {
+      "name": "Finland",
+      "flag": "fi",
+      "links": [
+        { "type": "website", "url": "https://smashfinland.fi/"},
+        { "type": "discord", "url": "https://discord.gg/TZcusus"},
+        { "type": "x", "url": "https://twitter.com/SmashFinland"},
+        { "type": "fb", "url": "https://www.facebook.com/groups/smashfinland/"},
+        { "type": "yt", "url": "https://www.youtube.com/user/MeleeFinland"},
+        { "type": "twitch", "url": "https://www.twitch.tv/smashfinland"}
+
+      ]
+    },
+    {
+      "name": "Ireland",
+      "flag": "ie",
+      "links": [
+        { "type": "discord", "url": "https://discord.gg/M4mT7jd"},
+        { "type": "fb", "url": "https://www.facebook.com/groups/SmashIreland/"},
+        { "type": "yt", "url": "https://www.youtube.com/user/MeleeFinland"},
+        { "type": "twitch", "url": "https://www.twitch.tv/smashfinland"}
+
+      ]
+    },
+    {
+      "name": "Italy",
+      "flag": "it",
+      "links": [
+        { "type": "x", "url": "https://twitter.com/smashbrositalia"}
+      ]
+    },
+    {
+      "name": "Lithuania",
+      "flag": "lt",
+      "links": [
+        { "type": "discord", "url": "https://discord.gg/hjTbqsZ"},
+        { "type": "x", "url": "https://twitter.com/SmashLietuva"},
+        { "type": "fb", "url": "https://www.facebook.com/pg/SmashLietuva/posts/"}
+      ]
+    },
+    {
+      "name": "Luxembourg",
+      "flag": "lu",
+      "links": [
+        { "type": "discord", "url": "https://discord.gg/hjTbqsZ"},
+        { "type": "x", "url": "https://twitter.com/SmashLietuva"},
+        { "type": "fb", "url": "https://www.facebook.com/groups/269808489848565/"}
+      ]
+    },
+    {
+      "name": "Malta",
+      "flag": "mt",
+      "links": [
+        { "type": "discord", "url": "https://discord.gg/bUYFhYc"},
+        { "type": "x", "url": "https://twitter.com/smashmalta"},
+        { "type": "fb", "url": "https://www.facebook.com/groups/SmashersMalta/"}
+      ]
+    },
+    {
       "name": "Netherlands",
       "flag": "fr",
       "links": [
@@ -37,6 +127,82 @@
             { "type": "yt", "url": "https://www.youtube.com/c/SmashWageningen"}
           ]
         }
+      ]
+    },
+    {
+      "name": "Norway",
+      "flag": "no",
+      "links": [
+        { "type": "website", "url": "https://www.smashnorge.no"},
+        { "type": "discord", "url": "https://discord.gg/BDRVJPD"},
+        { "type": "x", "url": "https://twitter.com/smashnorge"},
+        { "type": "fb", "url": "http://facebook.com/smashnorge"},
+        { "type": "yt", "url": "https://www.youtube.com/smashnorge"},
+        { "type": "twitch", "url": "https://www.twitch.tv/smashnorge"}
+      ]
+    },
+    {
+      "name": "Poland",
+      "flag": "pl",
+      "links": [
+        { "type": "discord", "url": "https://discord.gg/DRmY4Jp"},
+        { "type": "x", "url": "https://twitter.com/SmashBrosPoland"},
+        { "type": "fb", "url": "https://www.facebook.com/smashbrospolska"},
+        { "type": "yt", "url": "https://www.youtube.com/smashnorge"},
+        { "type": "twitch", "url": "https://www.twitch.tv/smashnorge"}
+      ]
+    },
+    {
+      "name": "Portugal",
+      "flag": "pt",
+      "links": [
+        { "type": "discord", "url": "https://discord.gg/smashbrosportugal"},
+        { "type": "x", "url": "https://twitter.com/SmashBrosPT"},
+        { "type": "fb", "url": "https://www.facebook.com/pages/Smash-Bros-Portugal/431843766963840"}
+      ]
+    },
+    {
+      "name": "Scotland",
+      "flag": "gb-sct",
+      "links": [
+        { "type": "fb", "url": "https://www.facebook.com/groups/194535274054492/"}
+      ]
+    },
+    {
+      "name": "Spain",
+      "flag": "es",
+      "links": [
+        { "type": "website", "url": "https://smashbrosspain.com/"},
+        { "type": "discord", "url": "https://smashbrosspain.com/discord"},
+        { "type": "x", "url": "http://twitter.com/SmashBrosSpain"},
+        { "type": "fb", "url": "http://facebook.com/SmashBrosSpain"},
+        { "type": "instagram", "url": "https://www.instagram.com/smashbrosspain/"},
+        { "type": "yt", "url": "http://youtube.com/user/SmashBrosSpain"},
+        { "type": "twitch", "url": "https://www.twitch.tv/smashbrosspain"}
+      ]
+    },
+    {
+      "name": "Sweden",
+      "flag": "se",
+      "links": [
+        { "type": "fb", "url": "https://www.facebook.com/SwedishSmash"},
+        { "type": "instagram", "url": "https://www.instagram.com/smashbrosspain/"},
+        { "type": "yt", "url": "http://youtube.com/user/SmashBrosSpain"},
+        { "type": "twitch", "url": "https://www.twitch.tv/smashbrosspain"}
+      ]
+    },
+    {
+      "name": "Switzerland",
+      "flag": "ch",
+      "links": [
+        { "type": "fb", "url": "https://www.facebook.com/groups/218742101607432/"}
+      ]
+    },
+    {
+      "name": "Ukraine",
+      "flag": "ch",
+      "links": [
+        { "type": "fb", "url": "https://www.facebook.com/groups/SmashUK/"}
       ]
     }
   ]
