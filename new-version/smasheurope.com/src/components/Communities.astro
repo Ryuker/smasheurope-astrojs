@@ -1,4 +1,5 @@
 ---
+import CardsFilter from "./CardsFilter.astro";
 import CountryCard from "./ui/CountryCard.astro";
 
 const countries = [
@@ -20,21 +21,9 @@ const countries = [
   }
 ];
 ---
+<CardsFilter type="Countries" />
 
-<section class="mx-auto">
-  <div class="flex justify-center my-4">
-      <div id="filter" class="filter bg-transparent">
-          <input
-          type="text"
-          class="p-2 my-5 text-lg border-b-2 border-[#ccc] outline-none bg-transparent focus:text-se-dark"
-          id="filter"
-          placeholder="Filter Countries By Name"
-          />
-      </div>
-  </div>
-</section>
-
-<section id="communities">
+<section id="communities" data-cards>
   <div class="mx-auto w-full flex justify-center pt-5">
     <div class="container">
       <div class="flex justify-center gap-5 flex-wrap">
