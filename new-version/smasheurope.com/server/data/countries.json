@@ -1,0 +1,85 @@
+{
+  "events": [
+    {
+      "name": "Netherlands",
+      "flag": "fr",
+      "website": "https://smash-bros.nl/",
+      "links": [
+        { "type": "website", "url": ""},
+        { "type": "x", "url": ""},
+        { "type": "fb", "url": ""},
+        { "type": "instagram", "url": ""},
+        { "type": "twitch", "url": ""},
+        { "type": "youtube", "url": ""},
+      ],
+      "games": [
+        { 
+          "name": "ultimate",
+          "links": [
+            { "type": "website", "url": ""},
+            { "type": "discord", "url": ""},
+            { "type": "x", "url": ""},
+            { "type": "fb", "url": ""},
+            { "type": "yt", "url": ""},
+            { "type": "twitch", "url": ""}
+          ]
+        },
+        { 
+          "name": "wii-u",
+          "links": [
+            { "type": "website", "url": ""},
+            { "type": "discord", "url": ""},
+            { "type": "x", "url": ""},
+            { "type": "fb", "url": ""},
+            { "type": "yt", "url": ""},
+            { "type": "twitch", "url": ""}
+          ]
+        },
+        { 
+          "name": "melee",
+          "links": [
+            { "type": "website", "url": ""},
+            { "type": "discord", "url": ""},
+            { "type": "x", "url": ""},
+            { "type": "fb", "url": ""},
+            { "type": "yt", "url": ""},
+            { "type": "twitch", "url": ""}
+          ]
+        },
+        { 
+          "name": "p+",
+          "links": [
+            { "type": "website", "url": ""},
+            { "type": "discord", "url": ""},
+            { "type": "x", "url": ""},
+            { "type": "fb", "url": ""},
+            { "type": "yt", "url": ""},
+            { "type": "twitch", "url": ""}
+          ]
+        },
+        { 
+          "name": "brawl",
+          "links": [
+            { "type": "website", "url": ""},
+            { "type": "discord", "url": ""},
+            { "type": "x", "url": ""},
+            { "type": "fb", "url": ""},
+            { "type": "yt", "url": ""},
+            { "type": "twitch", "url": ""}
+          ]
+        },
+        { 
+          "name": "smash-64",
+          "links": [
+            { "type": "website", "url": ""},
+            { "type": "discord", "url": ""},
+            { "type": "x", "url": ""},
+            { "type": "fb", "url": ""},
+            { "type": "yt", "url": ""},
+            { "type": "twitch", "url": ""}
+          ]
+        }  
+      ]
+    }
+  ]
+}
