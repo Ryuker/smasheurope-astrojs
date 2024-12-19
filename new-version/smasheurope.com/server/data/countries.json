@@ -4,16 +4,35 @@
       "name": "Austria",
       "flag": "at",
       "links": [
-        { "type": "fb", "url": "https://www.facebook.com/groups/421686951299892/"}
+        { "type": "fb", "url": "https://www.facebook.com/groups/421686951299892/" }
+      ],
+      "games": [
+        {
+          "name": "ultimate",
+          "links": [
+            { "type": "website", "url": "https://smashbrothers.at/en/"},
+            { "type": "discord", "url": "http://discord.gg/Sa2m3CN"},
+            { "type": "x", "url": "https://twitter.com/SmashBrosAT"}
+          ]
+        }
       ]
     },
     {
       "name": "Belgium",
       "flag": "be",
       "links": [
-        { "type": "discord", "url": "https://discord.gg/0W4hwWkt5MSSNhdJ"},
         { "type": "fb", "url": "https://www.facebook.com/groups/smashBXL/"},
         { "type": "x", "url": "https://twitter.com/Smash_Belgium"}
+      ],
+      "games": [
+        {
+          "name": "ultimate",
+          "links": [
+            { "type": "website", "url": "https://smashbrothers.at/en/"},
+            { "type": "fb", "url": "https://www.facebook.com/groups/smashBXL/"},
+            { "type": "x", "url": "https://twitter.com/SmashBrosAT"}
+          ]
+        }
       ]
     },
     {
@@ -21,6 +40,16 @@
       "flag": "cy",
       "links": [
         { "type": "fb", "url": "https://www.facebook.com/groups/597270823736915/"}
+      ],
+      "games": [
+        {
+          "name": "ultimate",
+          "links": [
+            { "type": "discord", "url": "https://discord.gg/aAanQYS"},
+            { "type": "fb", "url": "https://www.facebook.com/groups/597270823736915"},
+            { "type": "x", "url": "https://twitter.com/SmashBrosCyprus"}
+          ]
+        }
       ]
     },
     {
@@ -30,6 +59,16 @@
         { "type": "website", "url": "http://www.smashbros.dk/"},
         { "type": "discord", "url": "https://discord.gg/cbSQX6f"},
         { "type": "fb", "url": "https://www.facebook.com/groups/1397200900559117/?ref=bookmarks"}
+      ],
+      "games": [
+        {
+          "name": "ultimate",
+          "links": [
+            { "type": "discord", "url": "https://discordapp.com/invite/cbSQX6f"},
+            { "type": "fb", "url": "https://www.facebook.com/groups/1397200900559117"},
+            { "type": "x", "url": "https://twitter.com/SmashBrosCyprus"}
+          ]
+        }
       ]
     },
     {
@@ -46,6 +85,49 @@
       ]
     },
     {
+      "name": "France",
+      "flag": "fr",
+      "games": [
+        {
+          "name": "ultimate",
+          "links": [
+            { "type": "website", "url": "https://www.smashultimate.fr/"},
+            { "type": "discord", "url": "https://discord.com/invite/GYyBUKg"},
+            { "type": "x", "url": "https://twitter.com/SmashUltimateFR"}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Germany",
+      "flag": "de",
+      "games": [
+        {
+          "name": "ultimate",
+          "links": [
+            { "type": "website", "url": "https://www.germanysmash.de/"},
+            { "type": "discord", "url": "https://discord.gg/QstytxxFFc"},
+            { "type": "x", "url": "https://x.com/germansmashcom"}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Greece",
+      "flag": "gr",
+      "games": [
+        {
+          "name": "ultimate",
+          "links": [
+            { "type": "discord", "url": "https://discord.gg/h8VJPdp"},
+            { "type": "x", "url": "https://twitter.com/SmashBrosGreece"},
+            { "type": "fb", "url": "https://www.facebook.com/SmashBrosGreece/"},
+            { "type": "twitch", "url": "https://www.twitch.tv/spggreece"}
+          ]
+        }
+      ]
+    },
+    {
       "name": "Ireland",
       "flag": "ie",
       "links": [
@@ -54,6 +136,15 @@
         { "type": "yt", "url": "https://www.youtube.com/user/MeleeFinland"},
         { "type": "twitch", "url": "https://www.twitch.tv/smashfinland"}
 
+      ],
+      "games": [
+        {
+          "name": "ultimate",
+          "links": [
+            { "type": "discord", "url": "https://discord.gg/M4mT7jd"},
+            { "type": "fb", "url": "https://www.facebook.com/groups/SmashIreland/"},
+          ]
+        }
       ]
     },
     {
@@ -61,6 +152,18 @@
       "flag": "it",
       "links": [
         { "type": "x", "url": "https://twitter.com/smashbrositalia"}
+      ],
+      "games": [
+        {
+          "name": "ultimate",
+          "links": [
+            { "type": "discord", "url": "https://t.co/XE7L9mpBYr"},
+            { "type": "x", "url": "https://twitter.com/smashbrositalia"},
+            { "type": "instagram", "url": "https://www.instagram.com/smashbrositalia/"},
+            { "type": "twitch", "url": "https://www.twitch.tv/smashbrositalia"},
+            { "type": "yt", "url": "https://www.youtube.com/SmashBrosItalia"}
+          ]
+        }
       ]
     },
     {
@@ -69,7 +172,17 @@
       "links": [
         { "type": "discord", "url": "https://discord.gg/hjTbqsZ"},
         { "type": "x", "url": "https://twitter.com/SmashLietuva"},
-        { "type": "fb", "url": "https://www.facebook.com/pg/SmashLietuva/posts/"}
+        { "type": "fb", "url": "https://www.facebook.com/pg/SmashLietuva"}
+      ],
+      "games": [
+        {
+          "name": "ultimate",
+          "links": [
+            { "type": "discord", "url": "https://discord.gg/hjTbqsZ"},
+            { "type": "fb", "url": "https://www.facebook.com/pg/SmashLietuva"},
+            { "type": "x", "url": "https://twitter.com/SmashLietuva"}
+          ]
+        }
       ]
     },
     {
@@ -86,8 +199,7 @@
       "flag": "mt",
       "links": [
         { "type": "discord", "url": "https://discord.gg/bUYFhYc"},
-        { "type": "x", "url": "https://twitter.com/smashmalta"},
-        { "type": "fb", "url": "https://www.facebook.com/groups/SmashersMalta/"}
+        { "type": "x", "url": "https://twitter.com/smashmalta"}
       ]
     },
     {
@@ -189,6 +301,16 @@
         { "type": "instagram", "url": "https://www.instagram.com/smashbrosspain/"},
         { "type": "yt", "url": "http://youtube.com/user/SmashBrosSpain"},
         { "type": "twitch", "url": "https://www.twitch.tv/smashbrosspain"}
+      ],
+      "games": [
+        {
+          "name": "ultimate",
+          "links": [
+            { "type": "discord", "url": "https://discord.gg/0xLdQDdl6va3YjKq"},
+            { "type": "fb", "url": "https://www.facebook.com/pg/SmashLietuva"},
+            { "type": "x", "url": "https://twitter.com/SmashLietuva"}
+          ]
+        }
       ]
     },
     {
@@ -196,13 +318,41 @@
       "flag": "ch",
       "links": [
         { "type": "fb", "url": "https://www.facebook.com/groups/218742101607432/"}
+      ],
+      "games": [
+        {
+          "name": "ultimate",
+          "links": [
+            { "type": "discord", "url": "https://discord.gg/YhgSjFn"},
+            { "type": "fb", "url": "https://www.facebook.com/groups/218742101607432/"},
+            { "type": "x", "url": "https://twitter.com/SmashLietuva"}
+          ]
+        }
       ]
     },
     {
       "name": "Ukraine",
-      "flag": "ch",
+      "flag": "ua",
       "links": [
         { "type": "fb", "url": "https://www.facebook.com/groups/SmashUK/"}
+      ]
+    },
+    {
+      "name": "United Kingdom",
+      "flag": "gb",
+      "links": [
+        { "type": "fb", "url": "https://www.facebook.com/groups/SmashUK/"}
+      ],
+      "games": [
+        {
+          "name": "ultimate",
+          "links": [
+            { "type": "website", "url": "https://www.smashultimate.uk/"},
+            { "type": "discord", "url": "https://discord.gg/gWxdYyV"},
+            { "type": "fb", "url": "https://www.facebook.com/groups/SmashUK/"},
+            { "type": "x", "url": "https://x.com/SmashUltimateUK"}
+          ]
+        }
       ]
     }
   ]
