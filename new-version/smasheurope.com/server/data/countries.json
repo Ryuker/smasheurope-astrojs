@@ -15,6 +15,12 @@
             { "type": "x", "url": "https://twitter.com/SmashBrosAT"}
           ]
         }
+        {
+          "name": "melee",
+          "links": [
+            { "type": "discord", "url": "https://discord.gg/4mH8CpV"}
+          ]
+        }
       ]
     },
     {
@@ -31,6 +37,13 @@
             { "type": "website", "url": "https://smashbrothers.at/en/"},
             { "type": "fb", "url": "https://www.facebook.com/groups/smashBXL/"},
             { "type": "x", "url": "https://twitter.com/SmashBrosAT"}
+          ]
+        },
+        {
+          "name": "melee",
+          "links": [
+            { "type": "discord", "url": "https://discord.gg/xQtsmc2"},
+            { "type": "x", "url": "https://twitter.com/MeleeBelgium"}
           ]
         }
       ]
@@ -95,6 +108,16 @@
             { "type": "discord", "url": "https://discord.com/invite/GYyBUKg"},
             { "type": "x", "url": "https://twitter.com/SmashUltimateFR"}
           ]
+        },
+        {
+          "name": "melee",
+          "links": [
+            { "type": "website", "url": "http://lefrenchmelee.fr/"},
+            { "type": "discord", "url": "https://discord.gg/zc4dUYQ"},
+            { "type": "x", "url": "https://twitter.com/lefrenchmelee"},
+            { "type": "fb", "url": "https://www.facebook.com/LeFrenchMelee"},
+            { "type": "twitch", "url": "http://twitch.tv/LeFrenchMelee"}
+          ]
         }
       ]
     },
@@ -109,6 +132,15 @@
             { "type": "discord", "url": "https://discord.gg/QstytxxFFc"},
             { "type": "x", "url": "https://x.com/germansmashcom"}
           ]
+        },
+        {
+          "name": "melee",
+          "links": [
+            { "type": "website", "url": "https://www.germanysmash.de/"},
+            { "type": "discord", "url": "http://discord.gg/TgmQxcV"},
+            { "type": "x", "url": "https://twitter.com/German_Melee"},
+            { "type": "fb", "url": "https://www.facebook.com/GermanSmash"}
+          ]
         }
       ]
     },
@@ -120,6 +152,15 @@
           "name": "ultimate",
           "links": [
             { "type": "discord", "url": "https://discord.gg/h8VJPdp"},
+            { "type": "x", "url": "https://twitter.com/SmashBrosGreece"},
+            { "type": "fb", "url": "https://www.facebook.com/SmashBrosGreece/"},
+            { "type": "twitch", "url": "https://www.twitch.tv/spggreece"}
+          ]
+        },
+        {
+          "name": "melee",
+          "links": [
+            { "type": "discord", "url": "https://discord.gg/ehGuNet"},
             { "type": "x", "url": "https://twitter.com/SmashBrosGreece"},
             { "type": "fb", "url": "https://www.facebook.com/SmashBrosGreece/"},
             { "type": "twitch", "url": "https://www.twitch.tv/spggreece"}
@@ -163,6 +204,14 @@
             { "type": "twitch", "url": "https://www.twitch.tv/smashbrositalia"},
             { "type": "yt", "url": "https://www.youtube.com/SmashBrosItalia"}
           ]
+        },
+        {
+          "name": "melee",
+          "links": [
+            { "type": "website", "url": "http://www.ssbm.it/forum/"},
+            { "type": "discord", "url": "https://discord.gg/bYzWsNQ"},
+            { "type": "fb", "url": "https://www.facebook.com/groups/smashbrositalia/"}
+          ]
         }
       ]
     },
@@ -200,6 +249,14 @@
       "links": [
         { "type": "discord", "url": "https://discord.gg/bUYFhYc"},
         { "type": "x", "url": "https://twitter.com/smashmalta"}
+      ],
+      "games": [
+        {
+          "name": "melee",
+          "links": [
+            { "type": "fb", "url": "https://www.facebook.com/groups/112462789389861/"}
+          ]
+        }
       ]
     },
     {
@@ -251,6 +308,14 @@
         { "type": "fb", "url": "http://facebook.com/smashnorge"},
         { "type": "yt", "url": "https://www.youtube.com/smashnorge"},
         { "type": "twitch", "url": "https://www.twitch.tv/smashnorge"}
+      ],
+      "games": [
+        {
+          "name": "melee",
+          "links": [
+            { "type": "fb", "url": "https://www.facebook.com/groups/meleenorway/"}
+          ]
+        }
       ]
     },
     {
@@ -271,6 +336,28 @@
         { "type": "discord", "url": "https://discord.gg/smashbrosportugal"},
         { "type": "x", "url": "https://twitter.com/SmashBrosPT"},
         { "type": "fb", "url": "https://www.facebook.com/pages/Smash-Bros-Portugal/431843766963840"}
+      ],
+      "games": [
+        {
+          "name": "melee",
+          "links": [
+            { "type": "discord", "url": "https://discord.com/invite/BEmtSh4"},
+            { "type": "fb", "url": "https://www.facebook.com/pages/Smash-Bros-Portugal/431843766963840"},
+            { "type": "x", "url": "https://twitter.com/SSBMeleePT"}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Russia",
+      "flag": "ru",
+      "games": [
+        {
+          "name": "melee",
+          "links": [
+            { "type": "discord", "url": "https://discord.gg/7guM95xeda"}
+          ]
+        }
       ]
     },
     {
@@ -278,6 +365,15 @@
       "flag": "gb-sct",
       "links": [
         { "type": "fb", "url": "https://www.facebook.com/groups/194535274054492/"}
+      ],
+      "games": [
+        {
+          "name": "melee",
+          "links": [
+            { "type": "discord", "url": "https://discord.com/invite/fj7KccKYKU"},
+            { "type": "x", "url": "https://x.com/ScottishMelee"}
+          ]
+        }
       ]
     },
     {
@@ -291,6 +387,15 @@
         { "type": "instagram", "url": "https://www.instagram.com/smashbrosspain/"},
         { "type": "yt", "url": "http://youtube.com/user/SmashBrosSpain"},
         { "type": "twitch", "url": "https://www.twitch.tv/smashbrosspain"}
+      ],
+      "games": [
+        {
+          "name": "melee",
+          "links": [
+            { "type": "discord", "url": "https://discord.gg/EyQ4vjF"},
+            { "type": "fb", "url": "https://www.facebook.com/groups/116757201803852/"}
+          ]
+        }
       ]
     },
     {
@@ -311,6 +416,12 @@
             { "type": "x", "url": "https://twitter.com/SmashLietuva"}
           ]
         }
+        {
+          "name": "melee",
+          "links": [
+            { "type": "discord", "url": "http://discord.gg/dqR8Mg5"}
+          ]
+        }
       ]
     },
     {
@@ -326,6 +437,17 @@
             { "type": "discord", "url": "https://discord.gg/YhgSjFn"},
             { "type": "fb", "url": "https://www.facebook.com/groups/218742101607432/"},
             { "type": "x", "url": "https://twitter.com/SmashLietuva"}
+          ]
+        },
+        {
+          "name": "melee",
+          "links": [
+            { "type": "website", "url": "https://linktr.ee/SwissMelee"},
+            { "type": "discord", "url": "https://discord.gg/H8m4CwjmBv"},
+            { "type": "x", "url": "https://twitter.com/Swiss_melee"},
+            { "type": "fb", "url": "https://www.facebook.com/groups/218742101607432/"},
+            { "type": "twitch", "url": "https://www.twitch.tv/swissmelee"},
+            { "type": "yt", "url": "https://www.youtube.com/channel/UCq7hYMPsWWYaXIR-xEXvD_Q/featured"}
           ]
         }
       ]
@@ -351,6 +473,16 @@
             { "type": "discord", "url": "https://discord.gg/gWxdYyV"},
             { "type": "fb", "url": "https://www.facebook.com/groups/SmashUK/"},
             { "type": "x", "url": "https://x.com/SmashUltimateUK"}
+          ]
+        },
+        {
+          "name": "melee",
+          "links": [
+            { "type": "website", "url": "http://melee.xyz"},
+            { "type": "discord", "url": "https://discord.com/invite/Hj57XPgdze"},
+            { "type": "fb", "url": "https://www.facebook.com/groups/MeleeUK/"},
+            { "type": "x", "url": "https://x.com/MeleeUK"},
+            { "type": "twitch", "url": "https://www.twitch.tv/phoenixsmash"}
           ]
         }
       ]
