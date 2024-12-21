@@ -134,6 +134,12 @@
             { "type": "x", "url": "https://x.com/projectmfrance"},
             { "type": "twitch", "url": "http://twitch.tv/pm_france"}
           ]
+        },
+        {
+          "name": "wii-u",
+          "links": [
+            { "type": "fb", "url": "https://www.facebook.com/groups/1468374803440676/"}
+          ]
         }
       ]
     },
@@ -156,6 +162,12 @@
             { "type": "discord", "url": "http://discord.gg/TgmQxcV"},
             { "type": "x", "url": "https://twitter.com/German_Melee"},
             { "type": "fb", "url": "https://www.facebook.com/GermanSmash"}
+          ]
+        },
+        {
+          "name": "wii-u",
+          "links": [
+            { "type": "discord", "url": "discord.gg/XpjNsRp"}
           ]
         }
       ]
