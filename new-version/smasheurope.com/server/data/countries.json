@@ -169,6 +169,12 @@
           "links": [
             { "type": "discord", "url": "discord.gg/XpjNsRp"}
           ]
+        },
+        {
+          "name": "smash-64",
+          "links": [
+            { "type": "fb", "url": "https://www.facebook.com/groups/857162747729143"}
+          ]
         }
       ]
     },
