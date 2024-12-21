@@ -12,7 +12,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "server": "json-server --watch server/data/events.json --port 5000"
+    "server": "json-server --watch server/data/index.js --port 5000"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
