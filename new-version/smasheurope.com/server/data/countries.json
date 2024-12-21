@@ -217,7 +217,7 @@
           "name": "ultimate",
           "links": [
             { "type": "discord", "url": "https://discord.gg/M4mT7jd"},
-            { "type": "fb", "url": "https://www.facebook.com/groups/SmashIreland/"},
+            { "type": "fb", "url": "https://www.facebook.com/groups/SmashIreland/"}
           ]
         }
       ]
@@ -436,20 +436,15 @@
       "name": "Sweden",
       "flag": "se",
       "links": [
-        { "type": "fb", "url": "https://www.facebook.com/SwedishSmash"},
-        { "type": "instagram", "url": "https://www.instagram.com/smashbrosspain/"},
-        { "type": "yt", "url": "http://youtube.com/user/SmashBrosSpain"},
-        { "type": "twitch", "url": "https://www.twitch.tv/smashbrosspain"}
+        { "type": "fb", "url": "https://www.facebook.com/SwedishSmash"}
       ],
       "games": [
         {
           "name": "ultimate",
           "links": [
-            { "type": "discord", "url": "https://discord.gg/0xLdQDdl6va3YjKq"},
-            { "type": "fb", "url": "https://www.facebook.com/pg/SmashLietuva"},
-            { "type": "x", "url": "https://twitter.com/SmashLietuva"}
+            { "type": "discord", "url": "https://discord.gg/0xLdQDdl6va3YjKq"}
           ]
-        }
+        },
         {
           "name": "melee",
           "links": [
