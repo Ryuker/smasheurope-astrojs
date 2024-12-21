@@ -94,6 +94,16 @@
       [v] PUT event handler by ID - /api/events/[eventId] 
         - ! important to make sure we send over the full event object, JSON-SERVER replaces the whole object
       [v] DELETE event handler - /api/events/[eventId]
+    []countries
+      [] GET all countries - /api/countries
+      [] GET country by id - /api/countries/[countryId]
+        [] return `404` if event ID isn't found
+      [] GET country by Slug?
+        - won't work with json-server, so it's for later
+      [] POST new country - /api/countries
+      [] PUT country handler by ID - /api/countries/[countryId] 
+        - ! important to make sure we send over the full country object, JSON-SERVER replaces the whole object
+      [] DELETE country handler - /api/countries/[countryId]
 
 # Responsive
   [] Responsive style all component and pages
