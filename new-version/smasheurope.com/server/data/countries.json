@@ -14,11 +14,17 @@
             { "type": "discord", "url": "http://discord.gg/Sa2m3CN"},
             { "type": "x", "url": "https://twitter.com/SmashBrosAT"}
           ]
-        }
+        },
         {
           "name": "melee",
           "links": [
             { "type": "discord", "url": "https://discord.gg/4mH8CpV"}
+          ]
+        },
+        {
+          "name": "p+",
+          "links": [
+            { "type": "discord", "url": "https://discord.gg/aVUGCku"}
           ]
         }
       ]
@@ -117,6 +123,16 @@
             { "type": "x", "url": "https://twitter.com/lefrenchmelee"},
             { "type": "fb", "url": "https://www.facebook.com/LeFrenchMelee"},
             { "type": "twitch", "url": "http://twitch.tv/LeFrenchMelee"}
+          ]
+        },
+        {
+          "name": "p+",
+          "links": [
+            { "type": "website", "url": "https://projectmfr.wordpress.com/"},
+            { "type": "discord", "url": "discord.gg/DXH52mf"},
+            { "type": "fb", "url": "https://www.facebook.com/groups/603709883010189/?fref=ts"},
+            { "type": "x", "url": "https://x.com/projectmfrance"},
+            { "type": "twitch", "url": "http://twitch.tv/pm_france"}
           ]
         }
       ]
