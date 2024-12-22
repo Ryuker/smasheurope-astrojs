@@ -5,9 +5,9 @@ const inStaticMode = await import.meta.env.STATIC_MODE;
 
 let api_url;
 
-inStaticMode 
+inStaticMode === true
   ? api_url = new URL(`http://localhost:5000/events`)
-  : api_url = new URL(`/api/events.json`, Astro.url);
+  : api_url = new URL(`/api/events`, Astro.url);
 
 const response = await fetch(api_url);
 const data = await response.json();

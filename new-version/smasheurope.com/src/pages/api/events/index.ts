@@ -11,7 +11,7 @@ export const GET: APIRoute = async ({ params, request }) => {
   const response = await fetch(uri);
   const eventsData = await response.json();
 
-  const data = eventsData;
+  const data = eventsData.events;
 
   const dataStr = JSON.stringify(data);
 
