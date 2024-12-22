@@ -565,6 +565,29 @@
       "prevEventDetails": "https://www.start.gg/tournament/festa-2024/details",
       "embedCode": "<blockquote class=\"twitter-tweet\" data-media-max-width=\"560\"><p lang=\"zxx\" dir=\"ltr\"><a href=\"https://t.co/PJQAN8qxmd\">pic.twitter.com/PJQAN8qxmd</a></p>&mdash; Phoenix Blue (@PXBgg) <a href=\"https://twitter.com/PXBgg/status/1863266880405811591?ref_src=twsrc%5Etfw\">December 1, 2024</a></blockquote> <script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>",
       "slug": "festa-2025"
+    },
+    {
+      "id": "g452j",
+      "banner": "Valhalla5/valhalla_5-banner-se.png",
+      "title": "Valhalla V",
+      "games": "Melee | Ultimate",
+      "description": "Valhalla is  back in the <a target=\"_blank\" href=\"https://kulturogfritidn.kk.dk/noerrebrohallen\">Nørrebrohallen</a> for one more rodeo, but this time, the tournament will take place in spring offering an opportunity to experience a warmer and brighter Copenhagen while enjoying some good old Smash in the nation's capital! There are Singles and Doubles competitions for Melee and Ultimate and Rivals of Aether II joins the line up. There's room for 450 attendees total.",
+      "dates": [
+        "2025-04-24T00:00:00.000Z",
+        "2025-04-27T20:00:00.000Z"
+      ],
+      "location": {
+        "municipality": "Copenhagen",
+        "country": "Denmark"
+      },
+      "extraVideos": [
+        {
+          "id": "after-movie",
+          "text": "After Movie",
+          "url": "https://www.youtube-nocookie.com/embed/-KGU6XwWAuE?si=mc2WDNkPD5Y6V85G"
+        }
+      ],
+      "slug": "valhalla-5"
     }
   ]
 }
