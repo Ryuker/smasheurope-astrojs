@@ -6,12 +6,12 @@ export const GET: APIRoute = async ({ params, request }) => {
   console.log('Get request received');
 
   // Fetch the data from the external API
-  const api_endpoint = 'http://localhost:5000/countries';
+  const api_endpoint = 'http://localhost:5000/api/countries';
   const uri = `${api_endpoint}`;
   const response = await fetch(uri);
-  const eventsData = await response.json();
+  const countriesData = await response.json();
 
-  const data = eventsData;
+  const data = countriesData;
 
   const dataStr = JSON.stringify(data);
 
@@ -30,16 +30,16 @@ export const POST: APIRoute = async ({ params, request }) => {
   const newEvent = await request.json();
 
   // Fetch the data from the external API
-  const api_endpoint = 'http://localhost:5000/events';
+  const api_endpoint = 'http://localhost:5000/api/countries';
   const uri = `${api_endpoint}`;
   const response = await fetch(uri, {
     method: 'POST',
     body: JSON.stringify(newEvent)
   });
 
-  const eventData = await response.json();
+  const countryData = await response.json();
 
-  const data = eventData;
+  const data = countryData;
 
   const dataStr = JSON.stringify(data);
 

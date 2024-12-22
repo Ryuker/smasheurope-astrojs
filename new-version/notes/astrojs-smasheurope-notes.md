@@ -73,4 +73,9 @@ modal animation - [link](https://frontendmasters.com/blog/animating-dialog/)
 # Country flags
 - flag-icons package with SVG flags - [flag-icons](https://github.com/lipis/flag-icons)
 
+# JSON Server - Multiple files API support
+- video explaining how to support CRUD for multiple files - [video](https://www.youtube.com/watch?v=d9p9n7iJ1HE&t=1736s)
+
+
+
 
