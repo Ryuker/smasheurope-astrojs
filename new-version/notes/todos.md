@@ -94,6 +94,8 @@
       [v] PUT event handler by ID - /api/events/[eventId] 
         - ! important to make sure we send over the full event object, JSON-SERVER replaces the whole object
       [v] DELETE event handler - /api/events/[eventId]
+      [] sort events chronologically during or after fetch
+        - I think we can modify the query we send to  JSON server to return a sorted result.
     []countries
       [] GET all countries - /api/countries
       [] GET country by id - /api/countries/[countryId]

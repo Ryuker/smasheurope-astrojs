@@ -93,7 +93,8 @@ export const DELETE: APIRoute = async ({ params, request }) => {
 
 // for static version only
 export async function getStaticPaths() {
-  if (!import.meta.env.STATIC_MODE){
+  const inStaticMode = await import.meta.env.STATIC_MODE;
+  if (inStaticMode === "false"){
     return [];
   }
   
