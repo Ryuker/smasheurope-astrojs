@@ -41,6 +41,8 @@ router.render = (req, res) => {
   ) {
     const db = router.db; // Lowdb instance
 
+    console.log(req.method, ' from jsonServer.cjs');
+    
     writeData(path.join(__dirname, 'events.json'), {
       events: db.get('events').value(),
     });

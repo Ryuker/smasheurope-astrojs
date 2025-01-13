@@ -2,6 +2,7 @@
   "countries": [
     {
       "name": "Austria",
+      "id": "1",
       "flag": "at",
       "links": [
         {
@@ -49,6 +50,7 @@
     },
     {
       "name": "Belgium",
+      "id": "2",
       "flag": "be",
       "links": [
         {
@@ -95,6 +97,7 @@
     },
     {
       "name": "Cyprus",
+      "id": "3",
       "flag": "cy",
       "links": [
         {
@@ -124,6 +127,7 @@
     },
     {
       "name": "Denmark",
+      "id": "4",
       "flag": "dk",
       "links": [
         {
@@ -161,6 +165,7 @@
     },
     {
       "name": "Finland",
+      "id": "5",
       "flag": "fi",
       "links": [
         {
@@ -191,6 +196,7 @@
     },
     {
       "name": "France",
+      "id": "6",
       "flag": "fr",
       "games": [
         {
@@ -273,6 +279,7 @@
     },
     {
       "name": "Germany",
+      "id": "7",
       "flag": "de",
       "games": [
         {
@@ -335,6 +342,7 @@
     },
     {
       "name": "Greece",
+      "id": "8",
       "flag": "gr",
       "games": [
         {
@@ -383,6 +391,7 @@
     },
     {
       "name": "Ireland",
+      "id": "9",
       "flag": "ie",
       "links": [
         {
@@ -420,6 +429,7 @@
     },
     {
       "name": "Italy",
+      "id": "10",
       "flag": "it",
       "links": [
         {
@@ -474,6 +484,7 @@
     },
     {
       "name": "Lithuania",
+      "id": "11",
       "flag": "lt",
       "links": [
         {
@@ -511,6 +522,7 @@
     },
     {
       "name": "Luxembourg",
+      "id": "12",
       "flag": "lu",
       "links": [
         {
@@ -529,6 +541,7 @@
     },
     {
       "name": "Malta",
+      "id": "13",
       "flag": "mt",
       "links": [
         {
@@ -554,6 +567,7 @@
     },
     {
       "name": "Netherlands",
+      "id": "14",
       "flag": "fr",
       "links": [
         {
@@ -641,6 +655,7 @@
     },
     {
       "name": "Norway",
+      "id": "15",
       "flag": "no",
       "links": [
         {
@@ -682,6 +697,7 @@
     },
     {
       "name": "Poland",
+      "id": "16",
       "flag": "pl",
       "links": [
         {
@@ -708,6 +724,7 @@
     },
     {
       "name": "Portugal",
+      "id": "17",
       "flag": "pt",
       "links": [
         {
@@ -745,6 +762,7 @@
     },
     {
       "name": "Russia",
+      "id": "18",
       "flag": "ru",
       "games": [
         {
@@ -760,6 +778,7 @@
     },
     {
       "name": "Scotland",
+      "id": "19",
       "flag": "gb-sct",
       "links": [
         {
@@ -785,6 +804,7 @@
     },
     {
       "name": "Spain",
+      "id": "20",
       "flag": "es",
       "links": [
         {
@@ -834,6 +854,7 @@
     },
     {
       "name": "Sweden",
+      "id": "21",
       "flag": "se",
       "links": [
         {
@@ -864,6 +885,7 @@
     },
     {
       "name": "Switzerland",
+      "id": "22",
       "flag": "ch",
       "links": [
         {
@@ -922,6 +944,7 @@
     },
     {
       "name": "Ukraine",
+      "id": "23",
       "flag": "ua",
       "links": [
         {
@@ -932,6 +955,7 @@
     },
     {
       "name": "United Kingdom",
+      "id": "24",
       "flag": "gb",
       "links": [
         {
