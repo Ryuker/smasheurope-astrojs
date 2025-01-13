@@ -8,6 +8,24 @@ import LinkButton from "@components/ui/LinkButton.astro";
 import Modal from "@components/ui/Modal.astro";
 import Communities from "@components/Communities.astro";
 import CardsFilter from "@components/CardsFilter.astro";
+
+
+const inStaticMode = await import.meta.env.STATIC_MODE;
+console.log('inStaticMode: ', inStaticMode);
+
+let api_url;
+
+inStaticMode === "true" 
+	? api_url = new URL(`http://localhost:5000/api/countries`)
+	: api_url = new URL(`/api/countries`, Astro.url);
+
+const response = await fetch(api_url);
+const data = await response.json();
+
+const countries = data;
+
+console.log(countries);
+
 ---
 
 <MainLayout title="European Smash Communities">
@@ -22,7 +40,7 @@ import CardsFilter from "@components/CardsFilter.astro";
 		<p class="text-se-dark">—The SmashEurope Development Team</p>
 	</Hero>
 
-  <Communities />
+  <Communities countries={countries} />
 	
 	<section>
 		<div class="container mx-auto max-w-6xl my-10">
