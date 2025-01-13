@@ -51,3 +51,25 @@ export const POST: APIRoute = async ({ params, request }) => {
   });
 }
 
+// for static version only
+export async function getStaticPaths() {
+  const inStaticMode = await import.meta.env.STATIC_MODE;
+  if (inStaticMode === "false"){
+    return [];
+  }
+  
+  // Fetch the data from the external API
+  const api_endpoint = 'http://localhost:5000/countries';
+  const uri = `${api_endpoint}`;
+  const response = await fetch(uri);
+  const countriesData = await response.json();
+
+  const data = countriesData;
+
+  return data.flatMap(country => {
+    return [
+      { params: { countryId: country.id } },
+    ]
+  });
+}
+
