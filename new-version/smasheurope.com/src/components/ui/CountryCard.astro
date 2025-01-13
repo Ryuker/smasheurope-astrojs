@@ -6,7 +6,7 @@ import ToggleButton from "./ToggleButton.astro";
 
 const { country } = Astro.props;
 
-const { links }  = country;
+const { links, games }  = country;
 
 function exists(type: string) {
   return links.some( link => link.type === type ) ? true : false ;
@@ -14,6 +14,11 @@ function exists(type: string) {
 
 function getLinkByType(type: string) {
   return links.find( link => link.type === type );
+}
+
+function gameExists(name: string) {
+  // console.log('gameExists', name, country.name);
+  return games.some( game => game.name === name) ? true : false;
 }
 ---
 
@@ -88,25 +93,39 @@ function getLinkByType(type: string) {
         </div>
       }
       <!-- Discors and Socials -->
-      <div class="font-semibold text-center mb-3">Game Specific Communities</div>
-       <div class="text-center border-2 rounded-lg border-se-blue-200 p-2 md:p-4" data-game-container>
-        <div class="flex justify-center flex-wrap gap-2 md:gap-5">
-          <ToggleButton id=`${country.flag}-ultimate` text="Ultimate" classes="w-full" target="ultimate" targetType="game"/>
-          <ToggleButton id=`${country.flag}-wii-u` text="Wii-U / 3DS" classes="w-full" target="wii-u" targetType="game"/>
-          <ToggleButton id=`${country.flag}-melee` text="Melee" classes="w-full" target="melee" targetType="game"/>
-          <ToggleButton id=`${country.flag}-p+` text="Project M/+" classes="w-full" target="p+" targetType="game"/>
-          <ToggleButton id=`${country.flag}-brawl` text="Brawl" classes="w-full" target="brawl" targetType="game"/>
-          <ToggleButton id=`${country.flag}-smash-64` text="Smash 64" classes="w-full" target="smash-64" targetType="game"/>
+      { country.games && 
+        <div class="font-semibold text-center mb-3">Game Specific Communities</div>
+        <div class="text-center border-2 rounded-lg border-se-blue-200 p-2 md:p-4" data-game-container>
+          <div class="flex justify-center flex-wrap gap-2 md:gap-5">
+            { gameExists('ultimate') && 
+              <ToggleButton id=`${country.flag}-ultimate` text="Ultimate" classes="w-full" target="ultimate" targetType="game"/>
+            }
+            { gameExists('wii-u') && 
+              <ToggleButton id=`${country.flag}-wii-u` text="Wii-U / 3DS" classes="w-full" target="wii-u" targetType="game"/>
+            }
+            { gameExists('melee') && 
+              <ToggleButton id=`${country.flag}-melee` text="Melee" classes="w-full" target="melee" targetType="game"/>
+            } 
+            { gameExists('p+') && 
+              <ToggleButton id=`${country.flag}-p+` text="Project M/+" classes="w-full" target="p+" targetType="game"/>
+            }
+            { gameExists('brawl') && 
+              <ToggleButton id=`${country.flag}-brawl` text="Brawl" classes="w-full" target="brawl" targetType="game"/>
+            }
+            { gameExists('smash-64') && 
+              <ToggleButton id=`${country.flag}-smash-64` text="Smash 64" classes="w-full" target="smash-64" targetType="game"/>
+            }
+          </div>
+          <div class="flex flex-col">
+            <CountryLinks country={country} game="Smash Bros.Ultimate" gameId="ultimate" classes="hidden" />
+            <CountryLinks country={country} game="Smash Bros. for Wii U / 3DS" gameId="wii-u" classes="hidden" />
+            <CountryLinks country={country} game="Smash Bros. Melee" gameId="melee" classes="hidden" />
+            <CountryLinks country={country} game="Project M/+" gameId="p+" classes="hidden" />
+            <CountryLinks country={country} game="Smash Bros. Brawl" gameId="brawl" classes="hidden" />
+            <CountryLinks country={country} game="Smash Bros. 64" gameId="smash-64" classes="hidden" />
+          </div>
         </div>
-        <div class="flex flex-col">
-          <CountryLinks country={country} game="Smash Bros.Ultimate" gameId="ultimate" classes="hidden" />
-          <CountryLinks country={country} game="Smash Bros. for Wii U / 3DS" gameId="wii-u" classes="hidden" />
-          <CountryLinks country={country} game="Smash Bros. Melee" gameId="melee" classes="hidden" />
-          <CountryLinks country={country} game="Project M/+" gameId="p+" classes="hidden" />
-          <CountryLinks country={country} game="Smash Bros. Brawl" gameId="brawl" classes="hidden" />
-          <CountryLinks country={country} game="Smash Bros. 64" gameId="smash-64" classes="hidden" />
-        </div>
-      </div>
+      }
     </div>
   </div>
 </div>
