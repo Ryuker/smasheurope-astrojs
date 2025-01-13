@@ -10,7 +10,7 @@ export const GET: APIRoute = async ({ params, request }) => {
   const uri = `${api_endpoint}`;
   const response = await fetch(uri);
   const countriesData = await response.json();
-  console.log(countriesData);
+  // console.log(countriesData);
 
   const data = countriesData;
 

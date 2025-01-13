@@ -20,6 +20,10 @@ function gameExists(name: string) {
   // console.log('gameExists', name, country.name);
   return games.some( game => game.name === name) ? true : false;
 }
+
+function getGameByName(name: string) {
+  return games.find( game => game.name === name );
+}
 ---
 
 <div class="min-h-[500px] px-5 sm:px-5 md:p-0" data-card>
@@ -117,12 +121,24 @@ function gameExists(name: string) {
             }
           </div>
           <div class="flex flex-col">
-            <CountryLinks country={country} game="Smash Bros.Ultimate" gameId="ultimate" classes="hidden" />
-            <CountryLinks country={country} game="Smash Bros. for Wii U / 3DS" gameId="wii-u" classes="hidden" />
-            <CountryLinks country={country} game="Smash Bros. Melee" gameId="melee" classes="hidden" />
-            <CountryLinks country={country} game="Project M/+" gameId="p+" classes="hidden" />
-            <CountryLinks country={country} game="Smash Bros. Brawl" gameId="brawl" classes="hidden" />
-            <CountryLinks country={country} game="Smash Bros. 64" gameId="smash-64" classes="hidden" />
+            { gameExists('ultimate') && 
+              <CountryLinks country={country} game={getGameByName('ultimate')} gameName="Smash Bros.Ultimate" gameId="ultimate" classes="hidden" />
+            }
+            { gameExists('wii-u') && 
+              <CountryLinks country={country} game={getGameByName('wii-u')} gameName="Smash Bros. for Wii U / 3DS" gameId="wii-u" classes="hidden" />
+            }
+            { gameExists('melee') && 
+              <CountryLinks country={country} game={getGameByName('melee')} gameName="Smash Bros. Melee" gameId="melee" classes="hidden" />
+            }
+            { gameExists('p+') && 
+              <CountryLinks country={country} game={getGameByName('p+')} gameName="Project M/+" gameId="p+" classes="hidden" />
+            }
+            { gameExists('brawl') && 
+              <CountryLinks country={country} game={getGameByName('brawl')} gameName="Smash Bros. Brawl" gameId="brawl" classes="hidden" />
+            }
+            { gameExists('smash-64') && 
+              <CountryLinks country={country} game={getGameByName('smash-64')} gameName="Smash Bros. 64" gameId="smash-64" classes="hidden" />
+            }
           </div>
         </div>
       }

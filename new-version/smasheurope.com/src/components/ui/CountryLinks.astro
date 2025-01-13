@@ -1,33 +1,56 @@
 ---
 import LinkButton from "./LinkButton.astro";
 
-const { country, game, classes, gameId } = Astro.props;
+const { country, game, gameName, classes, gameId } = Astro.props;
+
+function exists(type: string) {
+  return game.links.some( link => link.type === type ) ? true : false ;
+}
+
+function getLinkByType(type: string) {
+  return game.links.find( link => link.type === type );
+}
+
 ---
 <div class=`${classes ? classes + ' ': ''}mt-10` data-game={gameId}>
-  <div >{game}</div>
+  <div >{gameName}</div>
   <div class="flex gap-3 justify-center">
     <div class="flex w-full justify-between gap-5 pt-2 flex-wrap">
-      <LinkButton icon="globe" newTab={true} id=`${country.flag}-ultimate-website` tooltipText="Website" classes="basis-full"
-        url="https://docs.google.com/spreadsheets/d/11ElDfT0YmpIuiuApQ95lnoKM3b6BIe8MXmPyUfK4Sx8"
-      />
-      <LinkButton icon="discord" newTab={true} id=`${country.flag}-ultimate-discord` tooltipText="Discord" classes="flex-1"
-        url="https://docs.google.com/spreadsheets/d/11ElDfT0YmpIuiuApQ95lnoKM3b6BIe8MXmPyUfK4Sx8"
-      />
-      <LinkButton icon="x" newTab={true} id=`${country.flag}-ultimate-x` tooltipText="X" classes="flex-1"
-        url="https://docs.google.com/spreadsheets/d/11ElDfT0YmpIuiuApQ95lnoKM3b6BIe8MXmPyUfK4Sx8"
-      />
-      <LinkButton icon="bs" newTab={true} id=`${country.flag}-ultimate-bs` tooltipText="BlueSky" classes="flex-1"
-        url="https://docs.google.com/spreadsheets/d/11ElDfT0YmpIuiuApQ95lnoKM3b6BIe8MXmPyUfK4Sx8"
-      />
-      <LinkButton icon="fb" newTab={true} id=`${country.flag}-ultimate-fb` tooltipText="Facebook" classes="flex-1"
-        url="https://docs.google.com/spreadsheets/d/11ElDfT0YmpIuiuApQ95lnoKM3b6BIe8MXmPyUfK4Sx8"
-      />
-      <LinkButton icon="yt" newTab={true} id=`${country.flag}-ultimate-yt` tooltipText="Youtube" classes="flex-1"
-        url="https://docs.google.com/spreadsheets/d/11ElDfT0YmpIuiuApQ95lnoKM3b6BIe8MXmPyUfK4Sx8"
-      />
-      <LinkButton icon="twitch" newTab={true} id=`${country.flag}-ultimate-twitch` tooltipText="Twitch" classes="flex-1"
-        url="https://docs.google.com/spreadsheets/d/11ElDfT0YmpIuiuApQ95lnoKM3b6BIe8MXmPyUfK4Sx8"
-      />
+      { exists('website') && 
+        <LinkButton icon="globe" newTab={true} id=`${country.flag}-ultimate-website` tooltipText="Website" classes="basis-full"
+          url={getLinkByType('website').url}
+        />
+      }
+      { exists('discord') && 
+        <LinkButton icon="discord" newTab={true} id=`${country.flag}-ultimate-discord` tooltipText="Discord" classes="flex-1"
+          url={getLinkByType('discord').url}
+        />
+      }
+      { exists('x') && 
+        <LinkButton icon="x" newTab={true} id=`${country.flag}-ultimate-x` tooltipText="X" classes="flex-1"
+          url={getLinkByType('x').url}
+        />
+      }
+      { exists('bs') && 
+        <LinkButton icon="bs" newTab={true} id=`${country.flag}-ultimate-bs` tooltipText="BlueSky" classes="flex-1"
+          url={getLinkByType('bs').url}
+        />
+      }
+      { exists('fb') && 
+        <LinkButton icon="fb" newTab={true} id=`${country.flag}-ultimate-fb` tooltipText="Facebook" classes="flex-1"
+          url={getLinkByType('fb').url}
+        />
+      }
+      { exists('yt') && 
+        <LinkButton icon="yt" newTab={true} id=`${country.flag}-ultimate-yt` tooltipText="Youtube" classes="flex-1"
+          url={getLinkByType('yt').url}
+        />
+      }
+      { exists('twitch') && 
+        <LinkButton icon="twitch" newTab={true} id=`${country.flag}-ultimate-twitch` tooltipText="Twitch" classes="flex-1"
+          url={getLinkByType('twitch').url}
+        />
+      }
     </div>
   </div>  
 </div>
