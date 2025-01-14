@@ -17,7 +17,7 @@ function getLinkByType(type: string) {
 }
 
 function gameExists(name: string) {
-  // console.log('gameExists', name, country.name);
+  console.log('gameExists', name, country.name, games.some( game => game.name === name));
   return games.some( game => game.name === name) ? true : false;
 }
 
@@ -110,8 +110,8 @@ function getGameByName(name: string) {
             { gameExists('melee') && 
               <ToggleButton id=`${country.flag}-melee` text="Melee" classes="w-full" target="melee" targetType="game"/>
             } 
-            { gameExists('p+') && 
-              <ToggleButton id=`${country.flag}-p+` text="Project M/+" classes="w-full" target="p+" targetType="game"/>
+            { gameExists('project-plus') && 
+              <ToggleButton id=`${country.flag}-project-plus` text="Project M/+" classes="w-full" target="project-plus" targetType="game"/>
             }
             { gameExists('brawl') && 
               <ToggleButton id=`${country.flag}-brawl` text="Brawl" classes="w-full" target="brawl" targetType="game"/>
@@ -130,8 +130,8 @@ function getGameByName(name: string) {
             { gameExists('melee') && 
               <CountryLinks country={country} game={getGameByName('melee')} gameName="Smash Bros. Melee" gameId="melee" classes="hidden" />
             }
-            { gameExists('p+') && 
-              <CountryLinks country={country} game={getGameByName('p+')} gameName="Project M/+" gameId="p+" classes="hidden" />
+            { gameExists('project-plus') && 
+              <CountryLinks country={country} game={getGameByName('project-plus')} gameName="Project M/+" gameId="project-plus" classes="hidden" />
             }
             { gameExists('brawl') && 
               <CountryLinks country={country} game={getGameByName('brawl')} gameName="Smash Bros. Brawl" gameId="brawl" classes="hidden" />
