@@ -303,10 +303,6 @@
           "name": "melee",
           "links": [
             {
-              "type": "website",
-              "url": "https://www.germanysmash.de/"
-            },
-            {
               "type": "discord",
               "url": "http://discord.gg/TgmQxcV"
             },
@@ -317,6 +313,10 @@
             {
               "type": "fb",
               "url": "https://www.facebook.com/GermanSmash"
+            },
+            {
+              "type": "twitch",
+              "url": "https://www.twitch.tv/german_melee"
             }
           ]
         },
@@ -869,6 +869,10 @@
             {
               "type": "discord",
               "url": "https://discord.gg/0xLdQDdl6va3YjKq"
+            },
+            {
+              "type": "fb",
+              "url": "https://www.facebook.com/groups/smash4sverige/"
             }
           ]
         },
@@ -878,6 +882,10 @@
             {
               "type": "discord",
               "url": "http://discord.gg/dqR8Mg5"
+            },
+            {
+              "type": "fb",
+              "url": "https://www.facebook.com/groups/182402298476505/"
             }
           ]
         }
@@ -946,10 +954,19 @@
       "name": "Ukraine",
       "id": "23",
       "flag": "ua",
-      "links": [
+      "games": [
         {
-          "type": "fb",
-          "url": "https://www.facebook.com/groups/SmashUK/"
+          "name": "ultimate",
+          "links": [
+            {
+              "type": "discord",
+              "url": "https://discord.gg/UjWuMeneJT"
+            },
+            {
+              "type": "x",
+              "url": "https://x.com/ssbuua"
+            }
+          ]
         }
       ]
     },
