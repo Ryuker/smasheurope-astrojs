@@ -591,7 +591,7 @@
           "url": "https://www.twitch.tv/smash_nl"
         },
         {
-          "type": "youtube",
+          "type": "yt",
           "url": "http://www.youtube.com/SmashNederLand"
         }
       ],
@@ -627,6 +627,10 @@
             {
               "type": "discord",
               "url": "https://discord.gg/QJ5wT2Q"
+            },
+            {
+              "type": "yt",
+              "url": "https://www.youtube.com/@supersmashdelft"
             }
           ]
         },
@@ -954,19 +958,14 @@
       "name": "Ukraine",
       "id": "23",
       "flag": "ua",
-      "games": [
+      "links": [
         {
-          "name": "ultimate",
-          "links": [
-            {
-              "type": "discord",
-              "url": "https://discord.gg/UjWuMeneJT"
-            },
-            {
-              "type": "x",
-              "url": "https://x.com/ssbuua"
-            }
-          ]
+          "type": "discord",
+          "url": "https://discord.gg/UjWuMeneJT"
+        },
+        {
+          "type": "x",
+          "url": "https://x.com/ssbuua"
         }
       ]
     },
