@@ -119,9 +119,11 @@
   [] Responsive style all component and pages
 
 # Deployment
-[] commit production to smasheurope.com repository from this dev repository
-[] deploy from production repository to GH pages
-[] move old website to old folder in same repository
+[] manually copy over this folder to (production repo) smasheurope.com for each version release
+  - handle events and country updates in that repository, work on development features in this repository
+  [] explore how can manually commit this folder using node scripts when we want to commit to production, but do it manual for now.
+[] deploy from (production repo) to GH pages 
+[] move old website to old folder in same (production) repository, this is just archived
 
 
 # BUGS
