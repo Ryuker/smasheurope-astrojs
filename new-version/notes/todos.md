@@ -20,6 +20,7 @@
   pages:
     [v] index
     [v] past events
+    [v] community
     [v] events page
       [] design layout
     [v] dynamic event page
@@ -27,6 +28,7 @@
       [] 404 redirect if 404 is received from api
       [v]dates
         [v] format to correct string and render
+        
 
     [] 404 page
       - added but marked it `_` so we don't use it yet
@@ -56,6 +58,10 @@
     [v] Tooltip
       [v] displays centered over buttons on hover
       [v] fades in and out
+    [v] Communities
+    [] European Wide Rankings
+      [] simple section with buttons linking to the rankings pages on ssbwiki - simple but effective and low on maintenance
+      [] trophy icon or some other ranking icon
 
     [v] EventFilter
       [v] filters events based text in title
@@ -82,6 +88,8 @@
         [v] icon
         [v] props
         [v] styling
+      [v] CountryCard
+      [v] CountryLinks
   
   Api:
     []events
@@ -96,19 +104,24 @@
       [v] DELETE event handler - /api/events/[eventId]
       [] sort events chronologically during or after fetch
         - I think we can modify the query we send to  JSON server to return a sorted result.
-    []countries
-      [] GET all countries - /api/countries
-      [] GET country by id - /api/countries/[countryId]
+    [v]countries
+      [v] GET all countries - /api/countries
+      [v] GET country by id - /api/countries/[countryId]
         [] return `404` if event ID isn't found
       [] GET country by Slug?
         - won't work with json-server, so it's for later
-      [] POST new country - /api/countries
-      [] PUT country handler by ID - /api/countries/[countryId] 
+      [v] POST new country - /api/countries
+      [v] PUT country handler by ID - /api/countries/[countryId] 
         - ! important to make sure we send over the full country object, JSON-SERVER replaces the whole object
-      [] DELETE country handler - /api/countries/[countryId]
+      [v] DELETE country handler - /api/countries/[countryId]
 
 # Responsive
   [] Responsive style all component and pages
+
+# Deployment
+[] commit production to smasheurope.com repository from this dev repository
+[] deploy from production repository to GH pages
+[] move old website to old folder in same repository
 
 
 # BUGS
