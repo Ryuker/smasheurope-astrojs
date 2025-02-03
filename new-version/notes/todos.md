@@ -59,9 +59,10 @@
       [v] displays centered over buttons on hover
       [v] fades in and out
     [v] Communities
-    [] European Wide Rankings
-      [] simple section with buttons linking to the rankings pages on ssbwiki - simple but effective and low on maintenance
-      [] trophy icon or some other ranking icon
+    [v] European Wide Rankings
+      [v] simple section with buttons linking to the rankings pages on ssbwiki - simple but effective and low on maintenance
+      [v] ranking image
+      [v] trophy icon or some other ranking icon
 
     [v] EventFilter
       [v] filters events based text in title
@@ -78,6 +79,8 @@
       [v] EventImage
         [v] dynamically import images using `import.meta.glob`
         [v] render with Image component
+      [v] RankingImage
+        [v] same as EventImage code but some changes due to use in RankingCard component
       [v] InitiativeCard
         [v] display Initiative title
         [] display slot content
