@@ -34,9 +34,11 @@
       - added but marked it `_` so we don't use it yet
     
   components:
-    [v] Navbar
+    [] Navbar
       [] skeleton
+      [] links
       [] styling
+      [] responsiveness
     [v] Hero
     [v] TeaserVideo
       [v] Embed Video
@@ -93,7 +95,16 @@
         [v] styling
       [v] CountryCard
       [v] CountryLinks
-  
+
+      styling:
+      [] add theme configuration to Tailwind config 
+        - to use css variables.
+      [] refactor tailwind colors to css variables in :root theme
+        - we want to use the same classes in the components 
+          - instead of using `dark:` in components all over the place
+      [] configure darkmode theme
+        - different colors for the same var names
+
   Api:
     []events
       [v] GET all events - /api/events
@@ -117,6 +128,10 @@
       [v] PUT country handler by ID - /api/countries/[countryId] 
         - ! important to make sure we send over the full country object, JSON-SERVER replaces the whole object
       [v] DELETE country handler - /api/countries/[countryId]
+
+    Self Hosting:
+      [] configure coolify.io in a local setup
+      [] configure coolify.io on hetzner.com VPS (requires hosting plan)
 
 # Responsive
   [] Responsive style all component and pages

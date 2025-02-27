@@ -80,3 +80,18 @@ modal animation - [link](https://frontendmasters.com/blog/animating-dialog/)
 
 
 
+## Self Hosting Research
+we can configure coolify.io in a local setup for exploring the setup
+- this will allow for hosting a proper database in a setup that's eventually deployable to production
+- this will allow for hosting a CMS
+- this gives us a setup that can run Node, PHP etc
+   - so we can host Wordpress as well
+- this allows for news.smasheurope.com domains for example when we go to production.
+  - we can setup dev.news.smaseurope.com as well for a better deployment flow.
+- we can still hook up 
+
+### Hosting Live
+- we can use hertzer to selfhost coolify.io
+- this would allow us to have news.smasheurope.com and dev alternatives etc
+- we basically run  our own Vercel like interface for managing the different projects this way without having the costs of hosting on Vercel.
+
