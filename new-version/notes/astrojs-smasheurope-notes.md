@@ -91,7 +91,23 @@ we can configure coolify.io in a local setup for exploring the setup
 - we can still hook up 
 
 ### Hosting Live
-- we can use hertzer to selfhost coolify.io
+- we can use hertzer to selfhost coolify.io or Kubero
 - this would allow us to have news.smasheurope.com and dev alternatives etc
 - we basically run  our own Vercel like interface for managing the different projects this way without having the costs of hosting on Vercel.
 
+Coolify.io does not support kubernetes yet, so it's limited in scaling
+
+#### Local Testing the setup:
+[running KIND locally](https://www.youtube.com/watch?v=eKr75oClPZ4)
+- used to install Kubernetes in a docker container a local machine
+- then can install Kubero in that Kubernetes
+  - this allows for setting up a scalable setup
+  - the scaling isn't necessary but this way we can just repeat the setup when we start to setup a VPN on an actual cloud server like hertzner.
+
+[hosting kubero](https://www.youtube.com/watch?v=3hvdqQoxU70)
+- built on kubernetes, better for scaling
+- Kubero offers an interface to deploy apps, hook up to gihub repo's etc
+  - we can install PHP, Node etc
+  - this gives a lot of flexibility to build dedicated apps and connect them to each other.
+    - we can avoid a Monolith application this way.
+[docs](https://www.kubero.dev/docs/goals-and-concepts)
