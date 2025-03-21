@@ -10,20 +10,20 @@ POST http://localhost:5000/api/events
 Content-Type: application/json
 
 {
-  "banner": "NTZ/ntz-se-banner.webp",
-  "title": "No Tech Zone",
-  "games": "Ultimate",
-  "description": "The hosts of Icarus bring you a brand new Major hosted in the heart of Milan, easily reachable from every train station or airport. The event has a space of 600 square meters, offers singles, doubles and ladder competitions and various side events. There's capacity for 320 competitors.",
+  "banner": "LDTP/ldtp-banner-se.webp",
+  "title": "Let's Drink The Pool",
+  "games": "Melee",
+  "description": "Team Fête's back in action with another multi-day event. Teaming up with Max and Redbull Gaming Spere they aim to bring you the largest Melee event in London. Hosted in the vibrant area of Shoreditch you can expect a wide range of food options, great transport links and plenty of affordable accommodation close to the action. There's singles, doubles and and 3 vs 3 crews to compete in and a capacity for 320 competitors. The singles champion earns a free trip to <a target=\"_blank\" href=\"https://www.start.gg/tournament/riptide-2025-4/\">Riptide</a> in the states.",
   "dates": [
-    "2025-05-03T00:00:00.000Z",
-    "2025-05-04T20:00:00.000Z"
+    "2025-07-11T00:00:00.000Z",
+    "2025-07-13T20:00:00.000Z"
   ],
   "location": {
-    "municipality": "Milan",
-    "country": "Italy"
+    "municipality": "London",
+    "country": "England"
   },
-  "details": "https://www.start.gg/no-tech-zone-2/",
-  "trailerUrl": "https://www.youtube-nocookie.com/embed/TET6IeEWoz8?si=6WDKEVB5_bN4YVrH",
-  "slug": "ntz"
+  "details": "https://www.start.gg/tournament/let-s-drink-the-pool/",
+  "trailerUrl": "https://www.youtube-nocookie.com/embed/wD5Vek9t1Kw?si=kJ6we-Pc-8gIG6yA",
+  "slug": "ldtp"
 }
 
