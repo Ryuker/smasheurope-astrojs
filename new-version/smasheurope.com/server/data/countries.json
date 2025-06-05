@@ -228,13 +228,13 @@
           "url": "https://www.twitch.tv/smashfinland"
         }
       ],
-      "games":[
+      "games": [
         {
-          "name":"project-plus",
-          "links":[
+          "name": "project-plus",
+          "links": [
             {
-              "type":"discord",
-              "url":"https://discord.gg/UADR6yw"
+              "type": "discord",
+              "url": "https://discord.gg/UADR6yw"
             }
           ]
         }

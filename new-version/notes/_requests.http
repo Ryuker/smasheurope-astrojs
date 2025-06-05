@@ -10,20 +10,19 @@ POST http://localhost:5000/api/events
 Content-Type: application/json
 
 {
-  "banner": "SAPF2/sapf2-banner-se.png",
-  "title": "SAPF 2",
-  "games": "Melee",
-  "description": "SAPF features some top talent from Germany, Europe and beyond! With more than 800 m2 in venue space and over 60 setups there's space for 256 singles and 256 doubles competitors (ex.spectators). There's also ladder and crew competitions.",
+  "banner": "SBS2025/sbs2025-banner-se.webp",
+  "title": "Smash Borge: Siege 2025",
+  "games": "Ultimate | Melee | Smash 64",
+  "description": "You are invited to Europes biggest tournament this Summer, in Sarpsborg! Smashborg: Siege 2025 is here to further unite the Nordic scene and strengthen their presence in Europe! The major offers singles and doubles competitons for Melee, Ultimate and Smash 64 and ladder competitions for Melee and Ultimate. There's also a pot bonus of €4.342,94. There's a total capacity for 512 competitors.",
   "dates": [
-    "2026-04-10T00:00:00.000Z",
-    "2026-04-12T20:00:00.000Z"
+    "2025-07-31T00:00:00.000Z",
+    "2025-08-03T20:00:00.000Z"
   ],
   "location": {
-    "municipality": "Hannover",
-    "country": "Germany"
+    "municipality": "Sarpsborg",
+    "country": "Norway"
   },
-  "details": "https://www.start.gg/sapf-2/",
-  "trailerUrl": "https://www.youtube-nocookie.com/embed/EWaoogA4MUw?si=d4ld8mBS4Xu3sW48",
-  "slug": "sapf-2"
+  "details": "https://www.start.gg/siege25/",
+  "slug": "sbs-2025"
 }
 
