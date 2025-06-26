@@ -10,19 +10,19 @@ POST http://localhost:5000/api/events
 Content-Type: application/json
 
 {
-  "banner": "SBS2025/sbs2025-banner-se.webp",
-  "title": "Smash Borge: Siege 2025",
-  "games": "Ultimate | Melee | Smash 64",
-  "description": "You are invited to Europes biggest tournament this Summer, in Sarpsborg! Smashborg: Siege 2025 is here to further unite the Nordic scene and strengthen their presence in Europe! The major offers singles and doubles competitons for Melee, Ultimate and Smash 64 and ladder competitions for Melee and Ultimate. There's also a pot bonus of €4.342,94. There's a total capacity for 512 competitors.",
+  "banner": "SM2025/sm2025-banner-se.png",
+  "title": "SmashMania 2025",
+  "games": "Ultimate",
+  "description": "Team Askalon presents Smash Mania 2025 at Cadets de Bretagne. There's singles, 3 vs 3 and Ladder competitions for Ultimate along with sever other fighting/platform fighters. There's a capacity for 384 competitors. For Ultimate singles there's a €2700 cash prize.",
   "dates": [
-    "2025-07-31T00:00:00.000Z",
-    "2025-08-03T20:00:00.000Z"
+    "2025-09-27T00:00:00.000Z",
+    "2025-09-28T20:00:00.000Z"
   ],
   "location": {
-    "municipality": "Sarpsborg",
-    "country": "Norway"
+    "municipality": "Rennes",
+    "country": "France"
   },
-  "details": "https://www.start.gg/siege25/",
-  "slug": "sbs-2025"
+  "details": "https://www.start.gg/tournament/smashmania-2025",
+  "slug": "sm-2025"
 }
 
