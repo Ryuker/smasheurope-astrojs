@@ -10,19 +10,19 @@ POST http://localhost:5000/api/events
 Content-Type: application/json
 
 {
-  "banner": "Teaghlach/teaghlach-se-banner.png",
-  "title": "Teaghlach",
-  "games": "Melee",
-  "description": "The TO team that brought you the Schism series are delighted to launch a brand new 4-day Melee experience! Coming a mere 3 years later than initially promised, Teaghlach (\"family\" as Gaeilge) is a self-catered, community-driven retreat packed with Melee and mischief. They're bringing together the very best of Irish Melee along with international talent to one of Ireland's most beautiful settings. Expect intense sets, late-night sessions and a whole lot of craic.",
+  "banner": "SomnioNoctem/somnio-noctem-se-banner.png",
+  "title": "Somnio Noctem",
+  "games": "Melee | Ultimate | \"Brawl\"",
+  "description": "After 7 editions the Somnio team is scoping up to be bring The Netherlands a new 🕸spooky🕸 Major, Somnio Noctem hosted in the <a target=\"_blank\" href=\"https://h20.gg/en/\">H20 Esports Campus</a> in Purmerend (near Amsterdam). There's singles, doubles and 3 vs 3 crew competitions for Melee and Ultimate along with several other games to compete in and exciting (Halloween themed) side events. There's a max capacity of 512 attendees.",
   "dates": [
-    "2025-10-27T00:00:00.000Z",
-    "2025-12-28T20:00:00.000Z"
+    "2025-10-31T00:00:00.000Z",
+    "2025-11-02T20:00:00.000Z"
   ],
   "location": {
-    "municipality": "Wicklow",
-    "country": "Ireland"
+    "municipality": "Purmerend",
+    "country": "Netherlands"
   },
-  "details": "https://www.start.gg/tournament/teaghlach",
-  "slug": "teaghlach"
+  "details": "https://www.start.gg/tournament/somnio-noctem",
+  "slug": "somnio-noctem"
 }
 
