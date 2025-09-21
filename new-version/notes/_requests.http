@@ -10,19 +10,19 @@ POST http://localhost:5000/api/events
 Content-Type: application/json
 
 {
-  "banner": "DHS2025/dhs2025-se-banner.webp",
-  "title": "DreamHack Stockholm 2025",
-  "games": "Melee",
-  "description": "Smash Bros. Melee is back at another DreamhHack event, this time part of the <a target=\"_blank\" href=\"https://dreamhack.com/stockholm/#/\">Stockholm edition</a>. There singles and doubles competitions. Max capacity is currently unknown. Entree to the tournaments are free but a ticket to the festival must be purchased on the dreamhack event's website.",
+  "banner": "Glory4/glory4-se-banner.webp",
+  "title": "GLORY 4",
+  "games": "Ultimate",
+  "description": "As part of the <a target=\"_blank\" href=\"https://saga.cat/\">SAGA2025 gaming fair</a> in Barcelona, Mystic Squad is back with the 4th edition in Spain's popular Ultimate series feat. MKLeo, Gackt, MKBigBoss, Glutonny and many more. For 3 days players can play in a venue open 24h's. There's singles, doubles and ladder competitions.",
   "dates": [
     "2025-11-28T00:00:00.000Z",
     "2025-11-30T20:00:00.000Z"
   ],
   "location": {
-    "municipality": "Stockholm",
-    "country": "Sweden"
+    "municipality": "Barcelona",
+    "country": "Spain"
   },
-  "details": "https://www.start.gg/tournament/ssbm-sf6-dreamhack-stockholm-2025/",
-  "slug": "dhs-2025"
+  "details": "https://www.start.gg/glory4",
+  "slug": "glory-4"
 }
 
