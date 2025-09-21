@@ -65,6 +65,9 @@
       [v] simple section with buttons linking to the rankings pages on ssbwiki - simple but effective and low on maintenance
       [v] ranking image
       [v] trophy icon or some other ranking icon
+    [] BlueSky Event Timeline on event pages
+      - webcomponent to do so - https://github.com/Vincenius/bsky-embed
+        - this can also load feeds, but feeds need to be created
 
     [v] EventFilter
       [v] filters events based text in title
