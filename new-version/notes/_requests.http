@@ -10,19 +10,19 @@ POST http://localhost:5000/api/events
 Content-Type: application/json
 
 {
-  "banner": "Somnio8/somnio-8-se-banner.png",
-  "title": "Somnio 8",
-  "games": "Melee | Ultimate | \"Brawl\"",
-  "description": "From the people that brought you Somnio Noctem, Dreamhack Rotterdam, Sector Z, NL Arcadian and more comes another edition in the Somnio series hosted in the Eindhoven Dynamo Centre with singles and doubles competions for Melee, Ultimate, \"Brawl\" plus several other games. The event holds a capacity for 256 attendees.",
+  "banner": "Festa2026/festa_2026-se-banner.png",
+  "title": "Festa 2026",
+  "games": "Melee",
+  "description": "Follow up to a Melee experience unlike anything you've ever seen before 🌴 FESTA is back for its 5th year anniversy with another seven day event with the community in focus, packed with activities, gaming and relaxation. The venue? An island in the Stockholm archipelago. Caught your attention?",
   "dates": [
-    "2026-09-05T00:00:00.000Z",
-    "2026-09-05T20:00:00.000Z"
+    "2026-08-09T00:00:00.000Z",
+    "2026-08-15T20:00:00.000Z"
   ],
   "location": {
-    "municipality": "Eindhoven",
-    "country": "Netherlands"
+    "municipality": "Grinda",
+    "country": "Sweden"
   },
-  "details": "https://www.start.gg/somnio-8",
-  "slug": "somnio-8"
+  "details": "https://www.start.gg/tournament/festa-2026/details",
+  "slug": "festa-2026"
 }
 
