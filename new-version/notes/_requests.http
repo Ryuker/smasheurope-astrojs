@@ -1,12 +1,12 @@
 ### Get all events
-GET http://localhost:5000/api/events
+GET http://localhost:5001/api/events
 
 ### Get Event by ID
-GET http://localhost:5000/api/events/fc11
+GET http://localhost:5001/api/events/fc11
 
 
 ### Post new event
-POST http://localhost:5000/api/events
+POST http://localhost:5001/api/events
 Content-Type: application/json
 
 {
