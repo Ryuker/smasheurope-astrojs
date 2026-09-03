@@ -26,6 +26,11 @@
     "2025-08-23T00:00:00.000Z",
     "2025-08-25T00:00:00.000Z"
   ],
+  "circuits": [
+    {
+      "slug": "cloud-chasers"
+    }
+  ],
   "location": "Leicester, England",
   "details": "https://www.start.gg/tournament/regen-2024/details",
   "slug": "regen-2025"
