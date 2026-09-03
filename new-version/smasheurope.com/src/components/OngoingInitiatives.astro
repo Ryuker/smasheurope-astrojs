@@ -3,7 +3,7 @@ import InitiativeCard from "./ui/InitiativeCard.astro"
 import LinkButton from './ui/LinkButton.astro';
 
 // images
-import CloudChasersLogo from '@assets/images/initiatives/circuits/melee/CloudChasers/cloud-chasers-logo.svg';
+import CloudChasersLogo from '@assets/images/initiatives/circuits/melee/CloudChasers/cloud-chasers-logo.svg?raw';
 import Modal from './ui/Modal.astro';
 ---
 
@@ -12,7 +12,7 @@ import Modal from './ui/Modal.astro';
     Ongoing community initiatives
   </h2>
   <div class="mx-auto grid grid-cols-1 gap-8 max-w-6xl">
-    <InitiativeCard title="Ready to aim for the sky?" image={CloudChasersLogo} alt="Cloud Chasers Logo" columns={2}>
+    <InitiativeCard title="Ready to aim for the sky?" svg={CloudChasersLogo} alt="Cloud Chasers Logo" columns={2}>
       <Fragment slot="content">
         <p>Earn points this Melee season by competing at European Melee tournaments including LENNIED 2, Somnio Noctem 2 and SAPF 3!</p>
         <p>You can even win free flights to an North American major + a European tournament of choice!</p>

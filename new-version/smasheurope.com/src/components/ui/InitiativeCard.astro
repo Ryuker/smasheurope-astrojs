@@ -3,12 +3,13 @@ import { Image } from "astro:assets";
 
 interface Props {
   title?: string;
-  image: string | any;
+  image?: string | any;
+  svg?: string | any ;
   alt: string;
   columns?: 2 | 3 | 4; // Explicitly defining expected column counts
 }
 
-const { title, image, alt, columns = 4 } = Astro.props;
+const { title, image, svg, alt, columns = 4 } = Astro.props;
 
 // Dictionary mapping numbers to full, explicit Tailwind classes
 const gridMap = {
@@ -20,18 +21,20 @@ const gridMap = {
 // Fallback safely to 4 columns if an unsupported number is passed
 const layoutClasses = gridMap[columns as keyof typeof gridMap] || gridMap[4];
 
-const imageSrc = typeof image === 'string' ? image : image?.src || '';
-const isSvg = imageSrc.toLowerCase().endsWith('.svg') || imageSrc.includes('.svg?');
+const isSvg = true;
 
-const imageClass = isSvg 
-  ? "flex lg:basis-full items-center py-2 h-auto max-w-full" 
-  : "flex lg:basis-full items-center py-2 object-none";
+const imageClass = "flex lg:basis-full items-center py-2 object-none";
 ---
 <div class="flex justify-center bg-white mx-5 sm:mx-10 h-full rounded-lg p-8 shadow-md">
   {/* Injected the explicit tailwind classes safely */}
   <div class={`grid grid-cols-1 ${layoutClasses.total} lg:space-x-10`}>
     <div class="flex items-center justify-center">
-      <Image src={image} alt={alt} class={imageClass} />
+      {
+        isSvg 
+          ? <div class="h-full w-full [&>svg]:h-full [&>svg]:w-full" set:html={svg}/>
+          : <Image src={image} alt={alt} class={imageClass} /> 
+      }
+
     </div>
     <div class={`col-span-1 ${layoutClasses.text} space-y-2`}>
       <span class="text-2xl text-se-dark font-bold">{title}</span>

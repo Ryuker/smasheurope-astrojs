@@ -1,4 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="4757" zoomAndPan="magnify" viewBox="176.833 81.121 1524.382 1522.855" height="2256" preserveAspectRatio="xMidYMid meet" version="1.0">
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="100%"
+  height="100%"
+  viewBox="176.833 81.121 1524.382 1522.855"
+  preserveAspectRatio="xMidYMid meet"
+  fill="currentColor"
+  stroke="currentColor"
+>
+
   <defs>
     <filter x="0%" y="0%" width="100%" height="100%" id="8c9bab1978">
       <feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" color-interpolation-filters="sRGB"></feColorMatrix>
@@ -9,7 +18,7 @@
     <g></g>
     <mask id="079048023a">
       <g filter="url(#8c9bab1978)">
-        <rect x="-356.775" width="4281.3" fill="#000000" y="-169.199993" height="2030.399913" fill-opacity="0.85"></rect>
+        <rect x="-356.775" width="4281.3" fill="currentColor" y="-169.199993" height="2030.399913" fill-opacity="0.85"></rect>
       </g>
     </mask>
     <clipPath id="ec3b3baafa">
@@ -27,7 +36,7 @@
     </clipPath>
     <mask id="c393a6f807">
       <g filter="url(#8c9bab1978)">
-        <rect x="-356.775" width="4281.3" fill="#000000" y="-169.199993" height="2030.399913" fill-opacity="0.85"></rect>
+        <rect x="-356.775" width="4281.3" fill="currentColor" y="-169.199993" height="2030.399913" fill-opacity="0.85"></rect>
       </g>
     </mask>
     <clipPath id="b761bee487">
@@ -41,7 +50,7 @@
     </clipPath>
     <mask id="c204b12731">
       <g filter="url(#8c9bab1978)">
-        <rect x="-356.775" width="4281.3" fill="#000000" y="-169.199993" height="2030.399913" fill-opacity="0.85"></rect>
+        <rect x="-356.775" width="4281.3" fill="currentColor" y="-169.199993" height="2030.399913" fill-opacity="0.85"></rect>
       </g>
     </mask>
     <clipPath id="545ea2db5e">
@@ -55,7 +64,7 @@
     </clipPath>
     <mask id="719f980838">
       <g filter="url(#8c9bab1978)">
-        <rect x="-356.775" width="4281.3" fill="#000000" y="-169.199993" height="2030.399913" fill-opacity="0.85"></rect>
+        <rect x="-356.775" width="4281.3" fill="currentColor" y="-169.199993" height="2030.399913" fill-opacity="0.85"></rect>
       </g>
     </mask>
     <clipPath id="0d069ce48d">
