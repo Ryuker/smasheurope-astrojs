@@ -994,11 +994,6 @@
       },
       "trailerUrl": "https://www.youtube-nocookie.com/embed/E6kAh3IcXcc?si=OAK0gmEvbddBsoAO",
       "details": "https://www.start.gg/somnio-8",
-      "circuits": [
-        {
-          "slug": "cloud-chasers"
-        }
-      ],
       "slug": "somnio-8",
       "id": "omnGjIL"
     },
@@ -1018,6 +1013,28 @@
       "details": "https://www.start.gg/ultimate-fighting-arena-2026-2",
       "slug": "ufa-2026",
       "id": "3dKLdEy"
+    },
+    {
+      "banner": "Lennied2/lennied-2-se-banner.webp",
+      "title": "Lennied: Fatta the Lan",
+      "games": "Melee",
+      "description": "Hosted in London's <a target=\"_blank\" href=\"https://www.redbull.com/gb-en/projects/gaming-sphere/\">Red Bull Gaming Sphere</a>, Lennied is back for another edition with regular competitions for Melee singles & doubles and Red Bull God's and Gatekeepers style crews. There's also a mystery game to compete in.",
+      "dates": [
+        "2026-10-03T00:00:00.000Z",
+        "2026-10-04T20:00:00.000Z"
+      ],
+      "location": {
+        "municipality": "London",
+        "country": "England"
+      },
+      "circuits": [
+        {
+          "slug": "cloud-chasers"
+        }
+      ],
+      "details": "https://www.start.gg/lennied-fatta-the-lan/",
+      "slug": "lennied-2",
+      "id": "uYLQR-0"
     }
   ]
 }

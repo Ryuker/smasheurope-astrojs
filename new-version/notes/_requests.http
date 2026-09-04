@@ -10,19 +10,45 @@ POST http://localhost:5001/api/events
 Content-Type: application/json
 
 {
-  "banner": "Festa2026/festa_2026-se-banner.png",
-  "title": "Festa 2026",
+  "banner": "Lennied2/lennied-2-se-banner.webp",
+  "title": "Lennied: Fatta the Lan",
   "games": "Melee",
-  "description": "Follow up to a Melee experience unlike anything you've ever seen before 🌴 FESTA is back for its 5th year anniversy with another seven day event with the community in focus, packed with activities, gaming and relaxation. The venue? An island in the Stockholm archipelago. Caught your attention?",
+  "description": "Hosted in London's <a target=\"_blank\" href=\"https://www.redbull.com/gb-en/projects/gaming-sphere/\">Red Bull Gaming Sphere</a>, Lennied is back for another edition with regular competitions for Melee singles & doubles and Red Bull God's and Gatekeepers style crews. There's also a mystery game to compete in.",
   "dates": [
-    "2026-08-09T00:00:00.000Z",
-    "2026-08-15T20:00:00.000Z"
+    "2026-10-03T00:00:00.000Z",
+    "2026-10-04T20:00:00.000Z"
   ],
   "location": {
-    "municipality": "Grinda",
-    "country": "Sweden"
+    "municipality": "London",
+    "country": "England"
   },
-  "details": "https://www.start.gg/tournament/festa-2026/details",
-  "slug": "festa-2026"
+  "details": "https://www.start.gg/lennied-fatta-the-lan/",
+  "slug": "lennied-2"
+}
+
+### Post new event part of circuit
+POST http://localhost:5001/api/events
+Content-Type: application/json
+
+{
+  "banner": "Lennied2/lennied-2-se-banner.webp",
+  "title": "Lennied: Fatta the Lan",
+  "games": "Melee",
+  "description": "Hosted in London's <a target=\"_blank\" href=\"https://www.redbull.com/gb-en/projects/gaming-sphere/\">Red Bull Gaming Sphere</a>, Lennied is back for another edition with regular competitions for Melee singles & doubles and Red Bull God's and Gatekeepers style crews. There's also a mystery game to compete in.",
+  "dates": [
+    "2026-10-03T00:00:00.000Z",
+    "2026-10-04T20:00:00.000Z"
+  ],
+  "location": {
+    "municipality": "London",
+    "country": "England"
+  },
+  "circuits": [
+    {
+      "slug": "cloud-chasers"
+    }
+  ],
+  "details": "https://www.start.gg/lennied-fatta-the-lan/",
+  "slug": "lennied-2"
 }
 
