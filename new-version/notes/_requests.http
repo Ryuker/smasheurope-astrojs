@@ -10,20 +10,21 @@ POST http://localhost:5001/api/events
 Content-Type: application/json
 
 {
-  "banner": "Lennied2/lennied-2-se-banner.webp",
-  "title": "Lennied: Fatta the Lan",
-  "games": "Melee",
-  "description": "Hosted in London's <a target=\"_blank\" href=\"https://www.redbull.com/gb-en/projects/gaming-sphere/\">Red Bull Gaming Sphere</a>, Lennied is back for another edition with regular competitions for Melee singles & doubles and Red Bull God's and Gatekeepers style crews. There's also a mystery game to compete in.",
+  "banner": "Citadel3/citadel-3-se-banner.webp",
+  "title": "Citadel 3",
+  "games": "Ultimate",
+  "description": "Cloud Army's back with the third editon of their Ultimate major series with singles and doubles competions and a capacity for 256 attendees. There's a cash prize of €2000.",
   "dates": [
-    "2026-10-03T00:00:00.000Z",
-    "2026-10-04T20:00:00.000Z"
+    "2026-12-05T00:00:00.000Z",
+    "2026-11-06T20:00:00.000Z"
   ],
   "location": {
-    "municipality": "London",
-    "country": "England"
+    "municipality": "Ivry sur Seine",
+    "country": "France"
   },
-  "details": "https://www.start.gg/lennied-fatta-the-lan/",
-  "slug": "lennied-2"
+  "trailerUrl": "https://www.youtube-nocookie.com/embed/_BkQ_Ev6Pvc?si=_v6lnLlffFYKifeZ",
+  "details": "https://www.start.gg/citadel-3",
+  "slug": "citadel-3"
 }
 
 ### Post new event part of circuit
